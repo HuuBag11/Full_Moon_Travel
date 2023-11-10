@@ -1,3 +1,7 @@
+body main{
+    min-height: 100vh;
+}
+
 /* Header */
 #header{
     background-color: #FFF;
@@ -87,4 +91,98 @@
     border: none;
     line-height: 40px;
     text-align: center;
+}
+
+/* Footer */
+#footer{
+    border-top: 1px solid #000;
+}
+
+#footer .footer-top{
+    padding: 40px 0;
+}
+
+#footer .text-review{
+    gap: 10px;
+    margin-top: 10px;
+}
+
+#footer .footer-follow{
+    border-top: 1px solid #bfbfbf;
+    padding-top: 15px;
+    margin-top: 15px;
+}
+
+#footer .footer-follow .text{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+#footer .footer-follow .logo{
+    display: flex;
+    gap: 8px;
+}
+
+#footer .footer-menu .list-menu{
+    list-style: none;
+    padding-left: 0;
+}
+
+#footer .footer-menu .list-menu .menu-item{
+    font-size: 16px;
+    font-weight: 500;
+    color: #000;
+    text-decoration: none;
+}
+
+#footer .footer-menu .list-menu .menu-item a{
+    text-decoration: none;
+    color: #000;
+}
+
+#footer .footer-contact h4{
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+#footer .footer-contact .footer-support{
+    padding-left: 0;
+    margin-bottom: 15px;
+}
+
+#footer .footer-contact .footer-support .support-item{
+    margin-bottom: 5px;
+}
+
+#footer .footer-contact .footer-support .support-item a{
+    color: #212529;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+#footer .footer-contact .footer-support .support-item a.phone{
+    font-weight: 500;
+}
+
+#footer .footer-branch{
+    padding-left: 0;
+    list-style: none;
+}
+
+#footer .footer-branch .branch-item{
+    margin-bottom: 12px;
+    font-size: 14px;
+}
+
+#footer .footer-bottom{
+    padding: 40px 0 20px;
+    background-color: #EFF3F2;
+}
+
+#footer .footer-bottom .bottom-left p{
+    font-size: 14px;
+    margin-bottom: 4px;
+    color: #828282;
 }
