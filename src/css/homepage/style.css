@@ -256,11 +256,29 @@ body main{
 #footer .footer-follow .text{
     font-size: 16px;
     font-weight: 500;
+    margin-bottom: 5px;
 }
 
 #footer .footer-follow .logo{
     display: flex;
     gap: 8px;
+    font-size: 30px;
+}
+
+#footer .footer-follow .logo i.fa-facebook{
+    color: #3378ea;
+}
+
+#footer .footer-follow .logo i.fa-instagram{
+    color: #dd3173;
+}
+
+#footer .footer-follow .logo i.fa-pinterest{
+    color: #2f76b0;
+}
+
+#footer .footer-follow .logo i.fa-youtube{
+    color: #eb3223;
 }
 
 #footer .footer-menu .list-menu{
@@ -300,6 +318,19 @@ body main{
     color: #212529;
     text-decoration: none;
     font-size: 16px;
+    transition: all 0.3s ease-in-out;
+}
+
+#footer .footer-contact .footer-support .support-item a:hover{
+    color: #fe693b;
+}
+
+#footer .footer-contact .footer-support .support-item a i{
+    color: #fe693b;
+}
+
+#footer .footer-contact .footer-support .support-item a.mail i{
+    padding-right: 5px;
 }
 
 #footer .footer-contact .footer-support .support-item a.phone{
