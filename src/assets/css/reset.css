@@ -1,6 +1,16 @@
+:root {
+  --primary-color: #212529;
+  --secondary-color: #828282;
+}
+
 html {
     box-sizing: border-box;
-  }
+    font-family: 'Roboto', sans-serif;
+}
+body{
+  color: #444 !important;
+  background-color: #36716014 !important;
+}
   * {
     margin: 0;
     padding: 0;
@@ -24,7 +34,7 @@ html {
     cursor: pointer;
   }
   a {
-    text-decoration: none;
+    text-decoration: none !important;
   }
   img {
     display: block;

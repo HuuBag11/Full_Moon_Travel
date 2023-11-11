@@ -1,0 +1,280 @@
+/* Header */
+/* section poppular-advantures */
+/* Footer */
+body main {
+  min-height: 100vh;
+}
+
+#header {
+  background-color: #FFF;
+  border-bottom: 1px solid #e5e5e5;
+}
+#header .header-logo {
+  max-height: 60px;
+  object-fit: contain;
+  max-width: 220px;
+}
+#header .menu {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+#header .menu .menu-item:not(:last-child) {
+  margin-right: 10px;
+}
+#header .menu .menu-item a {
+  display: flex;
+  color: #444;
+  border-radius: 20px;
+  font-weight: 700;
+  align-items: center;
+  transition: none;
+  padding: 8px 20px;
+  border: 2px solid transparent;
+  font-size: 16px;
+  text-decoration: none;
+  border-radius: 24px;
+  border: 2px solid transparent;
+  transition: ease-out 0.3s;
+}
+#header .menu .menu-item a:hover {
+  border: 2px solid #000;
+}
+#header .tripadvisor {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  cursor: pointer;
+  padding: 10px;
+  border-right: 1px solid #f2f2f2;
+  border-left: 1px solid #f2f2f2;
+  text-decoration: none;
+}
+#header .tripadvisor img {
+  height: auto;
+  max-width: 100%;
+}
+#header .tripadvisor span {
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #333;
+  text-align: center;
+}
+#header .header__search {
+  position: relative;
+}
+#header .header__search input {
+  border: none;
+  background-color: #f1f2f3;
+  border-radius: 20px;
+  padding: 0 50px 0 15px;
+  height: 40px;
+  line-height: 40px;
+}
+#header .header__search button {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: transparent;
+  border: none;
+  line-height: 40px;
+  text-align: center;
+}
+
+section.popuplar-advantures {
+  padding: 40px 0 30px;
+}
+section.popuplar-advantures .home_title {
+  margin-bottom: 30px;
+}
+section.popuplar-advantures .home_title h2 {
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+section.popuplar-advantures .list-item {
+  gap: 24px 0;
+}
+section.popuplar-advantures .list-item .card-item {
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 16px;
+  margin-bottom: 0;
+  height: 100%;
+  background-color: #fff;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
+}
+section.popuplar-advantures .list-item .card-item__img {
+  width: 100%;
+  padding-top: 56.25%;
+  position: relative;
+  overflow: hidden;
+}
+section.popuplar-advantures .list-item .card-item__img:hover a img {
+  transform: scale(1.08);
+}
+section.popuplar-advantures .list-item .card-item__img a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+section.popuplar-advantures .list-item .card-item__img a img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.5s;
+}
+section.popuplar-advantures .list-item .card-item__infor {
+  width: 100%;
+  padding: 15px;
+  flex: 1;
+}
+section.popuplar-advantures .list-item .card-item__infor h3.name {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+section.popuplar-advantures .list-item .card-item__infor h3.name a {
+  line-height: normal;
+  color: #212529;
+  cursor: pointer;
+  text-decoration: unset;
+}
+section.popuplar-advantures .list-item .card-item__infor .star-rating {
+  margin-bottom: 6px;
+}
+section.popuplar-advantures .list-item .card-item__infor .address {
+  color: #828282;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+}
+section.popuplar-advantures .list-item .card-item__box {
+  width: 100%;
+  flex-direction: row;
+  align-items: center;
+  padding: 0 15px 15px;
+}
+section.popuplar-advantures .list-item .card-item__box .price {
+  width: auto;
+  display: flex;
+  align-items: center;
+}
+section.popuplar-advantures .list-item .card-item__box .price del {
+  margin-right: 6px;
+}
+section.popuplar-advantures .list-item .card-item__box .price del span {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #444;
+}
+section.popuplar-advantures .list-item .card-item__box .price ins span {
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: 700;
+  color: #b72020;
+}
+section.popuplar-advantures .list-item .card-item__box .view-tour {
+  display: inline-flex;
+  padding: 10px 15px;
+  color: #fff;
+  background-color: #d8232a;
+  font-weight: 600;
+  border-radius: 5px;
+  transition: all 300ms ease-in-out;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+  border: 1px solid #d8232a;
+}
+section.popuplar-advantures .list-item .card-item__box .view-tour:hover {
+  color: #d8232a;
+  background-color: #fff;
+}
+
+#footer {
+  border-top: 1px solid #000;
+}
+#footer .footer-top {
+  padding: 40px 0;
+}
+#footer .text-review {
+  gap: 10px;
+  margin-top: 10px;
+}
+#footer .footer-follow {
+  border-top: 1px solid #bfbfbf;
+  padding-top: 15px;
+  margin-top: 15px;
+}
+#footer .footer-follow .text {
+  font-size: 16px;
+  font-weight: 500;
+}
+#footer .footer-follow .logo {
+  display: flex;
+  gap: 8px;
+}
+#footer .footer-menu .list-menu {
+  list-style: none;
+  padding-left: 0;
+}
+#footer .footer-menu .list-menu .menu-item {
+  font-size: 16px;
+  font-weight: 500;
+  color: #000;
+  text-decoration: none;
+  padding: 0 10px 20px;
+}
+#footer .footer-menu .list-menu .menu-item a {
+  text-decoration: none;
+  color: #000;
+}
+#footer .footer-contact h4 {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+#footer .footer-contact .footer-support {
+  padding-left: 0;
+  margin-bottom: 15px;
+}
+#footer .footer-contact .footer-support .support-item {
+  margin-bottom: 5px;
+}
+#footer .footer-contact .footer-support .support-item a {
+  color: #212529;
+  text-decoration: none;
+  font-size: 16px;
+}
+#footer .footer-contact .footer-support .support-item a.phone {
+  font-weight: 500;
+}
+#footer .footer-branch {
+  padding-left: 0;
+  list-style: none;
+}
+#footer .footer-branch .branch-item {
+  margin-bottom: 12px;
+  font-size: 14px;
+}
+#footer .footer-bottom {
+  padding: 40px 0 20px;
+  background-color: #EFF3F2;
+}
+#footer .footer-bottom .bottom-left p {
+  font-size: 14px;
+  margin-bottom: 4px;
+  color: #828282;
+}
+
+/*# sourceMappingURL=style.css.map */
