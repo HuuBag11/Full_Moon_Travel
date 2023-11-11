@@ -73,6 +73,7 @@ body main{
 #header .menu .menu-item.has-children.many-children > .sub-menu{
     min-width: 678px;
     min-height: 336px;
+    overflow: hidden;
 }
 
 #header .menu .menu-item.has-children.many-children > .sub-menu .menu-item.has-children{
@@ -81,7 +82,7 @@ body main{
 
 #header .menu .menu-item.has-children.many-children > .sub-menu .menu-item.has-children > .sub-menu{
     position: absolute;
-    left: 100%;
+    left: 25%;
     top: 0;
     opacity: 0;
     visibility: hidden;
@@ -96,19 +97,25 @@ body main{
     padding: 15px;
 }
 
-#header .menu .menu-item.has-children.many-children > .sub-menu .menu-item.has-children:hover > .sub-menu,
-#header .menu .menu-item.has-children.many-children > .sub-menu .menu-item.has-children.active > .sub-menu{
+#header .menu .menu-item.has-children.many-children > .sub-menu .menu-item.has-children a.active + .sub-menu{
     opacity: 1;
     visibility: visible;
+    z-index: 2;
 }
 
 #header .menu .menu-item.has-children.many-children > .sub-menu .menu-item.has-children{
     background-color: #ededed;
     width: 25%;
+    position: unset;
 }
 
-#header .menu .menu-item.has-children.many-children > .sub-menu .menu-item.has-children:hover{
+#header .menu .menu-item.has-children.many-children > .sub-menu .menu-item.has-children.active{
     background-color: #fff;
+}
+
+#header .menu .menu-item.has-children.many-children > .sub-menu .menu-item.has-children a.active{
+    background-color: #fff;
+    border-radius: unset;
 }
 
 #header .menu .menu-item.has-children.many-children .menu-item.title{
@@ -126,6 +133,7 @@ body main{
 #header .menu .menu-item.has-children.many-children > .sub-menu .menu-item.has-children .menu-item{
     width: calc(100% / 3);
     margin-right: 0;
+    margin-bottom: 5px;
 }
 
 #header .menu .menu-item.has-children.many-children > .sub-menu .menu-item.has-children .menu-item a{
