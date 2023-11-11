@@ -6,6 +6,8 @@ body main{
 #header{
     background-color: #FFF;
     border-bottom: 1px solid #e5e5e5;
+    position: relative;
+    z-index: 9999;
 }
 
 #header .header-logo{
@@ -233,6 +235,7 @@ body main{
 /* Footer */
 #footer{
     border-top: 1px solid #000;
+    background-color: #fff;
 }
 
 #footer .footer-top{
