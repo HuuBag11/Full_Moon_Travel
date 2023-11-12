@@ -84,6 +84,144 @@ body main {
   text-align: center;
 }
 
+section.banner-hero {
+  background-image: url("https://fullmoontravel.asia/wp-content/uploads/2023/08/cau-vang-da-nang.jpg");
+  height: 22.75vw;
+  min-height: 320px;
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+section.banner-hero .wrapper {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 60px;
+  z-index: 3;
+}
+section.banner-hero .wrapper .title {
+  font-size: 32px;
+  padding: 5px 15px;
+  color: #fff;
+  font-weight: 700;
+  margin-bottom: 10px;
+  text-align: center;
+}
+section.banner-hero .wrapper .search-form {
+  margin-top: 20px;
+}
+section.banner-hero .wrapper .search-form__content {
+  display: flex;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.15);
+  width: 950px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+section.banner-hero .wrapper .search-form__content__form {
+  width: 80%;
+  background-color: #fff;
+  display: flex;
+  height: 84px;
+}
+section.banner-hero .wrapper .search-form__content__form i {
+  font-size: 38px;
+  margin-right: 5px;
+  color: #bababa;
+}
+section.banner-hero .wrapper .search-form__content__form .text {
+  color: #828282;
+  text-transform: uppercase;
+  cursor: pointer;
+  width: 100%;
+}
+section.banner-hero .wrapper .search-form__content__form .text span {
+  color: #555;
+  display: block;
+  font-weight: bold;
+}
+section.banner-hero .wrapper .search-form__content__form .text input {
+  border: none;
+  padding: 0;
+  font-weight: bold;
+  color: #555;
+  background-image: url("../images/icon-svgs/icon-calendar.svg");
+  background-repeat: no-repeat;
+  background-position: 96% center;
+  background-size: auto 60%;
+  width: 100%;
+}
+section.banner-hero .wrapper .search-form__content__form .list {
+  position: absolute;
+  top: calc(100% - 10px);
+  margin-bottom: 0;
+  left: 20px;
+  display: none;
+  transition: all 0.3s;
+  list-style: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.35);
+  border-radius: 8px;
+  background-color: #fff;
+  width: 250px;
+  z-index: 999;
+  padding: 10px 14px;
+}
+section.banner-hero .wrapper .search-form__content__form__des {
+  width: 40%;
+  padding: 15px 0 15px 20px;
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+section.banner-hero .wrapper .search-form__content__form__price {
+  width: 30%;
+  padding: 15px 0 15px 20px;
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+section.banner-hero .wrapper .search-form__content__form__date {
+  width: 30%;
+  padding: 15px 0 15px 20px;
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+section.banner-hero .wrapper .search-form__content #search_button {
+  font-size: 18px;
+  font-weight: bold;
+  height: 84px;
+  color: #fff;
+  text-align: center;
+  width: 20%;
+  background-color: #1e4f3f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0;
+}
+
+section.service {
+  padding: 20px 0;
+  background-color: #fbfbfb;
+}
+section.service .item {
+  display: flex;
+  align-items: center;
+  width: 33.3333333333%;
+  padding: 0 4%;
+}
+section.service .item .icon {
+  height: 55px;
+  width: 55px;
+  object-fit: contain;
+  margin-right: 15px;
+}
+section.service .item .name {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 600;
+}
+
 section.popuplar-advantures {
   padding: 40px 0 30px;
 }
