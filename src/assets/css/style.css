@@ -200,6 +200,63 @@ section.popuplar-advantures .list-item .card-item__box .view-tour:hover {
   background-color: #fff;
 }
 
+section.top-destination {
+  padding: 30px 0;
+  background-color: #fbfbfb;
+}
+section.top-destination h4.title {
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+section.top-destination .destination-top h5 {
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+section.top-destination .destination-top .container-content .list-item {
+  padding-left: 0;
+  list-style: none;
+}
+section.top-destination .destination-top .container-content .list-item li {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+section.top-destination .destination-top .container-content .list-item li a {
+  color: #212529;
+  text-decoration: none;
+}
+section.top-destination .destination-bottom {
+  margin-top: 30px;
+}
+section.top-destination .destination-bottom h5 {
+  font-weight: 600;
+  font-size: 16px;
+}
+section.top-destination .destination-bottom .top-tour {
+  padding-top: 30px;
+  border-top: 1px solid #dcdcdc;
+}
+section.top-destination .destination-bottom .top-tour .group-city:not(:last-child) {
+  margin-bottom: 20px;
+}
+section.top-destination .destination-bottom .content-list .list-item {
+  padding-left: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+section.top-destination .destination-bottom .content-list .list-item li {
+  width: 25%;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+section.top-destination .destination-bottom .content-list .list-item li a {
+  color: #212529;
+  text-decoration: none;
+}
+
 #footer {
   border-top: 1px solid #000;
 }
