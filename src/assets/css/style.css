@@ -257,6 +257,77 @@ section.top-destination .destination-bottom .content-list .list-item li a {
   text-decoration: none;
 }
 
+section.popular-destination {
+  padding: 30px 0;
+}
+section.popular-destination .title {
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+}
+section.popular-destination .desc {
+  color: #444;
+  font-size: 16px;
+  text-align: center;
+}
+section.popular-destination .container-title {
+  margin-bottom: 30px;
+}
+section.popular-destination .container-img {
+  display: flex;
+  flex-wrap: wrap;
+}
+section.popular-destination .container-img .item-img {
+  position: relative;
+}
+section.popular-destination .container-img .item-img .title {
+  color: #fff;
+  font-size: 26px;
+  font-weight: bold;
+  position: absolute;
+  bottom: 10px;
+  left: 15px;
+}
+section.popular-destination .container-img .item-img .img-wrapper {
+  position: relative;
+  border-radius: 5px;
+  overflow: hidden;
+  padding-top: 50%;
+}
+section.popular-destination .container-img .item-img .img-wrapper a {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+section.popular-destination .container-img .item-img .img-wrapper img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  transition: all 0.5s;
+}
+section.popular-destination .container-img .item-img .img-wrapper:hover img {
+  transform: scale(1.1);
+}
+section.popular-destination .container-img .item-img.item-large {
+  width: calc(50% - 6px);
+  margin-right: 3px;
+  margin-bottom: 3px;
+}
+section.popular-destination .container-img .item-img.item-small {
+  width: calc(25% - 3px);
+  margin-right: 3px;
+  margin-bottom: 3px;
+}
+section.popular-destination .container-img .item-img.item-small .img-wrapper {
+  padding-top: 100%;
+}
+
 #footer {
   border-top: 1px solid #000;
 }
