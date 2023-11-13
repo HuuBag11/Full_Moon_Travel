@@ -328,6 +328,58 @@ section.popular-destination .container-img .item-img.item-small .img-wrapper {
   padding-top: 100%;
 }
 
+section.related-articles {
+  padding: 30px 0;
+}
+section.related-articles h4.title {
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+section.related-articles .wrapper__list {
+  padding-left: 0;
+  list-style: none;
+  row-gap: 20px;
+}
+section.related-articles .wrapper__list .item-wrapper {
+  position: relative;
+}
+section.related-articles .wrapper__list .item-wrapper .item-img {
+  width: 100%;
+  padding-top: 56.25%;
+  overflow: hidden;
+  border-radius: 6px;
+  position: relative;
+}
+section.related-articles .wrapper__list .item-wrapper .item-img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: all 0.5s;
+}
+section.related-articles .wrapper__list .item-wrapper .item-title {
+  margin: 10px 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+section.related-articles .wrapper__list .item-wrapper .item-info {
+  color: #828282;
+  font-size: 16px;
+}
+section.related-articles .wrapper__list .item-wrapper > a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+section.related-articles .wrapper__list .item-wrapper > a:hover + .item-img img {
+  transform: scale(1.1);
+}
+
 #footer {
   border-top: 1px solid #000;
 }
