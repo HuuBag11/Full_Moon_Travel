@@ -38,6 +38,11 @@ section.travel-specialists{
         list-style: none;
         row-gap: 20px;
 
+        .item-wrapper{
+            max-width: 80%;
+            margin: 0 auto;
+        }
+
         .item-img{
             width: 100%;
             border-radius: 50%;

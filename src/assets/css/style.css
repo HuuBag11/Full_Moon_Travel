@@ -553,6 +553,10 @@ section.travel-specialists .content__list {
   list-style: none;
   row-gap: 20px;
 }
+section.travel-specialists .content__list .item-wrapper {
+  max-width: 80%;
+  margin: 0 auto;
+}
 section.travel-specialists .content__list .item-img {
   width: 100%;
   border-radius: 50%;
