@@ -18,6 +18,9 @@ section.top-destination{
             }
 
             .container-content{
+                @media (max-width: 768px){
+                    row-gap: 10px;
+                }
                 .list-item{
                     padding-left: 0;
                     list-style: none;

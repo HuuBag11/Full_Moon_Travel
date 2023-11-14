@@ -480,6 +480,11 @@ section.top-destination .destination-top h5 {
   margin-bottom: 15px;
   font-size: 16px;
 }
+@media (max-width: 768px) {
+  section.top-destination .destination-top .container-content {
+    row-gap: 10px;
+  }
+}
 section.top-destination .destination-top .container-content .list-item {
   padding-left: 0;
   list-style: none;
@@ -601,10 +606,20 @@ section.related-articles h4.title {
   font-weight: bold;
   margin-bottom: 30px;
 }
+@media (max-width: 768px) {
+  section.related-articles h4.title {
+    font-size: 24px;
+  }
+}
 section.related-articles .wrapper__list {
   padding-left: 0;
   list-style: none;
   row-gap: 20px;
+}
+@media (max-width: 768px) {
+  section.related-articles .wrapper__list {
+    row-gap: 25px;
+  }
 }
 section.related-articles .wrapper__list .item-wrapper {
   position: relative;
@@ -632,6 +647,11 @@ section.related-articles .wrapper__list .item-wrapper .item-title {
 section.related-articles .wrapper__list .item-wrapper .item-info {
   color: #828282;
   font-size: 16px;
+}
+@media (max-width: 768px) {
+  section.related-articles .wrapper__list .item-wrapper .item-info {
+    font-size: 14px;
+  }
 }
 section.related-articles .wrapper__list .item-wrapper > a {
   position: absolute;
@@ -671,9 +691,20 @@ section.travel-specialists .content-title h4.title {
   font-weight: bold;
   margin-bottom: 10px;
 }
+@media (max-width: 768px) {
+  section.travel-specialists .content-title h4.title {
+    font-size: 24px;
+    max-width: 80%;
+  }
+}
 section.travel-specialists .content-title .desc {
-  color: #868686;
+  color: #444;
   font-size: 16px;
+}
+@media (max-width: 768px) {
+  section.travel-specialists .content-title .desc {
+    font-size: 14px;
+  }
 }
 section.travel-specialists .content__list {
   padding-left: 0;
@@ -701,10 +732,20 @@ section.travel-specialists .content__list .title {
   font-size: 16px;
   text-align: center;
 }
+@media (max-width: 768px) {
+  section.travel-specialists .content__list .title {
+    font-size: 14px;
+  }
+}
 section.travel-specialists .content__list .subtitle {
   color: #868686;
   text-align: center;
   margin-top: 5px;
+}
+@media (max-width: 768px) {
+  section.travel-specialists .content__list .subtitle {
+    font-size: 14px;
+  }
 }
 section.travel-specialists .content-button {
   margin: 0 auto;
