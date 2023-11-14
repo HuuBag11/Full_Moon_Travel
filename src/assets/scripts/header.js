@@ -8,4 +8,25 @@ $(document).ready(function(){
         })
     }
     openSubmenu();
+
+    function splideComment(){
+        if ($(".splide_comment").length) {
+            new Splide(".splide_comment", {
+                type: 'slide',
+                perPage: 3,
+                perMove: 1,
+                arrows: true,
+                pagination: false,
+                drag: 'free',
+                gap: "30px",
+                breakpoints:{
+                    480: {
+                        perPage: 1,
+                        arrows: false,
+                    }
+                }
+            }).mount();
+        }
+    }
+    splideComment();
 })
