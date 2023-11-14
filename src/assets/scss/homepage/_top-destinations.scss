@@ -43,6 +43,11 @@ section.top-destination{
             h5{
                 font-weight: 600;
                 font-size: 16px;
+
+                @media (max-width: 768px){
+                    font-size: 14px;
+                    margin-bottom: 15px;
+                }
             }
 
             .top-tour{
@@ -67,6 +72,10 @@ section.top-destination{
                         width: 25%;
                         margin-bottom: 10px;
                         font-size: 14px;
+
+                        @media (max-width: 768px){
+                            width: 50%;
+                        }
 
                         a{
                             color: #212529;

@@ -504,6 +504,12 @@ section.top-destination .destination-bottom h5 {
   font-weight: 600;
   font-size: 16px;
 }
+@media (max-width: 768px) {
+  section.top-destination .destination-bottom h5 {
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+}
 section.top-destination .destination-bottom .top-tour {
   padding-top: 30px;
   border-top: 1px solid #dcdcdc;
@@ -522,6 +528,11 @@ section.top-destination .destination-bottom .content-list .list-item li {
   margin-bottom: 10px;
   font-size: 14px;
 }
+@media (max-width: 768px) {
+  section.top-destination .destination-bottom .content-list .list-item li {
+    width: 50%;
+  }
+}
 section.top-destination .destination-bottom .content-list .list-item li a {
   color: #212529;
   text-decoration: none;
@@ -536,10 +547,20 @@ section.popular-destination .title {
   margin-bottom: 10px;
   text-align: center;
 }
+@media (max-width: 768px) {
+  section.popular-destination .title {
+    font-size: 24px;
+  }
+}
 section.popular-destination .desc {
   color: #444;
   font-size: 16px;
   text-align: center;
+}
+@media (max-width: 768px) {
+  section.popular-destination .desc {
+    font-size: 14px;
+  }
 }
 section.popular-destination .container-title {
   margin-bottom: 30px;
@@ -558,6 +579,11 @@ section.popular-destination .container-img .item-img .title {
   position: absolute;
   bottom: 10px;
   left: 15px;
+}
+@media (max-width: 768px) {
+  section.popular-destination .container-img .item-img .title {
+    font-size: 20px;
+  }
 }
 section.popular-destination .container-img .item-img .img-wrapper {
   position: relative;
@@ -589,13 +615,31 @@ section.popular-destination .container-img .item-img.item-large {
   margin-right: 3px;
   margin-bottom: 3px;
 }
+@media (max-width: 768px) {
+  section.popular-destination .container-img .item-img.item-large {
+    width: 100%;
+  }
+}
 section.popular-destination .container-img .item-img.item-small {
   width: calc(25% - 3px);
   margin-right: 3px;
   margin-bottom: 3px;
 }
+@media (max-width: 768px) {
+  section.popular-destination .container-img .item-img.item-small {
+    width: calc(50% - 3px);
+  }
+}
 section.popular-destination .container-img .item-img.item-small .img-wrapper {
   padding-top: 100%;
+}
+@media (max-width: 768px) {
+  section.popular-destination .container-img .item-img:nth-child(4) {
+    order: 5;
+  }
+  section.popular-destination .container-img .item-img:nth-child(6) {
+    order: 6;
+  }
 }
 
 section.related-articles {
