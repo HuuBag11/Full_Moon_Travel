@@ -5,12 +5,20 @@ section.popular-destination{
         font-weight: bold;
         margin-bottom: 10px;
         text-align: center;
+
+        @media (max-width: 768px){
+            font-size: 24px;
+        }
     }
 
     .desc{
         color: #444;
         font-size: 16px;
         text-align: center;
+
+        @media (max-width: 768px){
+            font-size: 14px;
+        }
     }
 
     .container-title{
@@ -31,6 +39,10 @@ section.popular-destination{
                 position: absolute;
                 bottom: 10px;
                 left: 15px;
+
+                @media (max-width: 768px){
+                    font-size: 20px;
+                }
             }
 
             .img-wrapper{
@@ -69,6 +81,10 @@ section.popular-destination{
                 width: calc(50% - 6px);
                 margin-right: 3px;
                 margin-bottom: 3px;
+
+                @media (max-width: 768px){
+                    width: 100%;
+                }
             }
 
             &.item-small{
@@ -76,8 +92,22 @@ section.popular-destination{
                 margin-right: 3px;
                 margin-bottom: 3px;
 
+                @media (max-width: 768px){
+                    width: calc(50% - 3px);
+                }
+
                 .img-wrapper{
                     padding-top: 100%;
+                }
+            }
+
+            @media (max-width: 768px){
+                &:nth-child(4){
+                    order: 5;
+                }
+
+                &:nth-child(6){
+                    order: 6;
                 }
             }
         }

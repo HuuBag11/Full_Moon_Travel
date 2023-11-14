@@ -25,11 +25,20 @@ section.travel-specialists{
             font-size: 26px;
             font-weight: bold;
             margin-bottom: 10px;
+
+            @media (max-width: 768px){
+                font-size: 24px;
+                max-width: 80%;
+            }
         }
 
         .desc{
-            color: #868686;
+            color: #444;
             font-size: 16px;
+
+            @media (max-width: 768px){
+                font-size: 14px;
+            }
         }
     }
 
@@ -61,12 +70,20 @@ section.travel-specialists{
             font-weight: 500;
             font-size: 16px;
             text-align: center;
+
+            @media (max-width: 768px){
+                font-size: 14px;
+            }
         }
 
         .subtitle{
             color: #868686;
             text-align: center;
             margin-top: 5px;
+
+            @media (max-width: 768px){
+                font-size: 14px;
+            }
         }
     }
 

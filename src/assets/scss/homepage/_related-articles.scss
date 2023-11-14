@@ -5,12 +5,20 @@ section.related-articles{
         font-size: 26px;
         font-weight: bold;
         margin-bottom: 30px;
+
+        @media (max-width: 768px){
+            font-size: 24px;
+        }
     }
 
     .wrapper__list{
         padding-left: 0;
         list-style: none;
         row-gap: 20px;
+
+        @media (max-width: 768px){
+           row-gap: 25px;
+        }
 
         .item-wrapper{
             position: relative;
@@ -41,6 +49,10 @@ section.related-articles{
             .item-info{
                 color: #828282;
                 font-size: 16px;
+
+                @media (max-width: 768px){
+                    font-size: 14px;
+                }
             }
 
             >a{

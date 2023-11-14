@@ -1,6 +1,20 @@
+$color_1: #444;
+$color_2: #333;
+$color_3: #f47921;
+$color_4: white;
+$background-color_1: #FFF;
+$background-color_2: #fff;
+$background-color_3: transparent;
+$background-color_4: #ededed;
+$background-color_5: #f1f2f3;
+$border-color_1: transparent;
+
+/* Header */
 #header {
 	background-color: $background-color_1;
 	border-bottom: 1px solid #e5e5e5;
+	position: relative;
+	z-index: 9999;
 	.header-logo {
 		max-height: 60px;
 		object-fit: contain;
@@ -33,6 +47,108 @@
 				}
 			}
 		}
+		.menu-item.has-children {
+			position: relative;
+			>.sub-menu {
+				position: absolute;
+				left: 0;
+				top: 100%;
+				opacity: 0;
+				visibility: hidden;
+				transition: all 0.3s ease;
+				border-radius: 8px;
+				background-color: $background-color_2;
+				min-width: 160px;
+				box-shadow: 0 0 4px rgba(0,0,0,.25);
+				font-size: 14px;
+				padding-left: 0;
+				list-style: none;
+				margin-top: 8px;
+				&::after {
+					content: "";
+					width: 100%;
+					height: 10px;
+					background-color: $background-color_3;
+					position: absolute;
+					bottom: 100%;
+				}
+				.menu-item {
+					a {
+						padding: 8px 10px;
+						font-weight: normal;
+						&:hover {
+							border-color: $border-color_1;
+						}
+					}
+				}
+			}
+			&:hover {
+				>.sub-menu {
+					opacity: 1;
+					visibility: visible;
+				}
+			}
+		}
+		.menu-item.has-children.many-children {
+			>.sub-menu {
+				min-width: 678px;
+				min-height: 336px;
+				overflow: hidden;
+				.menu-item.has-children {
+					position: relative;
+					background-color: $background-color_4;
+					width: 25%;
+					position: unset;
+					>.sub-menu {
+						position: absolute;
+						left: 25%;
+						top: 0;
+						opacity: 0;
+						visibility: hidden;
+						margin-top: 0;
+						border-radius: unset;
+						box-shadow: none;
+						display: flex;
+						flex-wrap: wrap;
+						align-items: flex-end;
+						min-width: 500px;
+						padding: 15px;
+					}
+					a.active {
+						+ {
+							.sub-menu {
+								opacity: 1;
+								visibility: visible;
+								z-index: 2;
+							}
+						}
+						background-color: $background-color_2;
+						border-radius: unset;
+					}
+					.menu-item {
+						width: calc(100% / 3);
+						margin-right: 0;
+						margin-bottom: 5px;
+						a {
+							padding: 0;
+						}
+					}
+				}
+				.menu-item.has-children.active {
+					background-color: $background-color_2;
+				}
+			}
+			.menu-item.title {
+				font-size: 16px;
+				font-weight: 700;
+				margin-bottom: 5px;
+				text-transform: uppercase;
+				width: 100% !important;
+				a {
+					font-weight: 700;
+				}
+			}
+		}
 	}
 	.tripadvisor {
 		display: flex;
@@ -55,11 +171,41 @@
 			text-align: center;
 		}
 	}
+	.header__button {
+		display: flex;
+		.header__button--wishlist {
+			padding: 8px 10px;
+			display: flex;
+			align-items: center;
+			span {
+				font-size: 30px;
+				position: relative;
+				color: $color_3;
+			}
+			span.wishlist-count {
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				font-size: 12px;
+				color: $color_4;
+			}
+		}
+		.header__button--cart {
+			padding: 8px 10px;
+			display: flex;
+			align-items: center;
+			span {
+				font-size: 24px;
+				color: $color_3;
+			}
+		}
+	}
 	.header__search {
 		position: relative;
 		input {
 			border: none;
-			background-color: $background-color_2;
+			background-color: $background-color_5;
 			border-radius: 20px;
 			padding: 0 50px 0 15px;
 			height: 40px;
