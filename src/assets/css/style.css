@@ -16,6 +16,7 @@ body main {
   max-height: 60px;
   object-fit: contain;
   max-width: 220px;
+  min-width: 150px;
 }
 #header .menu {
   list-style: none;
@@ -147,6 +148,11 @@ body main {
   border-left: 1px solid #f2f2f2;
   text-decoration: none;
 }
+@media (max-width: 1200px) {
+  #header .tripadvisor {
+    display: none;
+  }
+}
 #header .tripadvisor img {
   height: auto;
   max-width: 100%;
@@ -198,6 +204,12 @@ body main {
   padding: 0 50px 0 15px;
   height: 40px;
   line-height: 40px;
+}
+@media (max-width: 1200px) {
+  #header .header__search input {
+    padding-left: 30px;
+    max-width: 200px;
+  }
 }
 #header .header__search button {
   width: 40px;
@@ -1164,10 +1176,26 @@ main#detailPage #tour-detail .tour-detail__content .tour-content-right .inner .t
   gap: 10px;
   margin-top: 10px;
 }
+@media (max-width: 768px) {
+  #footer .footer-social {
+    display: flex;
+    align-items: flex-start;
+  }
+}
 #footer .footer-follow {
   border-top: 1px solid #bfbfbf;
   padding-top: 15px;
   margin-top: 15px;
+}
+@media (max-width: 768px) {
+  #footer .footer-follow {
+    margin-top: 0;
+    border: none;
+    padding-top: 0;
+    margin-left: 10px;
+    padding-left: 10px;
+    border-left: 1px solid #bfbfbf;
+  }
 }
 #footer .footer-follow .text {
   font-size: 16px;
@@ -1191,9 +1219,21 @@ main#detailPage #tour-detail .tour-detail__content .tour-content-right .inner .t
 #footer .footer-follow .logo i.fa-youtube {
   color: #eb3223;
 }
+@media (max-width: 768px) {
+  #footer .footer-menu {
+    margin-top: 20px;
+  }
+}
 #footer .footer-menu .list-menu {
   list-style: none;
   padding-left: 0;
+}
+@media (max-width: 768px) {
+  #footer .footer-menu .list-menu {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+  }
 }
 #footer .footer-menu .list-menu .menu-item {
   font-size: 16px;
@@ -1202,6 +1242,11 @@ main#detailPage #tour-detail .tour-detail__content .tour-content-right .inner .t
   text-decoration: none;
   margin-bottom: 15px;
 }
+@media (max-width: 768px) {
+  #footer .footer-menu .list-menu .menu-item {
+    width: 50%;
+  }
+}
 #footer .footer-menu .list-menu .menu-item a {
   text-decoration: none;
   color: #000;
@@ -1209,7 +1254,7 @@ main#detailPage #tour-detail .tour-detail__content .tour-content-right .inner .t
 #footer .footer-contact h4 {
   text-transform: uppercase;
   font-size: 16px;
-  font-weight: 500;
+  font-weight: bold;
   margin-bottom: 10px;
 }
 #footer .footer-contact .footer-support {
@@ -1269,6 +1314,11 @@ main#detailPage #tour-detail .tour-detail__content .tour-content-right .inner .t
   #footer .footer-bottom .bottom-right {
     margin-left: auto;
     max-width: max-content;
+  }
+}
+@media (max-width: 768px) {
+  #footer .footer-logo {
+    margin-bottom: 10px;
   }
 }
 #footer .footer-logo img {
