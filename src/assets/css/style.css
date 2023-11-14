@@ -912,10 +912,27 @@ section.travel-specialists .content-button a:hover {
   padding: 40px 0 20px;
   background-color: #EFF3F2;
 }
+@media (max-width: 768px) {
+  #footer .footer-bottom .bottom-wrapper {
+    display: block !important;
+  }
+}
+@media (max-width: 768px) {
+  #footer .footer-bottom .bottom-left {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
 #footer .footer-bottom .bottom-left p {
   font-size: 14px;
   margin-bottom: 4px;
   color: #828282;
+}
+@media (max-width: 768px) {
+  #footer .footer-bottom .bottom-right {
+    margin-left: auto;
+    max-width: max-content;
+  }
 }
 #footer .footer-logo img {
   width: 100%;
