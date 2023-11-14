@@ -20,6 +20,10 @@ body{
   *:after {
     box-sizing: border-box;
   }
+  html ul{
+    padding-left: 0;
+    list-style-type: none;
+  }
   input,
   textarea,
   select,
