@@ -370,7 +370,7 @@ section.popuplar-advantures .list-item .card-item {
   margin-bottom: 0;
   height: 100%;
   background-color: #fff;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0.25rem 1.125rem rgba(75, 70, 92, 0.1);
 }
 section.popuplar-advantures .list-item .card-item__img {
   width: 100%;
@@ -1047,6 +1047,111 @@ section.travel-specialists .content-button a:hover {
   background-color: #f47921;
 }
 
+main#detailPage #breadcrumb {
+  padding: 9px 0;
+}
+main#detailPage #breadcrumb nav * {
+  margin-bottom: 0;
+  color: #bdbdbd;
+  font-size: 14px;
+  line-height: 16px;
+}
+main#detailPage #tour-detail .tour-detail__content .tour-gallery {
+  margin-bottom: 40px;
+}
+main#detailPage #tour-detail .tour-detail__content .tour-gallery .splide__gallery .splide__slide {
+  width: 100%;
+  padding-top: 56.25%;
+  overflow: hidden;
+  cursor: pointer;
+}
+main#detailPage #tour-detail .tour-detail__content .tour-gallery .splide__gallery .splide__slide img {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 0;
+  width: 100%;
+  object-fit: cover;
+}
+main#detailPage #tour-detail .tour-detail__content #tab-details .nav-details {
+  margin-bottom: 25px;
+}
+main#detailPage #tour-detail .tour-detail__content #tab-details .nav-details ul {
+  border-bottom: 1px solid #ebebeb;
+  white-space: nowrap;
+  margin-bottom: 0;
+  padding: 0;
+}
+main#detailPage #tour-detail .tour-detail__content #tab-details .nav-details ul li {
+  list-style: none;
+  display: inline-block;
+  margin-bottom: -1px;
+  margin-right: 45px;
+}
+main#detailPage #tour-detail .tour-detail__content #tab-details .nav-details ul li.is-active a {
+  border-bottom: 3px solid #e9680c;
+  color: #e9680c;
+}
+main#detailPage #tour-detail .tour-detail__content #tab-details .nav-details ul li a {
+  padding: 5px 0;
+  display: block;
+  border-bottom: 3px solid transparent;
+  color: #828282;
+  font-weight: 500;
+  transition: all 0.4s;
+}
+main#detailPage #tour-detail .tour-detail__content #tab-details .nav-details ul li a:hover {
+  color: #e9680c;
+}
+main#detailPage #tour-detail .tour-detail__content #h_tour_overview .content-post {
+  width: 100%;
+}
+main#detailPage #tour-detail .tour-detail__content #h_tour_overview .content-post * {
+  width: 100% !important;
+}
+main#detailPage #tour-detail .tour-detail__content #h_tour_overview .content-post img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+main#detailPage #tour-detail .tour-detail__content .tour-content-right .inner {
+  padding: 20px 8px 20px 36px;
+}
+main#detailPage #tour-detail .tour-detail__content .tour-content-right .inner .tour-title {
+  font-size: 28px;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+main#detailPage #tour-detail .tour-detail__content .tour-content-right .inner .tour-rating {
+  margin-top: 4px;
+  margin-bottom: 32px;
+}
+main#detailPage #tour-detail .tour-detail__content .tour-content-right .inner .tour-rating a {
+  margin-left: 6px;
+  text-decoration: none;
+  color: #212529;
+  cursor: pointer;
+  display: block;
+}
+main#detailPage #tour-detail .tour-detail__content .tour-content-right .inner .tour-price del {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #444;
+  margin-right: 6px;
+}
+main#detailPage #tour-detail .tour-detail__content .tour-content-right .inner .tour-price ins {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #444;
+}
+main#detailPage #tour-detail .tour-detail__content .tour-content-right .inner .tour-price ins span {
+  font-size: 26px;
+  line-height: 39px;
+  font-weight: 700;
+  color: #b72020;
+}
 /* Footer */
 #footer {
   border-top: 1px solid #000;
