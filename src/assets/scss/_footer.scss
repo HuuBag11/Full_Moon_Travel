@@ -1,5 +1,18 @@
+$color_1: #3378ea;
+$color_2: #dd3173;
+$color_3: #2f76b0;
+$color_4: #eb3223;
+$color_5: #000;
+$color_6: #212529;
+$color_7: #fe693b;
+$color_8: #828282;
+$background-color_1: #fff;
+$background-color_2: #EFF3F2;
+
+/* Footer */
 #footer {
 	border-top: 1px solid #000;
+	background-color: $background-color_1;
 	.footer-top {
 		padding: 40px 0;
 	}
@@ -14,10 +27,24 @@
 		.text {
 			font-size: 16px;
 			font-weight: 500;
+			margin-bottom: 5px;
 		}
 		.logo {
 			display: flex;
 			gap: 8px;
+			font-size: 30px;
+			i.fa-facebook {
+				color: $color_1;
+			}
+			i.fa-instagram {
+				color: $color_2;
+			}
+			i.fa-pinterest {
+				color: $color_3;
+			}
+			i.fa-youtube {
+				color: $color_4;
+			}
 		}
 	}
 	.footer-menu {
@@ -27,12 +54,12 @@
 			.menu-item {
 				font-size: 16px;
 				font-weight: 500;
-				color: $color_3;
+				color: $color_5;
 				text-decoration: none;
-				padding: 0 10px 20px;
+				margin-bottom: 15px;
 				a {
 					text-decoration: none;
-					color: $color_3;
+					color: $color_5;
 				}
 			}
 		}
@@ -50,9 +77,21 @@
 			.support-item {
 				margin-bottom: 5px;
 				a {
-					color: $color_4;
+					color: $color_6;
 					text-decoration: none;
 					font-size: 16px;
+					transition: all 0.3s ease-in-out;
+					&:hover {
+						color: $color_7;
+					}
+					i {
+						color: $color_7;
+					}
+				}
+				a.mail {
+					i {
+						padding-right: 5px;
+					}
 				}
 				a.phone {
 					font-weight: 500;
@@ -70,13 +109,20 @@
 	}
 	.footer-bottom {
 		padding: 40px 0 20px;
-		background-color: $background-color_4;
+		background-color: $background-color_2;
 		.bottom-left {
 			p {
 				font-size: 14px;
 				margin-bottom: 4px;
-				color: $color_5;
+				color: $color_8;
 			}
+		}
+	}
+	.footer-logo {
+		img {
+			width: 100%;
+			height: auto;
+			max-width: 180px;
 		}
 	}
 }
