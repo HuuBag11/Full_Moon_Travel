@@ -395,6 +395,237 @@ section.top-destination .destination-bottom .content-list .list-item li a {
   text-decoration: none;
 }
 
+section.feature_home {
+  padding: 20px 0;
+}
+section.feature_home .inner {
+  border-top: 1px solid #828282;
+  border-bottom: 1px solid #828282;
+  padding: 15px 0;
+}
+section.feature_home .inner .title {
+  font-size: 16px;
+  font-weight: 700;
+}
+section.feature_home .inner .sub_title {
+  text-transform: uppercase;
+  font-size: 20px;
+}
+section.feature_home .inner .col-feature {
+  width: auto;
+}
+section.feature_home .inner .col-feature img {
+  max-height: 25px;
+  object-fit: contain;
+}
+
+section.support_home {
+  padding: 20px 0;
+}
+section.support_home .box_support {
+  margin-top: 60px;
+  padding: 25px;
+  background-color: rgba(243, 120, 33, 0.14);
+  border-radius: 5px;
+  text-align: center;
+}
+section.support_home .box_support .avatar {
+  width: 115px;
+  height: 115px;
+  object-fit: cover;
+  border-radius: 50%;
+  position: relative;
+  margin: -80px auto 20px;
+}
+section.support_home .box_support .title {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+section.support_home .box_support .contact {
+  margin: 15px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+section.support_home .box_support .contact img {
+  object-fit: contain;
+  max-height: 35px;
+  margin: 0 20px;
+}
+section.support_home .box_support .cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  height: 50px;
+  font-weight: bold;
+  padding: 0 40px;
+  border-radius: 5px;
+  background-color: #f37821;
+  border: 1px solid #f37821;
+  transition: all 0.4s;
+}
+section.support_home .box_support .cta:hover {
+  color: #f37821;
+  background-color: transparent;
+}
+
+section.comment {
+  padding: 30px 0;
+}
+section.comment .home_title {
+  margin-bottom: 30px;
+}
+section.comment .home_title .title {
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+}
+section.comment .splide_comment .splide__slide .cr-review-card-inner {
+  border: 1px solid #f8f8f8;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+section.comment .splide_comment .splide__slide .cr-review-card-inner .top-row {
+  display: flex;
+  padding: 16px 0 16px 0;
+  border-bottom: solid 2px #F4F4F4;
+  margin: 0 10px 0 10px;
+}
+section.comment .splide_comment .splide__slide .cr-review-card-inner .top-row .review-thumbnail {
+  flex-basis: 56px;
+  flex-shrink: 0;
+  margin-right: 16px;
+  position: relative;
+}
+section.comment .splide_comment .splide__slide .cr-review-card-inner .top-row .review-thumbnail img {
+  max-width: 50px;
+  max-height: 50px;
+  border-radius: 25px;
+}
+section.comment .splide_comment .splide__slide .cr-review-card-inner .top-row .review-thumbnail .cr-avatar-check {
+  width: 20px;
+  height: 20px;
+  background-color: #31856C;
+  position: absolute;
+  left: 34px;
+  top: 28px;
+  border-radius: 10px;
+  border: 2px solid #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+section.comment .splide_comment .splide__slide .cr-review-card-inner .top-row .reviewer {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+section.comment .splide_comment .splide__slide .cr-review-card-inner .top-row .reviewer-name {
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
+  color: #203741;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+}
+section.comment .splide_comment .splide__slide .cr-review-card-inner .rating-row {
+  padding: 17px 0 12px 0;
+  display: flex;
+  align-items: center;
+  margin: 0 10px 0 10px;
+  overflow: hidden;
+}
+section.comment .splide_comment .splide__slide .cr-review-card-inner .rating-row .rating .rating-label {
+  margin: 0 0 0 16px;
+  font-family: sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.1em;
+  text-align: left;
+  color: #898F92;
+}
+section.comment .splide_comment .splide__slide .cr-review-card-inner .middle-row {
+  padding: 16px;
+  background: #FCFCFC;
+  border: 1px solid #F9F9F9;
+  border-radius: 6px;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+  font-size: 16px;
+  margin: 0 10px 15px 10px;
+  flex: 1;
+}
+section.comment .splide_comment .splide__slide .cr-review-card-inner .middle-row .review-content {
+  margin: 0 0 12px 0;
+  color: #484E51;
+}
+section.comment .splide_comment .splide__slide .cr-review-card-inner .middle-row .datetime {
+  font-weight: 300;
+  font-size: 14px;
+  color: #898F92;
+}
+section.comment .splide_comment .splide__slide .cr-review-card-inner .review-product {
+  display: flex;
+  border-radius: inherit;
+  display: flex;
+  padding: 10px;
+  margin-top: 10px;
+  line-height: 1;
+}
+section.comment .splide_comment .splide__slide .cr-review-card-inner .review-product .product-thumbnail {
+  flex: 0 0 20%;
+}
+section.comment .splide_comment .splide__slide .cr-review-card-inner .review-product .product-thumbnail img {
+  width: 50px;
+  height: 50px;
+  max-width: none;
+  max-height: none;
+}
+section.comment .splide_comment .splide__slide .cr-review-card-inner .review-product .product-title {
+  margin: auto 0;
+  padding-left: 5px;
+  font-family: Helvetica;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #203741;
+}
+section.comment .splide_comment .splide__slide .cr-review-card-inner .review-product .product-title a {
+  text-decoration: none;
+  color: #212529;
+  cursor: pointer;
+  transition: all 300ms ease-in-out;
+}
+section.comment .splide_comment .splide__arrows .splide__arrow--prev {
+  left: -3em;
+}
+section.comment .splide_comment .splide__arrows .splide__arrow--next {
+  right: -3em;
+}
+
 section.popular-destination {
   padding: 30px 0;
 }
@@ -448,6 +679,7 @@ section.popular-destination .container-img .item-img .img-wrapper img {
   top: 0;
   left: 0;
   transition: all 0.5s;
+  object-fit: cover;
 }
 section.popular-destination .container-img .item-img .img-wrapper:hover img {
   transform: scale(1.1);
