@@ -51,7 +51,8 @@ $border-color_1: transparent;
 		@media (max-width: 992px){
 			display: flex !important;
 			flex-direction: column;
-			height: 100vh;
+			max-height: calc(100vh + 50px);
+			height: 100%;
 			min-width: 375px;
 			max-width: 100%;
 
@@ -65,6 +66,7 @@ $border-color_1: transparent;
 			&.open{
 				transform: translateX(0);
 				overflow-y: scroll;
+				padding-bottom: 40px;
 			}
 		}
 		.menu-item {
@@ -92,7 +94,7 @@ $border-color_1: transparent;
 					display: block;
 					width: 100%;
 					margin-top: 50px;
-					margin-bottom: 20px;
+					margin-bottom: 30px;
 				}
 
 				form{
@@ -104,15 +106,22 @@ $border-color_1: transparent;
 						max-width: 100%;
 						width: 100%;
 						padding-left: 50px;
+						height: 50px;
 					}
 
 					button{
 						left: 0;
+						width: 50px;
+						height: 50px;
 					}
 				}
 			}
 			&:not(:last-child) {
 				margin-right: 10px;
+
+				@media (max-width: 992px){
+					margin-right: 0;
+				}
 			}
 			a {
 				display: flex;
@@ -128,13 +137,32 @@ $border-color_1: transparent;
 				border-radius: 24px;
 				border: 2px solid transparent;
 				transition: ease-out 0.3s;
+
+				@media (max-width: 992px){
+					border: none !important;
+					border-radius: unset;
+					padding: 15px 20px;
+				}
+
 				&:hover {
 					border: 2px solid #000;
+
 				}
 			}
 		}
 		.menu-item.has-children {
 			position: relative;
+
+			@media (max-width: 992px){
+				&::before{
+					content: url("../images/icon-svgs/caret-down-solid.svg");
+					width: 9px;
+					height: 14px;
+					position: absolute;
+					right: 20px;
+					top: 16px;
+				}
+			}
 
 			&::after {
 				content: "";
@@ -143,6 +171,10 @@ $border-color_1: transparent;
 				background-color: transparent;
 				position: absolute;
 				top: 100%;
+
+				@media (max-width: 992px){
+					display: none;
+				}
 			}
 
 			>.sub-menu {
@@ -160,11 +192,24 @@ $border-color_1: transparent;
 				padding-left: 0;
 				list-style: none;
 				margin-top: 8px;
+
+				@media (max-width: 992px){
+					position: unset;
+					margin-top: 0;
+					box-shadow: none;
+				}
 				
 				.menu-item {
 					a {
 						padding: 8px 10px;
 						font-weight: normal;
+
+						@media (max-width: 992px){
+							padding: 15px 20px;
+							font-size: 16px;
+							//font-weight: bold;
+						}
+
 						&:hover {
 							border-color: $border-color_1;
 						}
@@ -186,21 +231,46 @@ $border-color_1: transparent;
 				display: flex;
 				width: 100%;
 
+				@media (max-width: 992px){
+					flex-wrap: wrap;
+					min-height: unset;
+				}
+
 				.menu-item{
 					&.left{
 						width: 25%;
 						background-color: #ededed;
+
+						@media (max-width: 992px){
+							width: 100%;
+						}
 
 						.menu-link{
 							&.active{
 								background-color: #FFF;
 								border-radius: unset;
 							}
+
+							@media (max-width: 992px){
+								color: #1e4f3f;
+								font-weight: normal;
+							}
 						}
 					}
 
 					&.right{
 						width: 75%;
+
+						@media (max-width: 992px){
+							width: 100%;
+						}
+
+						.menu-link{
+							@media (max-width: 992px){
+								color: #1e4f3f;
+								font-weight: normal;
+							}
+						}
 					}
 
 					.menu-tab{
@@ -223,6 +293,10 @@ $border-color_1: transparent;
 							.menu-item{
 								&:not(.title){
 									width: 30%;
+
+									@media (max-width: 992px){
+										width: 100%;
+									}
 								}
 							}
 						}
@@ -270,6 +344,13 @@ $border-color_1: transparent;
 						a {
 							padding: 0;
 						}
+
+						.menu-link{
+							@media (max-width: 992px){
+								font-weight: normal;
+								color: #1e4f3f;
+							}
+						}
 					}
 				}
 				.menu-item.has-children.active {
@@ -282,6 +363,11 @@ $border-color_1: transparent;
 				margin-bottom: 5px;
 				text-transform: uppercase;
 				width: 100% !important;
+
+				@media (max-width: 992px){
+					display: none;
+				}
+
 				a {
 					font-weight: 700;
 				}
