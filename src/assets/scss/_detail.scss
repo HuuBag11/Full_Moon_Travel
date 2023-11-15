@@ -1,0 +1,143 @@
+main#detailPage {
+    #breadcrumb {
+        padding: 9px 0;
+
+        nav {
+            * {
+                margin-bottom: 0;
+                color: #bdbdbd;
+                font-size: 14px;
+                line-height: 16px;
+            }
+        }
+    }
+
+    #tour-detail {
+        .tour-detail__content {
+            .tour-gallery {
+                margin-bottom: 40px;
+
+                .splide__gallery {
+                    .splide__slide {
+                        width: 100%;
+                        padding-top: 56.25%;
+                        overflow: hidden;
+                        cursor: pointer;
+
+                        img {
+                            position: absolute;
+                            height: 100%;
+                            top: 0;
+                            left: 0;
+                            width: 100%;
+                            object-fit: cover;
+                        }
+                    }
+                }
+            }
+
+            #tab-details {
+                .nav-details {
+                    margin-bottom: 25px;
+
+                    ul {
+                        border-bottom: 1px solid #ebebeb;
+                        white-space: nowrap;
+                        margin-bottom: 0;
+                        padding: 0;
+
+                        li {
+                            list-style: none;
+                            display: inline-block;
+                            margin-bottom: -1px;
+                            margin-right: 45px;
+
+                            &.is-active {
+                                a {
+                                    border-bottom: 3px solid #e9680c;
+                                    color: #e9680c;
+                                }
+                            }
+
+                            a {
+                                padding: 5px 0;
+                                display: block;
+                                border-bottom: 3px solid transparent;
+                                color: #828282;
+                                font-weight: 500;
+                                transition: all 0.4s;
+
+                                &:hover {
+                                    color: #e9680c;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            #h_tour_overview{
+                .content-post{
+                    width: 100%;
+                    *{
+                        width: 100% !important;
+                    }
+                    img{
+                        width: 100%;
+                        height: auto;
+                        object-fit: cover;
+                    }
+                }
+            }
+            .tour-content-right {
+                .inner {
+                    padding: 20px 8px 20px 36px;
+
+                    .tour-title {
+                        font-size: 28px;
+                        margin-bottom: 20px;
+                        font-weight: 700;
+                    }
+
+                    .tour-rating {
+                        margin-top: 4px;
+                        margin-bottom: 32px;
+
+                        a {
+                            margin-left: 6px;
+                            text-decoration: none;
+                            color: #212529;
+                            cursor: pointer;
+                            display: block;
+                        }
+                    }
+
+                    .tour-price {
+                        del {
+                            font-size: 16px;
+                            line-height: 24px;
+                            font-weight: 400;
+                            color: #444;
+                            margin-right: 6px;
+                        }
+
+                        ins {
+                            font-size: 16px;
+                            line-height: 24px;
+                            font-weight: 400;
+                            color: #444;
+                            
+                            span {
+                                font-size: 26px;
+                                line-height: 39px;
+                                font-weight: 700;
+                                color: #b72020;
+                            }
+                        }
+                    }
+
+                    form.variable {}
+                }
+            }
+        }
+    }
+}
