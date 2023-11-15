@@ -34,6 +34,14 @@ function toggleOpenPopup(event){
     $("header .backdrop").toggleClass("d-none");
     $("header ul.menu").toggleClass("open");
 }
+
+// toggle class active
+function toggleClassActive(event){
+    event.preventDefault();
+
+    let thisItem = $(event.target);
+    thisItem.toggleClass("active");
+}
     
 function splideGallery(){
     console.log('================================');
