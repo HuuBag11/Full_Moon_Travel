@@ -31,7 +31,16 @@
                     <img src="https://fullmoontravel.asia/wp-content/uploads/2023/08/A-HOAI-CAT-BA-scaled-e1691808620801.jpg"
                         alt="logo">
                 </a>
+                <div class="backdrop d-none" onclick="toggleOpenPopup(event)"></div>
                 <ul class="menu d-flex align-content-center">
+                    <li class="menu-item btn-close" onclick="toggleOpenPopup(event)">  
+                    </li>
+                    <li class="menu-item form-search-mobile">
+                        <form action="" class="header__search">
+                            <button type="submit"><i class="fa fa-search"></i></button>
+                            <input type="text" placeholder="Your searching here..." name="search">
+                        </form>
+                    </li>
                     <li class="menu-item">
                         <a href="#" class="menu-link">Home</a>
                     </li>
@@ -123,7 +132,7 @@
                             </a>
                         </div>
                         <div class="header__button--bars d-none">
-                            <a href="#">
+                            <a href="#" onClick="toggleOpenPopup(event)">
                                 <span class="bars-icon d-block">
                                     <i class="fa-solid fa-bars"></i>
                                 </span>

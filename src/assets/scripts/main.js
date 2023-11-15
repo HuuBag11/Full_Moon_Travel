@@ -7,8 +7,9 @@ $(document).ready(function(){
     splideComment();
     console.log('hello world');
 });
- // open sub menu
- function openSubmenu(){
+
+ // open sub menu desktop
+function openSubmenu(){
     $("#header .menu .menu-item.has-children > .sub-menu .menu-item.left a").on("click", function(e){
         e.preventDefault();
         $(this).addClass("active");
@@ -25,6 +26,13 @@ $(document).ready(function(){
             }
         })
     })
+}
+
+// toggle open popup menu mobile
+function toggleOpenPopup(event){
+    event.preventDefault();
+    $("header .backdrop").toggleClass("d-none");
+    $("header ul.menu").toggleClass("open");
 }
     
 function splideGallery(){
