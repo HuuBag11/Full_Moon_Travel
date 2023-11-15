@@ -1,3 +1,6 @@
+"use strict";
+$ = jQuery;
+
 $(document).ready(function(){
     openSubmenu();
     splideGallery();
@@ -6,10 +9,21 @@ $(document).ready(function(){
 });
  // open sub menu
  function openSubmenu(){
-    $("#header .menu .menu-item.has-children > .sub-menu .menu-item a").on("click", function(e){
+    $("#header .menu .menu-item.has-children > .sub-menu .menu-item.left a").on("click", function(e){
         e.preventDefault();
         $(this).addClass("active");
-        $(this).closest(".menu-item").siblings().children(".menu-link").removeClass("active");
+        $(this).siblings().removeClass("active");
+
+        let thisDataTab = $(this).data("tab");
+        let contentTab = $("#header .menu .menu-item.has-children > .sub-menu .menu-item.right .menu-tab");
+
+        contentTab.each(function(){
+            let thisContentTab = $(this);
+            if(thisContentTab.data("tab") == thisDataTab){
+                thisContentTab.addClass("active");
+                thisContentTab.siblings().removeClass("active");
+            }
+        })
     })
 }
     
