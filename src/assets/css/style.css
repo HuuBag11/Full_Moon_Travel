@@ -46,7 +46,7 @@ body main {
   #header .menu {
     display: flex !important;
     flex-direction: column;
-    max-height: calc(100vh + 50px);
+    max-height: calc(100vh + 70px);
     height: 100%;
     min-width: 375px;
     max-width: 100%;
@@ -188,6 +188,8 @@ body main {
     position: unset;
     margin-top: 0;
     box-shadow: none;
+    visibility: visible;
+    opacity: 1;
   }
 }
 #header .menu .menu-item.has-children > .sub-menu .menu-item a {
@@ -207,6 +209,9 @@ body main {
   opacity: 1;
   visibility: visible;
 }
+#header .menu .menu-item.has-children.many-children.open > .sub-menu {
+  height: auto;
+}
 #header .menu .menu-item.has-children.many-children > .sub-menu {
   min-width: 678px;
   min-height: 336px;
@@ -218,6 +223,9 @@ body main {
   #header .menu .menu-item.has-children.many-children > .sub-menu {
     flex-wrap: wrap;
     min-height: unset;
+    height: 0;
+    overflow: hidden;
+    transition: all ease-out;
   }
 }
 #header .menu .menu-item.has-children.many-children > .sub-menu .menu-item.left {
@@ -227,6 +235,7 @@ body main {
 @media (max-width: 992px) {
   #header .menu .menu-item.has-children.many-children > .sub-menu .menu-item.left {
     width: 100%;
+    background-color: #fff;
   }
 }
 #header .menu .menu-item.has-children.many-children > .sub-menu .menu-item.left .menu-link.active {
@@ -362,7 +371,9 @@ body main {
 }
 #header .tripadvisor img {
   height: auto;
-  max-width: 100%;
+  width: 100%;
+  max-width: 70px;
+  margin: 0 auto;
 }
 #header .tripadvisor span {
   font-size: 12px;
