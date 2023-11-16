@@ -1414,7 +1414,7 @@ main#detailPage #tour-detail .tour-detail__content .tour-content-right .inner .t
   color: #b72020;
 }
 main.pageTours .list-tours {
-  padding-top: 40px;
+  padding: 40px 0;
 }
 main.pageTours .sidebar__filter .filter__wrapper {
   border: 1px solid #297aa8;
@@ -1448,14 +1448,24 @@ main.pageTours .sidebar__filter .filter__wrapper .group__filter .filter-item {
 }
 main.pageTours .sidebar__filter .filter__wrapper .group__filter .filter-item .title {
   color: #212529;
-  margin-left: 10px;
+  margin-left: 25px;
   text-transform: none;
+}
+main.pageTours .sidebar__filter .filter__wrapper .group__filter .filter-item label {
+  position: relative;
+}
+main.pageTours .sidebar__filter .filter__wrapper .group__filter .filter-item label:hover .title {
+  color: #1e4f3f;
 }
 main.pageTours .sidebar__filter .filter__wrapper .group__filter .filter-item input {
   border-color: #1e4f3f;
   color: #1e4f3f;
   width: 15px;
   height: 15px;
+  position: absolute;
+  bottom: 50%;
+  transform: translateY(50%);
+  accent-color: #fff;
 }
 main.pageTours .tours__list .list-order {
   display: flex;
