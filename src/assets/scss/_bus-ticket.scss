@@ -1,0 +1,219 @@
+#bus-ticket {
+    padding: 20px 0;
+
+    .list-ticket {
+        .trip-card {
+            margin-bottom: 16px;
+            background: #fff;
+            transition: all .3s;
+            border-radius: 2px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, .25), 0 3px 6px rgba(75, 75, 75, .08);
+            padding: 12px;
+            position: relative;
+
+            .trip-info-card {
+                display: flex;
+                flex-direction: row;
+
+                &-body {
+                    display: flex;
+                    flex: 1 1 100%;
+                    padding: 8px;
+
+                    .trip-points {
+                        flex: 1 1 auto;
+                        padding-right: 10px;
+                        max-height: 100%;
+                        min-width: 270px;
+                        position: relative;
+
+                        .linkfull {
+                            display: block;
+                            width: 100%;
+                            height: 100%;
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                        }
+
+                        &-line {
+                            font-size: 14px;
+                            display: flex;
+                            gap: 8px;
+
+                            &.dep {
+                                .trip-points-line-bar:before {
+                                    top: 10px;
+                                }
+                            }
+                            &.arr{
+                                .trip-points-line-bar .badge {
+                                    color: #fff;
+                                    font-size: 8px;
+                                    line-height: 1.2;
+                                    margin: 10px auto 3px;
+                                    padding: 2px;
+                                }
+                                .trip-points-line-bar:before {
+                                    top: 0;
+                                    bottom: 4px;
+                                }
+                            }
+                            &-bar {
+                                display: flex;
+                                flex: 0 0 24px;
+                                flex-direction: column;
+                                position: relative;
+                                justify-content: flex-start;
+
+                                &::before {
+                                    border-right: 2px solid #1e4f3f;
+                                    bottom: 0;
+                                    content: "";
+                                    display: block;
+                                    left: 0;
+                                    margin: auto;
+                                    position: absolute;
+                                    right: 0;
+                                    top: 0;
+                                    width: 0;
+                                }
+
+                                .badge {
+                                    background: #1e4f3f;
+                                    border-radius: 100%;
+                                    min-height: 8px;
+                                    min-width: 8px;
+                                    z-index: 1;
+                                    padding: 0;
+                                    display: block;
+                                    margin: 3px auto 0;
+                                }
+                            }
+
+                            &-left {
+                                &.time-label {
+                                    font-weight: 600;
+                                }
+
+                                &.logo-icons {
+                                    align-items: center;
+                                    display: flex;
+                                    flex-flow: row wrap;
+                                    justify-content: flex-end;
+                                    min-width: 40px;
+
+                                    img {
+                                        height: 24px;
+                                    }
+                                }
+                            }
+
+                            &-desc {
+                                span {
+                                    display: flex;
+                                    align-items: center;
+                                }
+                            }
+                        }
+                    }
+
+                    .trip-gallery {
+                        width: 250px;
+                        display: flex;
+                        justify-content: space-between;
+
+                        .figure {
+                            width: 120px;
+                            display: none;
+                            margin-left: 10px;
+
+                            &:nth-child(1) {
+                                margin-left: 0;
+                                display: block;
+                            }
+
+                            &:nth-child(2) {
+                                display: block;
+                            }
+
+                            img {
+                                width: 100%;
+                                height: 80px;
+                                object-fit: cover;
+                            }
+                        }
+                    }
+                }
+
+                &-cta {
+                    flex-wrap: wrap;
+                    border-left: 1px solid #eaeaea;
+                    flex: 0 0 244px;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding: 8px;
+                    display: flex;
+                    gap: 8px;
+                    position: relative;
+
+                    .labels {
+                        display: flex;
+                        width: calc(100% - 80px);
+
+                        .icon {
+                            &:not(:last-child) {
+                                margin: 0 5px 5px 0;
+                            }
+
+                            img {
+                                height: 24px;
+                                width: auto;
+                                object-fit: contain;
+                            }
+                        }
+
+                    }
+
+                    .price{
+                        display: flex;
+                        flex-direction: column;
+                        color: #444;
+                        font-size: 16px;
+
+                        .price-regular{
+                            text-decoration: line-through;
+                        }
+
+                        .price-sale{
+                            text-decoration: underline;
+                            font-weight: bold;
+                        }
+                    }
+
+                    .booking {
+                        width: 100%;
+
+                        >a {
+                            border-radius: 1px;
+                            width: 100%;
+                            display: inline-block;
+                            text-align: center;
+                            font-size: 14px;
+                            padding: 7px 8px;
+                            background: #1e4f3f;
+                            color: #fff;
+                            border: 1px solid #1e4f3f;
+                            transition: all 0.4s;
+
+                            &:hover {
+                                background: #fff;
+                                color: #1e4f3f;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

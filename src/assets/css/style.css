@@ -2052,6 +2052,185 @@ main.pageTours .tours__list .list__wrapper .item-tour .tour-wrapper .tour-action
   color: #d8232a;
 }
 
+#bus-ticket {
+  padding: 20px 0;
+}
+#bus-ticket .list-ticket .trip-card {
+  margin-bottom: 16px;
+  background: #fff;
+  transition: all 0.3s;
+  border-radius: 2px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), 0 3px 6px rgba(75, 75, 75, 0.08);
+  padding: 12px;
+  position: relative;
+}
+#bus-ticket .list-ticket .trip-card .trip-info-card {
+  display: flex;
+  flex-direction: row;
+}
+#bus-ticket .list-ticket .trip-card .trip-info-card-body {
+  display: flex;
+  flex: 1 1 100%;
+  padding: 8px;
+}
+#bus-ticket .list-ticket .trip-card .trip-info-card-body .trip-points {
+  flex: 1 1 auto;
+  padding-right: 10px;
+  max-height: 100%;
+  min-width: 270px;
+  position: relative;
+}
+#bus-ticket .list-ticket .trip-card .trip-info-card-body .trip-points .linkfull {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#bus-ticket .list-ticket .trip-card .trip-info-card-body .trip-points-line {
+  font-size: 14px;
+  display: flex;
+  gap: 8px;
+}
+#bus-ticket .list-ticket .trip-card .trip-info-card-body .trip-points-line.dep .trip-points-line-bar:before {
+  top: 10px;
+}
+#bus-ticket .list-ticket .trip-card .trip-info-card-body .trip-points-line.arr .trip-points-line-bar .badge {
+  color: #fff;
+  font-size: 8px;
+  line-height: 1.2;
+  margin: 10px auto 3px;
+  padding: 2px;
+}
+#bus-ticket .list-ticket .trip-card .trip-info-card-body .trip-points-line.arr .trip-points-line-bar:before {
+  top: 0;
+  bottom: 4px;
+}
+#bus-ticket .list-ticket .trip-card .trip-info-card-body .trip-points-line-bar {
+  display: flex;
+  flex: 0 0 24px;
+  flex-direction: column;
+  position: relative;
+  justify-content: flex-start;
+}
+#bus-ticket .list-ticket .trip-card .trip-info-card-body .trip-points-line-bar::before {
+  border-right: 2px solid #1e4f3f;
+  bottom: 0;
+  content: "";
+  display: block;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 0;
+}
+#bus-ticket .list-ticket .trip-card .trip-info-card-body .trip-points-line-bar .badge {
+  background: #1e4f3f;
+  border-radius: 100%;
+  min-height: 8px;
+  min-width: 8px;
+  z-index: 1;
+  padding: 0;
+  display: block;
+  margin: 3px auto 0;
+}
+#bus-ticket .list-ticket .trip-card .trip-info-card-body .trip-points-line-left.time-label {
+  font-weight: 600;
+}
+#bus-ticket .list-ticket .trip-card .trip-info-card-body .trip-points-line-left.logo-icons {
+  align-items: center;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+  min-width: 40px;
+}
+#bus-ticket .list-ticket .trip-card .trip-info-card-body .trip-points-line-left.logo-icons img {
+  height: 24px;
+}
+#bus-ticket .list-ticket .trip-card .trip-info-card-body .trip-points-line-desc span {
+  display: flex;
+  align-items: center;
+}
+#bus-ticket .list-ticket .trip-card .trip-info-card-body .trip-gallery {
+  width: 250px;
+  display: flex;
+  justify-content: space-between;
+}
+#bus-ticket .list-ticket .trip-card .trip-info-card-body .trip-gallery .figure {
+  width: 120px;
+  display: none;
+  margin-left: 10px;
+}
+#bus-ticket .list-ticket .trip-card .trip-info-card-body .trip-gallery .figure:nth-child(1) {
+  margin-left: 0;
+  display: block;
+}
+#bus-ticket .list-ticket .trip-card .trip-info-card-body .trip-gallery .figure:nth-child(2) {
+  display: block;
+}
+#bus-ticket .list-ticket .trip-card .trip-info-card-body .trip-gallery .figure img {
+  width: 100%;
+  height: 80px;
+  object-fit: cover;
+}
+#bus-ticket .list-ticket .trip-card .trip-info-card-cta {
+  flex-wrap: wrap;
+  border-left: 1px solid #eaeaea;
+  flex: 0 0 244px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px;
+  display: flex;
+  gap: 8px;
+  position: relative;
+}
+#bus-ticket .list-ticket .trip-card .trip-info-card-cta .labels {
+  display: flex;
+  width: calc(100% - 80px);
+}
+#bus-ticket .list-ticket .trip-card .trip-info-card-cta .labels .icon:not(:last-child) {
+  margin: 0 5px 5px 0;
+}
+#bus-ticket .list-ticket .trip-card .trip-info-card-cta .labels .icon img {
+  height: 24px;
+  width: auto;
+  object-fit: contain;
+}
+#bus-ticket .list-ticket .trip-card .trip-info-card-cta .price {
+  display: flex;
+  flex-direction: column;
+  color: #444;
+  font-size: 16px;
+}
+#bus-ticket .list-ticket .trip-card .trip-info-card-cta .price .price-regular {
+  text-decoration: line-through;
+}
+#bus-ticket .list-ticket .trip-card .trip-info-card-cta .price .price-sale {
+  text-decoration: underline;
+  font-weight: bold;
+}
+#bus-ticket .list-ticket .trip-card .trip-info-card-cta .booking {
+  width: 100%;
+}
+#bus-ticket .list-ticket .trip-card .trip-info-card-cta .booking > a {
+  border-radius: 1px;
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+  font-size: 14px;
+  padding: 7px 8px;
+  background: #1e4f3f;
+  color: #fff;
+  border: 1px solid #1e4f3f;
+  transition: all 0.4s;
+}
+#bus-ticket .list-ticket .trip-card .trip-info-card-cta .booking > a:hover {
+  background: #fff;
+  color: #1e4f3f;
+}
+
 main#pageTicketDetail {
   padding: 20px 0;
 }
@@ -2113,12 +2292,12 @@ main#pageTicketDetail .wrapper-card .trip-info {
   display: flex;
 }
 main#pageTicketDetail .wrapper-card .trip-info .trip-content {
-  width: 70%;
+  width: 75%;
   padding: 8px;
   padding-right: 20px;
 }
 main#pageTicketDetail .wrapper-card .trip-info .trip-cta {
-  width: 30%;
+  width: 25%;
   display: flex;
   flex-direction: column;
   padding: 8px;
