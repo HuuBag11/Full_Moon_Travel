@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asia | Product categories</title>
+
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/reset.css" />
+    <link rel="stylesheet" href="../assets/css/core.css" />
+    <!-- Boostrap -->
+    <link rel="stylesheet" href="../assets/lib/bootstrap/bootstrap.min.css" />
+    <!-- splide CSS -->
+    <link rel="stylesheet" href="../assets/lib/splide/splide.min.css" />
+    <!-- Font awesome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- font roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Start header -->
+    <header id="header">
+        <div class="container">
+            <div class="header-container d-flex align-items-center justify-content-between">
+                <a href="/" class="header-logo">
+                    <img src="https://fullmoontravel.asia/wp-content/uploads/2023/08/A-HOAI-CAT-BA-scaled-e1691808620801.jpg"
+                        alt="logo">
+                </a>
+                <div class="backdrop d-none" onclick="toggleOpenPopup(event)"></div>
+                <ul class="menu d-flex align-content-center">
+                    <li class="menu-item btn-close" onclick="toggleOpenPopup(event)">  
+                    </li>
+                    <li class="menu-item form-search-mobile">
+                        <form action="" class="header__search">
+                            <button type="submit"><i class="fa fa-search"></i></button>
+                            <input type="text" placeholder="Your searching here..." name="search">
+                        </form>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#" class="menu-link">Home</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#" class="menu-link">Bus Ticket</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#" class="menu-link">Tour</a>
+                    </li>
+                    <li class="menu-item has-children many-children">
+                        <a href="#" class="menu-link">Cruises</a>
+                        <ul class="sub-menu">
+                            <li class="menu-item left">
+                                <a href="#" class="menu-link active" data-tab="tab-1">Halong Bay Cruises</a>
+                                <a href="#" class="menu-link" data-tab="tab-2">Mekong River Cruise</a>
+                            </li>
+
+                            <li class="menu-item right">
+                                <div class="menu-tab active" data-tab="tab-1">
+                                    <ul class="sub-menu">
+                                        <li class="menu-item title">
+                                            <a href="#" class="menu-link">Ha Long Bay Cruise</a>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a href="#" class="menu-link">Budget Cruises</a>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a href="#" class="menu-link">Budget Cruises</a>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a href="#" class="menu-link">Budget Cruises</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="menu-tab" data-tab="tab-2">
+                                    <ul class="sub-menu">
+                                        <li class="menu-item title">
+                                            <a href="#" class="menu-link">All Mekong River Cruise</a>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a href="#" class="menu-link">Budget Cruises</a>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a href="#" class="menu-link">Budget Cruises</a>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a href="#" class="menu-link">Budget Cruises</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu-item has-children">
+                        <a href="#" class="menu-link">About us</a>
+                        <ul class="sub-menu">
+                            <li class="menu-item">
+                                <a href="#" class="menu-link">About us</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#" class="menu-link">About us</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#" class="menu-link">About us</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="header__right d-flex align-items-center">
+                    <a href="#" class="tripadvisor">
+                        <img src="https://d13jio720g7qcs.cloudfront.net/assets/icon/tripadvisor-traveller-choice-2022.png"
+                            alt="">
+                        <span>Traveler choice</span>
+                    </a>
+                    <div class="header__button">
+                        <div class="header__button--wishlist">
+                            <a href="#">
+                                <span class="wishlist-icon d-block">
+                                    <i class="fa-solid fa-heart"></i>
+                                    <span class="wishlist-count">0</span>
+                                </span>
+                            </a>
+                        </div>
+                        <div class="header__button--cart">
+                            <a href="#">
+                                <span class="cart-icon d-block">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </span>
+                            </a>
+                        </div>
+                        <div class="header__button--bars d-none">
+                            <a href="#" onClick="toggleOpenPopup(event)">
+                                <span class="bars-icon d-block">
+                                    <i class="fa-solid fa-bars"></i>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <form action="" class="header__search">
+                        <input type="text" placeholder="Your searching here..." name="search">
+                        <button type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- End header -->
+
+    <main class="pageTours">
+        <section class="banner-hero">
+            <div class="wrapper">
+                <div class="container">
+                    <h1 class="title">
+                        Asia
+                    </h1>
+                    <form action="" id="searchform" class="search-form">
+                        <div class="search-form__content">
+                            <div class="search-form__content__form">
+                                <div class="frm-flight-from search-form__content__form__des box_click">
+                                    <i class="fa-regular fa-clock"></i>
+                                    <div class="text">
+                                        <div class="labels">Destination</div>
+                                        <span>Choose destination</span>
+                                    </div>
+                                    <ul class="list">
+                                        <div class="di cssnew">
+                                            <span>Point of departure</span>
+                                            <input type="search" id="search-departure-point" placeholder="Search">
+                                        </div>
+                                        <!-- <li><span>Cat Ba island</span> <input type="radio" name="destination"
+                                                value="cat-ba-island">
+                                            <span class="post-count">(5)</span>
+                                        </li>
+                                        <li><span>Da Nang</span> <input type="radio" name="destination" value="da-nang"> <span
+                                                class="post-count">(0)</span></li>
+                                        <li><span>Ha Giang</span> <input type="radio" name="destination" value="ha-giang"> <span
+                                                class="post-count">(0)</span></li>
+                                        <li><span>Ha noi</span> <input type="radio" name="destination" value="ha-noi"> <span
+                                                class="post-count">(6)</span></li>
+                                        <li><span>Halong Bay</span> <input type="radio" name="destination" value="halong-bay">
+                                            <span class="post-count">(9)</span></li>
+                                        <li><span>Ho Chi Minh</span> <input type="radio" name="destination" value="ho-chi-minh">
+                                            <span class="post-count">(4)</span>
+                                        </li>
+                                        <li><span>Hoi An</span> <input type="radio" name="destination" value="hoi-an"> <span
+                                                class="post-count">(4)</span></li>
+                                        <li><span>Hue</span> <input type="radio" name="destination" value="hue"> <span
+                                                class="post-count">(0)</span></li>
+                                        <li><span>Lan Ha Bay</span> <input type="radio" name="destination" value="lan-ha-bay">
+                                            <span class="post-count">(5)</span></li>
+                                        <li><span>Mui Ne</span> <input type="radio" name="destination" value="mui-ne"> <span
+                                                class="post-count">(0)</span></li>
+                                        <li><span>Nha Trang</span> <input type="radio" name="destination" value="nha-trang">
+                                            <span class="post-count">(0)</span></li>
+                                        <li><span>Ninh Binh</span> <input type="radio" name="destination" value="ninh-binh">
+                                            <span class="post-count">(5)</span></li>
+                                        <li><span>Phong Nha</span> <input type="radio" name="destination" value="phong-nha">
+                                            <span class="post-count">(0)</span></li>
+                                        <li><span>Sapa</span> <input type="radio" name="destination" value="sapa"> <span
+                                                class="post-count">(0)</span></li> -->
+                                    </ul>
+                                </div>
+                                <div class="search-form__content__form__price box_click">
+                                    <i class="fa-solid fa-tag"></i>
+                                    <div class="text">
+                                        <div class="labels">Duration</div>
+                                        <span>Choose duration</span>
+                                    </div>
+                                    <ul class="list">
+                                        <div class="den cssnew">
+                                            <span>number of days</span>
+                                            <input type="search" id="search-destination" placeholder="Search">
+                                        </div>
+                                        <!-- <li><span>1 day tour</span><input type="radio" name="duration" value="1-day-tour"></li>
+                                        <li><span>2 days / 1 night</span><input type="radio" name="duration"
+                                                value="2-days-1-night">
+                                        </li>
+                                        <li><span>3 days / 2 nights</span><input type="radio" name="duration"
+                                                value="3-days-2-nights"></li>
+                                        <li><span>4 days / 3 nights</span><input type="radio" name="duration"
+                                                value="4-days-3-nights"></li>
+                                        <li><span>7 – 10 days</span><input type="radio" name="duration" value="7-10-days"></li>
+                                        <li><span>Over 15 days</span><input type="radio" name="duration" value="over-15-days">
+                                        </li>
+                                        <li><span>Paradise Cruise + Sofitel Metropole Legend / 2 nights</span><input
+                                                type="radio" name="duration"
+                                                value="paradise-cruise-sofitel-metropole-legend-2-nights"></li>
+                                        <li><span>Under 7 days</span><input type="radio" name="duration" value="under-7-days">
+                                        </li> -->
+                                    </ul>
+                                </div>
+                                <div class="search-form__content__form__date">
+                                    <i class="fa-regular fa-calendar-days"></i>
+                                    <div class="text">
+                                        <div class="labels">Departure Date</div>
+                                        <input type="text" id="datepicker1" name="departure_date" placeholder="12-11-2023"
+                                            class="hasDatepicker">
+                                    </div>
+                                </div>
+                            </div>
+                            <button type="submit" id="search_button">
+                                <i class="ico-search"></i>Search now</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section class="service">
+            <div class="container">
+                <div class="d-flex justify-content-center">
+                    <div class="item">
+                        <img src="https://fullmoontravel.asia/wp-content/uploads/2023/06/best-price-guaranteed.png" alt=""
+                            class="icon">
+                        <span class="name">Best Value guaranteed</span>
+                    </div>
+                    <div class="item">
+                        <img src="https://fullmoontravel.asia/wp-content/uploads/2023/06/customizable-by-local-experts.png"
+                            alt="" class="icon">
+                        <span class="name">24/7 Customer Service</span>
+                    </div>
+                    <div class="item">
+                        <img src="https://fullmoontravel.asia/wp-content/uploads/2023/06/money-back-guarantee.png" alt=""
+                            class="icon">
+                        <span class="name">Money back guarantee</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="list-tours">
+            <div class="container">
+                <div class="row">
+                    <div class="sidebar__filter col-md-3 col-12">
+                        <div class="filter__wrapper">
+                            <h4 class="filter-title">
+                                <i class="fa-solid fa-filter"></i>
+                                Filter by
+                            </h4>
+                            <div class="group__filter">
+                                <h4 class="title">
+                                    DURATION
+                                </h4>
+                                <ul class="filter-list">
+                                    <li class="filter-item">
+                                        <label for="filter-item-1">
+                                            <input type="checkbox" id="filter-item-1">
+                                            <span class="title">1 day tour</span>
+                                        </label>
+                                    </li>
+                                    <li class="filter-item">
+                                        <label for="filter-item-2">
+                                            <input type="checkbox" id="filter-item-2">
+                                            <span class="title">7 – 10 days</span>
+                                        </label>
+                                    </li>
+                                    <li class="filter-item">
+                                        <label for="filter-item-3">
+                                            <input type="checkbox" id="filter-item-3">
+                                            <span class="title">Over 15 days</span>
+                                        </label>
+                                    </li>
+                                    <li class="filter-item">
+                                        <label for="filter-item-4">
+                                            <input type="checkbox" id="filter-item-4">
+                                            <span class="title">Under 7 days</span>
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="group__filter">
+                                <h4 class="title">
+                                    DURATION
+                                </h4>
+                                <ul class="filter-list">
+                                    <li class="filter-item">
+                                        <label for="filter-item-1-1">
+                                            <input type="checkbox" id="filter-item-1-1">
+                                            <span class="title">1 day tour</span>
+                                        </label>
+                                    </li>
+                                    <li class="filter-item">
+                                        <label for="filter-item-2-1">
+                                            <input type="checkbox" id="filter-item-2-1">
+                                            <span class="title">7 – 10 days</span>
+                                        </label>
+                                    </li>
+                                    <li class="filter-item">
+                                        <label for="filter-item-3-1">
+                                            <input type="checkbox" id="filter-item-3-1">
+                                            <span class="title">Over 15 days</span>
+                                        </label>
+                                    </li>
+                                    <li class="filter-item">
+                                        <label for="filter-item-4-1">
+                                            <input type="checkbox" id="filter-item-4-1">
+                                            <span class="title">Under 7 days</span>
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tours__list col-md-9 col-12">
+                        <form class="list-order">
+                            <div class="title">Oder by:</div> 
+                            <button value="sale" type="submit" name="orderby">Sale</button>
+                            <button value="price-desc" type="submit" name="orderby">Price: High to Low</button>
+                            <button value="price" type="submit" name="orderby">Price: Low to High</button>
+                            <input type="hidden" name="paged" value="1">
+                        </form>
+
+                        <ul class="list__wrapper">
+                            <li class="item-tour">
+                                <div class="tour-wrapper">
+                                    <div class="tour-img">
+                                        <a href="./detail.html"></a>
+                                        <img src="https://fullmoontravel.asia/wp-content/uploads/2023/11/z4869689775142_ea4d97a59ea0a00ba5892771bcd151ef.jpg" alt="">
+                                    </div>
+                                    <div class="tour-info">
+                                        <h2 class="name">
+                                            <a href="./detail.html">Phong Nha Paradise Cave, Dark Cave Day Tour</a>
+                                        </h2>
+                                        <p class="address">
+                                            <i class="fa-solid fa-location-dot"></i>
+                                            Phong Nha Center - Paradise Cave - Dark Cave
+                                        </p>
+                                        <p class="view">
+                                            <i class="fa-regular fa-image"></i>
+                                            Theme: Cultural, Foodies delight, Nature, Outdoor Active, Soft Adventure
+                                        </p>
+                                        <p class="check">
+                                            <i class="fa-solid fa-check"></i>
+                                            Suitable: Couples, Kids, Seniors, Singles & Solo, Young Adults
+                                        </p>
+                                        <a class="highlight" href="/" onclick="toggleClassActive(event)">Highlights</a>
+                                        <ul class="list-highlight">
+                                            <li class="highlight-item">
+                                                <i class="fa-solid fa-check"></i>
+                                                Exploring Paradaise cave, bigest cave in vietnam
+                                            </li>
+                                            <li class="highlight-item">
+                                                <i class="fa-solid fa-check"></i>
+                                                Zip lining in Dark Cave
+                                            </li>
+                                            <li class="highlight-item">
+                                                <i class="fa-solid fa-check"></i>
+                                                Mud bathing inside the cave
+                                            </li>
+                                            <li class="highlight-item">
+                                                <i class="fa-solid fa-check"></i>
+                                                Kayaking in Chay river
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="tour-action">
+                                        <div class="price">
+                                            <span class="price-regular">$65</span>
+                                            <span class="price-sale">$59</span>
+                                        </div>
+                                        <a href="./detail.html">View tour</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="item-tour">
+                                <div class="tour-wrapper">
+                                    <div class="tour-img">
+                                        <a href="./detail.html"></a>
+                                        <img src="https://fullmoontravel.asia/wp-content/uploads/2023/11/z4869689775142_ea4d97a59ea0a00ba5892771bcd151ef.jpg" alt="">
+                                    </div>
+                                    <div class="tour-info">
+                                        <h2 class="name">
+                                            <a href="./detail.html">Phong Nha Paradise Cave, Dark Cave Day Tour</a>
+                                        </h2>
+                                        <p class="address">
+                                            <i class="fa-solid fa-location-dot"></i>
+                                            Phong Nha Center - Paradise Cave - Dark Cave
+                                        </p>
+                                        <p class="view">
+                                            <i class="fa-regular fa-image"></i>
+                                            Theme: Cultural, Foodies delight, Nature, Outdoor Active, Soft Adventure
+                                        </p>
+                                        <p class="check">
+                                            <i class="fa-solid fa-check"></i>
+                                            Suitable: Couples, Kids, Seniors, Singles & Solo, Young Adults
+                                        </p>
+                                        <a class="highlight" href="/" onclick="toggleClassActive(event)">Highlights</a>
+                                        <ul class="list-highlight">
+                                            <li class="highlight-item">
+                                                <i class="fa-solid fa-check"></i>
+                                                Exploring Paradaise cave, bigest cave in vietnam
+                                            </li>
+                                            <li class="highlight-item">
+                                                <i class="fa-solid fa-check"></i>
+                                                Zip lining in Dark Cave
+                                            </li>
+                                            <li class="highlight-item">
+                                                <i class="fa-solid fa-check"></i>
+                                                Mud bathing inside the cave
+                                            </li>
+                                            <li class="highlight-item">
+                                                <i class="fa-solid fa-check"></i>
+                                                Kayaking in Chay river
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="tour-action">
+                                        <div class="price">
+                                            <span class="price-regular">$65</span>
+                                            <span class="price-sale">$59</span>
+                                        </div>
+                                        <a href="./detail.html">View tour</a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Start Footer -->
+    <footer id="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-logo col-md-2 col-12">
+                        <a href="/" class="logo">
+                            <img src="https://fullmoontravel.asia/wp-content/uploads/2023/07/logo-2.png" alt="logo">
+                        </a>
+                    </div>
+                    <div class="footer-social col-md-3 col-12">
+                        <div class="footer-trip">
+                            <img src="https://d13jio720g7qcs.cloudfront.net/assets/icon/tripadvisor_2023.png" alt="">
+                            <div class="text-review d-flex align-items-center">
+                                <img src="https://d13jio720g7qcs.cloudfront.net/assets/icon/circle.png" alt="">
+                                <span>100000 reviews</span>
+                            </div>
+                        </div>
+
+                        <div class="footer-follow">
+                            <p class="text">Follow us</p>
+                            <div class="logo">
+                                <a href="/">
+                                    <i class="fa-brands fa-facebook"></i>
+                                </a>
+                                <a href="/">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+                                <a href="/">
+                                    <i class="fa-brands fa-pinterest"></i>
+                                </a>
+                                <a href="/">
+                                    <i class="fa-brands fa-youtube"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-menu col-md-2 col-12">
+                        <ul class="list-menu">
+                            <li class="menu-item">
+                                <a href="menu-link">About Us</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="menu-link">Contact Us</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="menu-link">Privacy Statement</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="menu-link">Terms & Conditions</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="menu-link">On the News</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="menu-link">Travel Guide</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="menu-link">Payment Method</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-contact col-md-5 col-12">
+                        <h4 class="title">Contact information</h4>
+                        <div class="footer-support">
+                            <div class="support-item">
+                                <a href="/" class="mail">
+                                    <i class="fa-regular fa-envelope"></i>
+                                    fullmoonpartytour@gmail.com
+                                </a>
+                            </div>
+                            <div class="support-item">
+                                <a href="/" class="phone">
+                                    <i class="fa-solid fa-phone-volume"></i>
+                                    +84 974-426-821
+                                </a>
+                            </div>
+                        </div>
+                        <ul class="footer-branch">
+                            <li class="branch-item">
+                                <b>Hanoi, Vietnam:</b> 162B Tran Quang Khai Street, Ly Thai To Ward, Hoan Kiem District,
+                                Hanoi, Vietnam
+                            </li>
+                            <li class="branch-item">
+                                <b>Hanoi, Vietnam:</b> 162B Tran Quang Khai Street, Ly Thai To Ward, Hoan Kiem District,
+                                Hanoi, Vietnam
+                            </li>
+                            <li class="branch-item">
+                                <b>Hanoi, Vietnam:</b> 162B Tran Quang Khai Street, Ly Thai To Ward, Hoan Kiem District,
+                                Hanoi, Vietnam
+                            </li>
+                            <li class="branch-item">
+                                <b>Hanoi, Vietnam:</b> 162B Tran Quang Khai Street, Ly Thai To Ward, Hoan Kiem District,
+                                Hanoi, Vietnam
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="bottom-wrapper d-flex align-items-center justify-content-between">
+                    <div class="bottom-left">
+                        <p>Business license no: 0201897823 - Issued date: 10/08/2018</p>
+                        <p>Issued by: Investment Planning Department Hai Phong</p>
+                    </div>
+                    <div class="bottom-right">
+                        <img src="https://fullmoontravel.asia/wp-content/uploads/2023/08/ATM.png" alt="atm logo">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+    <script src="../assets/lib/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- Splide JS -->
+    <script src="../assets/lib/splide/splide.min.js"></script>
+
+    <script src="../assets/scripts/main.js"></script>
+</body>
