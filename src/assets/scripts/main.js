@@ -1,16 +1,16 @@
 "use strict";
 $ = jQuery;
 
-$(document).ready(function(){
+$(document).ready(function () {
     openSubmenu();
     splideGallery();
     splideComment();
-    console.log('hello world');
+    datePicker();
 });
 
- // open sub menu desktop
-function openSubmenu(){
-    $("#header .menu .menu-item.has-children > .sub-menu .menu-item.left a").on("click", function(e){
+// open sub menu desktop
+function openSubmenu() {
+    $("#header .menu .menu-item.has-children > .sub-menu .menu-item.left a").on("click", function (e) {
         e.preventDefault();
         $(this).addClass("active");
         $(this).siblings().removeClass("active");
@@ -18,9 +18,9 @@ function openSubmenu(){
         let thisDataTab = $(this).data("tab");
         let contentTab = $("#header .menu .menu-item.has-children > .sub-menu .menu-item.right .menu-tab");
 
-        contentTab.each(function(){
+        contentTab.each(function () {
             let thisContentTab = $(this);
-            if(thisContentTab.data("tab") == thisDataTab){
+            if (thisContentTab.data("tab") == thisDataTab) {
                 thisContentTab.addClass("active");
                 thisContentTab.siblings().removeClass("active");
             }
@@ -29,22 +29,21 @@ function openSubmenu(){
 }
 
 // toggle open popup menu mobile
-function toggleOpenPopup(event){
+function toggleOpenPopup(event) {
     event.preventDefault();
     $("header .backdrop").toggleClass("d-none");
     $("header ul.menu").toggleClass("open");
 }
 
 // toggle class active
-function toggleClassActive(event){
+function toggleClassActive(event) {
     event.preventDefault();
 
     let thisItem = $(event.target);
     thisItem.toggleClass("active");
 }
-    
-function splideGallery(){
-    console.log('================================');
+
+function splideGallery() {
     if ($(".splide__gallery").length) {
 
         var splideGallery = new Splide(".splide__gallery", {
@@ -58,7 +57,7 @@ function splideGallery(){
     }
 }
 
-function splideComment(){
+function splideComment() {
     if ($(".splide_comment").length) {
         var splideComment = new Splide(".splide_comment", {
             type: 'slide',
@@ -68,7 +67,7 @@ function splideComment(){
             pagination: false,
             drag: 'free',
             gap: "30px",
-            breakpoints:{
+            breakpoints: {
                 480: {
                     perPage: 1,
                     arrows: false,
@@ -76,5 +75,13 @@ function splideComment(){
             }
         });
         splideComment.mount();
+    }
+}
+
+function datePicker() {
+    if ($('input#datepicker').length) {
+        $('input#datepicker').daterangepicker({
+            opens: 'left'
+        });
     }
 }

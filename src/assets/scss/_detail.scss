@@ -413,6 +413,7 @@ main#detailPage {
                     .accordion-item {
                         background-color: transparent;
                         border: 0;
+
                         &:not(:last-child) {
                             margin-bottom: 20px;
                         }
@@ -450,6 +451,224 @@ main#detailPage {
                             }
                         }
                     }
+                }
+            }
+
+
+        }
+    }
+
+    #related-tour {
+        padding: 60px 0;
+        background-color: #f8f8f8;
+
+        .title {
+            font-weight: bold;
+            font-size: 26px;
+            margin-bottom: 30px;
+        }
+
+        .item {
+            box-shadow: 0 0.25rem 1.125rem rgba(75, 70, 92, .1);
+            height: 100%;
+            display: flex;
+            flex-flow: column;
+            position: relative;
+            border-radius: 6px;
+            overflow: hidden;
+
+            .linkfull {
+                display: block;
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: 2;
+
+                &:hover~.info {
+                    .name {
+                        color: #dd6e1e;
+                    }
+
+                    ins {
+                        span {
+                            background-color: #b72020;
+                            color: white !important;
+                        }
+                    }
+                }
+            }
+
+            .img {
+                width: 100%;
+                padding-top: 56.25%;
+                overflow: hidden;
+                position: relative;
+
+                img {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    height: 100%;
+                }
+            }
+
+            .info {
+                padding: 15px;
+                display: flex;
+                flex-flow: column;
+
+                .name {
+                    font-size: 16px;
+                    transition: all .3s;
+                    color: #444444;
+                    font-weight: bold;
+                    overflow: hidden;
+                    display: -webkit-box;
+                    -webkit-box-orient: vertical;
+                    -webkit-line-clamp: 2;
+                    margin-bottom: 6px;
+                    transition: all 0.4s;
+                }
+
+                .local {
+                    font-size: 14px;
+
+                    i {
+                        width: 16px;
+                        color: #828282;
+                        margin-right: 3px;
+                    }
+                }
+
+                .divider {
+                    margin: 15px 0;
+                    border-top: 2px dashed #dedede;
+                }
+
+                .box_price {
+                    display: flex;
+                    align-items: flex-end;
+                    justify-content: space-between;
+
+                    .time {
+                        font-size: 14px;
+                        padding: 5px 10px;
+                        background-color: #f3f3f3;
+                        border-radius: 4px;
+                    }
+
+                    .price {
+                        display: flex;
+                        flex-direction: column;
+                        text-align: right;
+                        font-size: 16px;
+                        line-height: 24px;
+                        font-weight: 400;
+                        color: #1e4f3f;
+
+                        ins {
+                            text-decoration: none;
+                            margin-top: 8px;
+
+                            span {
+                                transition: all .3s;
+                                font-size: 16px;
+                                font-weight: bold;
+                                color: #b72020;
+                                border: 2px solid #b72020;
+                                padding: 5px 10px;
+                                border-radius: 4px;
+                                transition: all 0.4s;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    #faqs-tour {
+        padding: 60px 0;
+
+        .block_faq {
+            max-width: 100%;
+            width: 800px;
+            display: block;
+            margin: 0 auto;
+
+            h2 {
+                font-weight: bold;
+                font-size: 28px;
+            }
+
+            form.searchfaq {
+                display: flex;
+                justify-content: flex-end;
+                margin-bottom: 30px;
+
+                .inputsearch {
+                    position: relative;
+                    flex-grow: 1;
+
+                    svg {
+                        fill: #18B394;
+                        display: inline-block;
+                        position: absolute;
+                        width: 1.1em;
+                        height: 1.1em;
+                        left: 9px;
+                        top: 50%;
+                        transform: translateY(-50%);
+                    }
+
+                    input {
+                        border: 0px;
+                        border-radius: 16px 16px 16px 16px;
+                        background-color: #F9F9F9;
+                        color: #898F92;
+                        padding: 3px 10px;
+                        padding-left: calc(1.5em + 0.75rem);
+                        padding-right: 1.5em;
+                        width: 100%;
+                        margin: 0px;
+                        font-size: 1em;
+                        box-shadow: none;
+                        outline: none;
+                        height: 42px;
+                    }
+                }
+
+                button {
+                    font-size: 16px;
+                    font-weight: 400;
+                    background: #1e4f3f;
+                    border: 1px solid #1e4f3f;
+                    border-radius: 16px;
+                    min-height: 42px;
+                    color: #FFFFFF;
+                    cursor: pointer;
+                    display: inline-block;
+                    outline-style: none;
+                    margin-top: 0px;
+                    margin-bottom: 0px;
+                    margin-left: 10px;
+                    margin-right: 0px;
+                    padding: 5px 15px;
+                    transition: all 0.4s;
+
+                    &:hover {
+                        color: #1e4f3f;
+                        background: #FFFFFF;
+                    }
+                }
+            }
+
+            .cr-qna-list-block {
+                .cr-qna-list-empty {
+                    padding: 30px;
+                    text-align: center;
                 }
             }
         }
