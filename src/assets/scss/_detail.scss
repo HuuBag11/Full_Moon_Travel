@@ -90,6 +90,47 @@ main#detailPage {
                         object-fit: cover;
                     }
                 }
+
+                .overview {
+                    padding-top: 20px;
+
+                    .list {
+                        list-style: none;
+                        display: flex;
+                        flex-wrap: wrap;
+                        margin: -10px;
+
+                        li {
+                            width: 50%;
+                            padding: 10px;
+                            display: flex;
+                            align-items: center;
+
+                            .icon {
+                                width: 45px;
+                                text-align: center;
+
+                                path {
+                                    fill: #1e4f3f;
+                                }
+                            }
+
+                            .value {
+                                width: calc(100% - 45px);
+                                font-size: 14px;
+
+                                p {
+                                    font-weight: 700;
+                                }
+
+                                a {
+                                    color: #212529;
+                                    cursor: pointer;
+                                }
+                            }
+                        }
+                    }
+                }
             }
 
             .tour-content-right {
@@ -272,13 +313,14 @@ main#detailPage {
                                 }
                             }
                         }
+
                         .btn-paypal,
                         .single_add_to_cart_button {
                             width: 100%;
                             float: none;
                             margin-top: 15px;
                             background-color: #1e4f3f;
-                            border:1px solid #1e4f3f;
+                            border: 1px solid #1e4f3f;
                             font-size: 18px;
                             font-weight: bold;
                             font-size: 100%;
@@ -297,20 +339,114 @@ main#detailPage {
                             color: white;
                             transition: all 0.4s;
                             margin-bottom: 16px;
-                            &:hover{
+
+                            &:hover {
                                 background-color: transparent;
                                 color: #1e4f3f;
                             }
 
                         }
-                        .btn-paypal{
+
+                        .btn-paypal {
                             background-color: #ffb800;
-                            border:1px solid #ffb800;
+                            border: 1px solid #ffb800;
                             display: flex;
                             justify-content: center;
                             align-items: center;
-                            &:hover{
+
+                            &:hover {
                                 color: #ffb800;
+                            }
+                        }
+                    }
+                }
+            }
+
+            #tour_highlight {
+                background: #ffe8d6;
+                border-radius: 8px;
+                padding: 24px 52px 24px 24px;
+                margin: 50px 0;
+
+                .title {
+                    font-weight: 700;
+                    font-size: 24px;
+                    line-height: 28px;
+                    margin-bottom: 10px;
+                }
+
+                .list {
+                    list-style: none;
+                    margin-bottom: 0;
+
+                    li {
+                        position: relative;
+                        padding-left: 26px;
+                        font-weight: 600;
+                        font-size: 16px;
+                        line-height: 24px;
+                        font-weight: 600;
+                        color: #444444;
+
+                        i {
+                            margin-right: 6px;
+                        }
+
+                        &:not(:last-child) {
+                            margin-bottom: 15px;
+                        }
+                    }
+                }
+            }
+
+            #booking-policy {
+                margin: 40px auto;
+                max-width: 850px;
+
+                .title {
+                    font-size: 28px;
+                    font-weight: bold;
+                    margin-bottom: 20px;
+                }
+
+                #accordionbooking {
+                    .accordion-item {
+                        background-color: transparent;
+                        border: 0;
+                        &:not(:last-child) {
+                            margin-bottom: 20px;
+                        }
+
+                        .accordion-header {
+                            margin-bottom: 0;
+
+                            .accordion-button {
+                                padding: 12px 30px 12px 15px;
+                                font-size: 20px;
+                                font-weight: 600;
+                                background: #fff !important;
+                                color: #444 !important;
+                                line-height: 24px;
+                                position: relative;
+                            }
+                        }
+
+                        .accordion-collapse {
+                            .accordion-body {
+                                padding: 15px 15px 5px;
+
+                                ul {
+                                    padding-left: 20px;
+                                    list-style: disc;
+
+                                    li {
+                                        position: relative;
+                                        margin-bottom: 10px;
+                                        font-size: 16px;
+                                        font-weight: 400;
+                                        line-height: 24px;
+                                    }
+                                }
                             }
                         }
                     }

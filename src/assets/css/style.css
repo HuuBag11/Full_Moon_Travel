@@ -1375,6 +1375,39 @@ main#detailPage #tour-detail .tour-detail__content #h_tour_overview .content-pos
   height: auto;
   object-fit: cover;
 }
+main#detailPage #tour-detail .tour-detail__content #h_tour_overview .overview {
+  padding-top: 20px;
+}
+main#detailPage #tour-detail .tour-detail__content #h_tour_overview .overview .list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin: -10px;
+}
+main#detailPage #tour-detail .tour-detail__content #h_tour_overview .overview .list li {
+  width: 50%;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+main#detailPage #tour-detail .tour-detail__content #h_tour_overview .overview .list li .icon {
+  width: 45px;
+  text-align: center;
+}
+main#detailPage #tour-detail .tour-detail__content #h_tour_overview .overview .list li .icon path {
+  fill: #1e4f3f;
+}
+main#detailPage #tour-detail .tour-detail__content #h_tour_overview .overview .list li .value {
+  width: calc(100% - 45px);
+  font-size: 14px;
+}
+main#detailPage #tour-detail .tour-detail__content #h_tour_overview .overview .list li .value p {
+  font-weight: 700;
+}
+main#detailPage #tour-detail .tour-detail__content #h_tour_overview .overview .list li .value a {
+  color: #212529;
+  cursor: pointer;
+}
 main#detailPage #tour-detail .tour-detail__content .tour-content-right .inner {
   padding: 20px 8px 20px 20px;
   margin-left: 16px;
@@ -1560,6 +1593,79 @@ main#detailPage #tour-detail .tour-detail__content .tour-content-right .inner fo
 }
 main#detailPage #tour-detail .tour-detail__content .tour-content-right .inner form.variable .btn-paypal:hover {
   color: #ffb800;
+}
+main#detailPage #tour-detail .tour-detail__content #tour_highlight {
+  background: #ffe8d6;
+  border-radius: 8px;
+  padding: 24px 52px 24px 24px;
+  margin: 50px 0;
+}
+main#detailPage #tour-detail .tour-detail__content #tour_highlight .title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  margin-bottom: 10px;
+}
+main#detailPage #tour-detail .tour-detail__content #tour_highlight .list {
+  list-style: none;
+  margin-bottom: 0;
+}
+main#detailPage #tour-detail .tour-detail__content #tour_highlight .list li {
+  position: relative;
+  padding-left: 26px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+  color: #444444;
+}
+main#detailPage #tour-detail .tour-detail__content #tour_highlight .list li i {
+  margin-right: 6px;
+}
+main#detailPage #tour-detail .tour-detail__content #tour_highlight .list li:not(:last-child) {
+  margin-bottom: 15px;
+}
+main#detailPage #tour-detail .tour-detail__content #booking-policy {
+  margin: 40px auto;
+  max-width: 850px;
+}
+main#detailPage #tour-detail .tour-detail__content #booking-policy .title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+main#detailPage #tour-detail .tour-detail__content #booking-policy #accordionbooking .accordion-item {
+  background-color: transparent;
+  border: 0;
+}
+main#detailPage #tour-detail .tour-detail__content #booking-policy #accordionbooking .accordion-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+main#detailPage #tour-detail .tour-detail__content #booking-policy #accordionbooking .accordion-item .accordion-header {
+  margin-bottom: 0;
+}
+main#detailPage #tour-detail .tour-detail__content #booking-policy #accordionbooking .accordion-item .accordion-header .accordion-button {
+  padding: 12px 30px 12px 15px;
+  font-size: 20px;
+  font-weight: 600;
+  background: #fff !important;
+  color: #444 !important;
+  line-height: 24px;
+  position: relative;
+}
+main#detailPage #tour-detail .tour-detail__content #booking-policy #accordionbooking .accordion-item .accordion-collapse .accordion-body {
+  padding: 15px 15px 5px;
+}
+main#detailPage #tour-detail .tour-detail__content #booking-policy #accordionbooking .accordion-item .accordion-collapse .accordion-body ul {
+  padding-left: 20px;
+  list-style: disc;
+}
+main#detailPage #tour-detail .tour-detail__content #booking-policy #accordionbooking .accordion-item .accordion-collapse .accordion-body ul li {
+  position: relative;
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
 }
 
 main.pageTours .list-tours {
