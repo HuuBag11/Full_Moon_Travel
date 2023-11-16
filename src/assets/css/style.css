@@ -1898,6 +1898,7 @@ main.pageTours .sidebar__filter .filter__wrapper .group__filter .filter-item inp
   position: absolute;
   bottom: 50%;
   transform: translateY(50%);
+  accent-color: #fff;
 }
 main.pageTours .tours__list .list-order {
   display: flex;
@@ -2049,6 +2050,357 @@ main.pageTours .tours__list .list__wrapper .item-tour .tour-wrapper .tour-action
 main.pageTours .tours__list .list__wrapper .item-tour .tour-wrapper .tour-action a:hover {
   background-color: transparent;
   color: #d8232a;
+}
+
+main#pageTicketDetail {
+  padding: 20px 0;
+}
+main#pageTicketDetail .wrapper-card {
+  margin-bottom: 16px;
+  background: #fff;
+  transition: all 0.3s;
+  border-radius: 2px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), 0 3px 6px rgba(75, 75, 75, 0.08);
+  padding: 12px;
+  position: relative;
+  font-size: 16px;
+  color: #444;
+}
+main#pageTicketDetail .wrapper-card:hover {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2509803922), 0 1px 3px rgba(75, 75, 75, 0.2), 0 3px 6px rgba(75, 75, 75, 0.2);
+}
+main#pageTicketDetail .wrapper-card .title {
+  border-bottom: 2px solid #1e4f3f;
+  font-weight: 700;
+  margin-bottom: 12px;
+  padding: 0 0 4px;
+  font-size: 22px;
+  color: #444;
+}
+main#pageTicketDetail .wrapper-card h3 {
+  font-size: 18px;
+  color: #444;
+  margin-bottom: 16px;
+  margin-top: 10px;
+  font-weight: bolder;
+}
+main#pageTicketDetail .wrapper-card h4 {
+  font-size: 20px;
+  color: #444;
+  margin-bottom: 16px;
+}
+main#pageTicketDetail .wrapper-card p {
+  margin-bottom: 16px;
+}
+main#pageTicketDetail .wrapper-card a {
+  position: relative;
+  display: inline-block;
+}
+main#pageTicketDetail .wrapper-card a::after {
+  content: "";
+  width: 0;
+  height: 1px;
+  background-color: #3366ff;
+  position: absolute;
+  top: calc(100% - 2px);
+  left: 0;
+  transition: all 0.4s ease-out;
+}
+main#pageTicketDetail .wrapper-card a:hover::after {
+  width: 100%;
+}
+main#pageTicketDetail .wrapper-card .trip-info {
+  display: flex;
+}
+main#pageTicketDetail .wrapper-card .trip-info .trip-content {
+  width: 70%;
+  padding: 8px;
+  padding-right: 20px;
+}
+main#pageTicketDetail .wrapper-card .trip-info .trip-cta {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  padding: 8px;
+  border-left: 1px solid #eaeaea;
+}
+main#pageTicketDetail .wrapper-card .trip-info .trip-cta-top {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+main#pageTicketDetail .wrapper-card .trip-info .trip-cta-top .label {
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+main#pageTicketDetail .wrapper-card .trip-info .trip-cta-top .price {
+  display: flex;
+  flex-direction: column;
+  color: #444;
+  font-size: 16px;
+}
+main#pageTicketDetail .wrapper-card .trip-info .trip-cta-top .price .price-regular {
+  text-decoration: line-through;
+}
+main#pageTicketDetail .wrapper-card .trip-info .trip-cta-top .price .price-sale {
+  text-decoration: underline;
+  font-weight: bold;
+}
+main#pageTicketDetail .wrapper-card .trip-info .trip-cta form p {
+  font-size: 16px;
+}
+main#pageTicketDetail .wrapper-card .trip-info .trip-cta form .wrapper-input {
+  width: 100%;
+  position: relative;
+}
+main#pageTicketDetail .wrapper-card .trip-info .trip-cta form .wrapper-input input {
+  border: 1px solid #c4c4c4;
+  width: 100%;
+  max-width: 100%;
+  display: block;
+  line-height: 18px;
+  outline: none;
+  height: 40px;
+  padding-left: 20px;
+  padding-right: 5px;
+}
+main#pageTicketDetail .wrapper-card .trip-info .trip-cta form .wrapper-input input::-webkit-calendar-picker-indicator {
+  width: 20px;
+  height: 20px;
+}
+main#pageTicketDetail .wrapper-card .trip-info .trip-cta form .wrapper-input span {
+  font-size: 20px;
+  position: absolute;
+  right: 20px;
+  top: 0;
+}
+main#pageTicketDetail .wrapper-card .trip-info .trip-cta form select {
+  margin-top: 10px;
+  padding: 6px 12px;
+  line-height: 1.7;
+  font-size: 13px;
+  border: 1px solid #ccc;
+  display: block;
+  border-radius: 0;
+  background: #FFFFFF;
+}
+main#pageTicketDetail .wrapper-card .trip-info .trip-cta form .total {
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: bold;
+}
+main#pageTicketDetail .wrapper-card .trip-info .trip-cta form .total .price {
+  font-size: 26px;
+  font-weight: bold;
+  color: #b72020;
+}
+main#pageTicketDetail .wrapper-card .trip-info .trip-cta form button {
+  border-radius: 1px;
+  border: none;
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+  font-size: 14px;
+  padding: 7px 8px;
+  background: #1e4f3f;
+  color: #fff;
+  font-weight: bold;
+  border: 1px solid #1e4f3f;
+  transition: all 0.3s ease-in-out;
+}
+main#pageTicketDetail .wrapper-card .trip-info .trip-cta form button:hover {
+  color: #1e4f3f;
+  background-color: transparent;
+}
+main#pageTicketDetail .wrapper-card .trip-info .trip-cta form .payment {
+  margin-top: 10px;
+  float: right;
+  border-radius: 4px;
+  background-color: #ffc439;
+}
+main#pageTicketDetail .wrapper-card .trip-info .trip-cta form .payment img {
+  height: 20px;
+  width: auto;
+  padding: 3px 30px;
+}
+main#pageTicketDetail .wrapper-card .trip-info .trip-line-wrapper {
+  padding-left: 30px;
+  position: relative;
+}
+main#pageTicketDetail .wrapper-card .trip-info .trip-line-wrapper::before {
+  content: "";
+  height: calc(100% - 20px);
+  width: 1px;
+  background-color: #1e4f3f;
+  position: absolute;
+  left: 4px;
+  top: 10px;
+}
+main#pageTicketDetail .wrapper-card .trip-info .trip-line-item {
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: #444;
+}
+main#pageTicketDetail .wrapper-card .trip-info .trip-line-item .time {
+  font-weight: 600;
+}
+main#pageTicketDetail .wrapper-card .trip-info .trip-line-item.departure, main#pageTicketDetail .wrapper-card .trip-info .trip-line-item.destination {
+  position: relative;
+}
+main#pageTicketDetail .wrapper-card .trip-info .trip-line-item.departure::before, main#pageTicketDetail .wrapper-card .trip-info .trip-line-item.destination::before {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #1e4f3f;
+  left: -30px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+main#pageTicketDetail .wrapper-card .trip-info .trip-line-item.text {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+main#pageTicketDetail .wrapper-card .trip-info .trip-note {
+  font-size: 16px;
+  color: #444;
+}
+main#pageTicketDetail .wrapper-card.card-gallery .gallery-top .list {
+  display: flex;
+  overflow-x: scroll;
+  padding-bottom: 10px;
+}
+main#pageTicketDetail .wrapper-card.card-gallery .gallery-top .list .item {
+  height: 100px;
+  width: 150px;
+  min-width: 150px;
+  margin-right: 10px;
+}
+main#pageTicketDetail .wrapper-card.card-gallery .gallery-top .list .item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+main#pageTicketDetail .wrapper-card.card-gallery .gallery-top .list .item.rating {
+  display: flex;
+  border-right: 1px solid #eaeaea;
+  height: unset;
+  background: #eaeaea;
+  justify-content: center;
+  align-items: center;
+  font-weight: bolder;
+  color: #212529;
+  position: relative;
+}
+main#pageTicketDetail .wrapper-card.card-gallery .gallery-top .list .item.rating a {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+main#pageTicketDetail .wrapper-card.card-gallery .gallery-bottom .list-condition {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 16px 0 8px;
+}
+main#pageTicketDetail .wrapper-card.card-gallery .gallery-bottom .list-condition .condition-item {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  margin-bottom: 4px;
+  margin-top: 8px;
+  gap: 5px;
+  font-size: 16px;
+  color: #444;
+}
+main#pageTicketDetail .wrapper-card.card-rating h3 {
+  margin-bottom: 5px;
+}
+main#pageTicketDetail .wrapper-card.card-rating form .rating {
+  margin-bottom: 0;
+}
+main#pageTicketDetail .wrapper-card.card-rating form .star {
+  margin-bottom: 10px;
+}
+main#pageTicketDetail .wrapper-card.card-rating form .review {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+main#pageTicketDetail .wrapper-card.card-rating form textarea {
+  border-radius: 10px;
+  background-color: #f8f8f8;
+  border: none;
+  min-height: 75px;
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+main#pageTicketDetail .wrapper-card.card-rating form label {
+  margin-bottom: 5px;
+}
+main#pageTicketDetail .wrapper-card.card-rating form .form-download {
+  display: flex;
+  width: 100%;
+}
+main#pageTicketDetail .wrapper-card.card-rating form .form-download input {
+  background-color: #e9ecef;
+  padding: 10px;
+  border: 1px solid #c4c4c4;
+  font-size: 16px;
+  color: #212529;
+  flex: 1 1 auto;
+}
+main#pageTicketDetail .wrapper-card.card-rating form .form-download button {
+  border: 1px solid #c4c4c4;
+  background-color: #6c757d;
+  border-radius: unset;
+  color: #fff;
+  font-size: 16px;
+  padding: 0 10px;
+  letter-spacing: 0.2px;
+}
+main#pageTicketDetail .wrapper-card.card-rating form .field {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+}
+main#pageTicketDetail .wrapper-card.card-rating form .field input {
+  border: 1px solid #c4c4c4;
+  font-size: 16px;
+  color: #444;
+  padding: 10px;
+  border-radius: unset;
+}
+main#pageTicketDetail .wrapper-card.card-rating form .field label {
+  color: #444;
+  font-size: 16px;
+}
+main#pageTicketDetail .wrapper-card.card-rating form .check {
+  margin-top: 15px;
+  display: block;
+}
+main#pageTicketDetail .wrapper-card.card-rating form button[type=submit] {
+  background: #1e4f3f;
+  border-radius: 16px;
+  color: #fff;
+  padding: 5px 20px;
+  font-weight: bold;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  border: 1px solid #1e4f3f;
+  transition: all 0.3s ease-in-out;
+}
+main#pageTicketDetail .wrapper-card.card-rating form button[type=submit]:hover {
+  color: #1e4f3f;
+  background-color: transparent;
 }
 
 /* Footer */
