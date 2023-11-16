@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticket Detail</title>
+
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/reset.css" />
+    <link rel="stylesheet" href="../assets/css/core.css" />
+    <!-- Boostrap -->
+    <link rel="stylesheet" href="../assets/lib/bootstrap/bootstrap.min.css" />
+    <!-- splide CSS -->
+    <link rel="stylesheet" href="../assets/lib/splide/splide.min.css" />
+    <!-- Font awesome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- font roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Start header -->
+    <header id="header">
+        <div class="container">
+            <div class="header-container d-flex align-items-center justify-content-between">
+                <a href="/" class="header-logo">
+                    <img src="https://fullmoontravel.asia/wp-content/uploads/2023/08/A-HOAI-CAT-BA-scaled-e1691808620801.jpg"
+                        alt="logo">
+                </a>
+                <div class="backdrop d-none" onclick="toggleOpenPopup(event)"></div>
+                <ul class="menu d-flex align-content-center">
+                    <li class="menu-item btn-close" onclick="toggleOpenPopup(event)">  
+                    </li>
+                    <li class="menu-item form-search-mobile">
+                        <form action="" class="header__search">
+                            <button type="submit"><i class="fa fa-search"></i></button>
+                            <input type="text" placeholder="Your searching here..." name="search">
+                        </form>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#" class="menu-link">Home</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#" class="menu-link">Bus Ticket</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#" class="menu-link">Tour</a>
+                    </li>
+                    <li class="menu-item has-children many-children">
+                        <a href="#" class="menu-link">Cruises</a>
+                        <ul class="sub-menu">
+                            <li class="menu-item left">
+                                <a href="#" class="menu-link active" data-tab="tab-1">Halong Bay Cruises</a>
+                                <a href="#" class="menu-link" data-tab="tab-2">Mekong River Cruise</a>
+                            </li>
+
+                            <li class="menu-item right">
+                                <div class="menu-tab active" data-tab="tab-1">
+                                    <ul class="sub-menu">
+                                        <li class="menu-item title">
+                                            <a href="#" class="menu-link">Ha Long Bay Cruise</a>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a href="#" class="menu-link">Budget Cruises</a>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a href="#" class="menu-link">Budget Cruises</a>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a href="#" class="menu-link">Budget Cruises</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="menu-tab" data-tab="tab-2">
+                                    <ul class="sub-menu">
+                                        <li class="menu-item title">
+                                            <a href="#" class="menu-link">All Mekong River Cruise</a>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a href="#" class="menu-link">Budget Cruises</a>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a href="#" class="menu-link">Budget Cruises</a>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a href="#" class="menu-link">Budget Cruises</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu-item has-children">
+                        <a href="#" class="menu-link">About us</a>
+                        <ul class="sub-menu">
+                            <li class="menu-item">
+                                <a href="#" class="menu-link">About us</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#" class="menu-link">About us</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#" class="menu-link">About us</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="header__right d-flex align-items-center">
+                    <a href="#" class="tripadvisor">
+                        <img src="https://d13jio720g7qcs.cloudfront.net/assets/icon/tripadvisor-traveller-choice-2022.png"
+                            alt="">
+                        <span>Traveler choice</span>
+                    </a>
+                    <div class="header__button">
+                        <div class="header__button--wishlist">
+                            <a href="#">
+                                <span class="wishlist-icon d-block">
+                                    <i class="fa-solid fa-heart"></i>
+                                    <span class="wishlist-count">0</span>
+                                </span>
+                            </a>
+                        </div>
+                        <div class="header__button--cart">
+                            <a href="#">
+                                <span class="cart-icon d-block">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </span>
+                            </a>
+                        </div>
+                        <div class="header__button--bars d-none">
+                            <a href="#" onClick="toggleOpenPopup(event)">
+                                <span class="bars-icon d-block">
+                                    <i class="fa-solid fa-bars"></i>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <form action="" class="header__search">
+                        <input type="text" placeholder="Your searching here..." name="search">
+                        <button type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- End header -->
+
+    <main id="pageTicketDetail">
+        <div class="container">
+            <div class="wrapper-card card-trip">
+                <h1 class="title">16-11-2023</h1>
+                <div class="trip-info">
+                    <div class="trip-content">
+                        <div class="trip-line-wrapper">
+                            <div class="trip-line-item departure">
+                                <span class="time">7.40</span>
+                                Ho Chi Minh City
+                            </div>
+                            <div class="trip-line-item text">
+                                <img src="https://fullmoontravel.asia/wp-content/uploads/2023/06/screenshot_1688341545.png" alt="">
+                                9 Hours Ride By Sleeper Bus
+                            </div>
+                            <div class="trip-line-item destination">
+                                <span class="time">17.40</span>
+                                Nha Trang Full Moon Bus
+                            </div>
+                        </div>
+                        <div class="trip-note">
+                            Please moving to Departure Location 20 minutes early to check in !
+                        </div>
+                    </div>
+                    <div class="trip-cta">
+                        <div class="trip-cta-top">
+                            <div class="label">
+                                <span class="icon">
+                                    <img src="https://fullmoontravel.asia/wp-content/uploads/2023/06/screenshot_1688341601.png" alt="">
+                                </span>
+                                <span class="icon">
+                                    <img src="https://fullmoontravel.asia/wp-content/uploads/2023/06/screenshot_1688341611.png" alt="">
+                                </span>
+                                <span class="icon">
+                                    <img src="https://fullmoontravel.asia/wp-content/uploads/2023/07/kisspng-public-domain-mark-creative-commons-license-comput-cashback-5b19ec82851b48.4804559115284256025452-e1691580280649.jpg" alt="">
+                                </span>
+                                <span class="icon">
+                                    <img src="https://fullmoontravel.asia/wp-content/uploads/2023/07/person-icon-vector-filled-flat-sign-solid-pictogram-isolated-white-user-account-member-symbol-logo-illustration-88293809-e1691581584308.webp" alt="">
+                                </span>
+                            </div>
+                            <div class="price">
+                                <span class="price-regular">$16</span>
+                                <span class="price-sale">$15</span>
+                            </div>
+                        </div>
+                        <form action="" class="trip-cta-form">
+                            <p>Departure:</p>
+                            <div class="wrapper-input">
+                                <input type="date">
+                                <!-- <span>
+                                    <i class="fa-solid fa-calendar"></i>
+                                </span> -->
+                            </div>
+                            <select name="number">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                            </select>
+                            <div class="total">
+                                <span class="text">Total:</span>
+                                <span class="price">$ 15</span>
+                            </div>
+                            <button class="btn-submit" type="submit">Buy ticket</button>
+                            <div class="payment">
+                                <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAxcHgiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAxMDEgMzIiIHByZXNlcnZlQXNwZWN0UmF0aW89InhNaW5ZTWluIG1lZXQiIHhtbG5zPSJodHRwOiYjeDJGOyYjeDJGO3d3dy53My5vcmcmI3gyRjsyMDAwJiN4MkY7c3ZnIj48cGF0aCBmaWxsPSIjMDAzMDg3IiBkPSJNIDEyLjIzNyAyLjggTCA0LjQzNyAyLjggQyAzLjkzNyAyLjggMy40MzcgMy4yIDMuMzM3IDMuNyBMIDAuMjM3IDIzLjcgQyAwLjEzNyAyNC4xIDAuNDM3IDI0LjQgMC44MzcgMjQuNCBMIDQuNTM3IDI0LjQgQyA1LjAzNyAyNC40IDUuNTM3IDI0IDUuNjM3IDIzLjUgTCA2LjQzNyAxOC4xIEMgNi41MzcgMTcuNiA2LjkzNyAxNy4yIDcuNTM3IDE3LjIgTCAxMC4wMzcgMTcuMiBDIDE1LjEzNyAxNy4yIDE4LjEzNyAxNC43IDE4LjkzNyA5LjggQyAxOS4yMzcgNy43IDE4LjkzNyA2IDE3LjkzNyA0LjggQyAxNi44MzcgMy41IDE0LjgzNyAyLjggMTIuMjM3IDIuOCBaIE0gMTMuMTM3IDEwLjEgQyAxMi43MzcgMTIuOSAxMC41MzcgMTIuOSA4LjUzNyAxMi45IEwgNy4zMzcgMTIuOSBMIDguMTM3IDcuNyBDIDguMTM3IDcuNCA4LjQzNyA3LjIgOC43MzcgNy4yIEwgOS4yMzcgNy4yIEMgMTAuNjM3IDcuMiAxMS45MzcgNy4yIDEyLjYzNyA4IEMgMTMuMTM3IDguNCAxMy4zMzcgOS4xIDEzLjEzNyAxMC4xIFoiPjwvcGF0aD48cGF0aCBmaWxsPSIjMDAzMDg3IiBkPSJNIDM1LjQzNyAxMCBMIDMxLjczNyAxMCBDIDMxLjQzNyAxMCAzMS4xMzcgMTAuMiAzMS4xMzcgMTAuNSBMIDMwLjkzNyAxMS41IEwgMzAuNjM3IDExLjEgQyAyOS44MzcgOS45IDI4LjAzNyA5LjUgMjYuMjM3IDkuNSBDIDIyLjEzNyA5LjUgMTguNjM3IDEyLjYgMTcuOTM3IDE3IEMgMTcuNTM3IDE5LjIgMTguMDM3IDIxLjMgMTkuMzM3IDIyLjcgQyAyMC40MzcgMjQgMjIuMTM3IDI0LjYgMjQuMDM3IDI0LjYgQyAyNy4zMzcgMjQuNiAyOS4yMzcgMjIuNSAyOS4yMzcgMjIuNSBMIDI5LjAzNyAyMy41IEMgMjguOTM3IDIzLjkgMjkuMjM3IDI0LjMgMjkuNjM3IDI0LjMgTCAzMy4wMzcgMjQuMyBDIDMzLjUzNyAyNC4zIDM0LjAzNyAyMy45IDM0LjEzNyAyMy40IEwgMzYuMTM3IDEwLjYgQyAzNi4yMzcgMTAuNCAzNS44MzcgMTAgMzUuNDM3IDEwIFogTSAzMC4zMzcgMTcuMiBDIDI5LjkzNyAxOS4zIDI4LjMzNyAyMC44IDI2LjEzNyAyMC44IEMgMjUuMDM3IDIwLjggMjQuMjM3IDIwLjUgMjMuNjM3IDE5LjggQyAyMy4wMzcgMTkuMSAyMi44MzcgMTguMiAyMy4wMzcgMTcuMiBDIDIzLjMzNyAxNS4xIDI1LjEzNyAxMy42IDI3LjIzNyAxMy42IEMgMjguMzM3IDEzLjYgMjkuMTM3IDE0IDI5LjczNyAxNC42IEMgMzAuMjM3IDE1LjMgMzAuNDM3IDE2LjIgMzAuMzM3IDE3LjIgWiI+PC9wYXRoPjxwYXRoIGZpbGw9IiMwMDMwODciIGQ9Ik0gNTUuMzM3IDEwIEwgNTEuNjM3IDEwIEMgNTEuMjM3IDEwIDUwLjkzNyAxMC4yIDUwLjczNyAxMC41IEwgNDUuNTM3IDE4LjEgTCA0My4zMzcgMTAuOCBDIDQzLjIzNyAxMC4zIDQyLjczNyAxMCA0Mi4zMzcgMTAgTCAzOC42MzcgMTAgQyAzOC4yMzcgMTAgMzcuODM3IDEwLjQgMzguMDM3IDEwLjkgTCA0Mi4xMzcgMjMgTCAzOC4yMzcgMjguNCBDIDM3LjkzNyAyOC44IDM4LjIzNyAyOS40IDM4LjczNyAyOS40IEwgNDIuNDM3IDI5LjQgQyA0Mi44MzcgMjkuNCA0My4xMzcgMjkuMiA0My4zMzcgMjguOSBMIDU1LjgzNyAxMC45IEMgNTYuMTM3IDEwLjYgNTUuODM3IDEwIDU1LjMzNyAxMCBaIj48L3BhdGg+PHBhdGggZmlsbD0iIzAwOWNkZSIgZD0iTSA2Ny43MzcgMi44IEwgNTkuOTM3IDIuOCBDIDU5LjQzNyAyLjggNTguOTM3IDMuMiA1OC44MzcgMy43IEwgNTUuNzM3IDIzLjYgQyA1NS42MzcgMjQgNTUuOTM3IDI0LjMgNTYuMzM3IDI0LjMgTCA2MC4zMzcgMjQuMyBDIDYwLjczNyAyNC4zIDYxLjAzNyAyNCA2MS4wMzcgMjMuNyBMIDYxLjkzNyAxOCBDIDYyLjAzNyAxNy41IDYyLjQzNyAxNy4xIDYzLjAzNyAxNy4xIEwgNjUuNTM3IDE3LjEgQyA3MC42MzcgMTcuMSA3My42MzcgMTQuNiA3NC40MzcgOS43IEMgNzQuNzM3IDcuNiA3NC40MzcgNS45IDczLjQzNyA0LjcgQyA3Mi4yMzcgMy41IDcwLjMzNyAyLjggNjcuNzM3IDIuOCBaIE0gNjguNjM3IDEwLjEgQyA2OC4yMzcgMTIuOSA2Ni4wMzcgMTIuOSA2NC4wMzcgMTIuOSBMIDYyLjgzNyAxMi45IEwgNjMuNjM3IDcuNyBDIDYzLjYzNyA3LjQgNjMuOTM3IDcuMiA2NC4yMzcgNy4yIEwgNjQuNzM3IDcuMiBDIDY2LjEzNyA3LjIgNjcuNDM3IDcuMiA2OC4xMzcgOCBDIDY4LjYzNyA4LjQgNjguNzM3IDkuMSA2OC42MzcgMTAuMSBaIj48L3BhdGg+PHBhdGggZmlsbD0iIzAwOWNkZSIgZD0iTSA5MC45MzcgMTAgTCA4Ny4yMzcgMTAgQyA4Ni45MzcgMTAgODYuNjM3IDEwLjIgODYuNjM3IDEwLjUgTCA4Ni40MzcgMTEuNSBMIDg2LjEzNyAxMS4xIEMgODUuMzM3IDkuOSA4My41MzcgOS41IDgxLjczNyA5LjUgQyA3Ny42MzcgOS41IDc0LjEzNyAxMi42IDczLjQzNyAxNyBDIDczLjAzNyAxOS4yIDczLjUzNyAyMS4zIDc0LjgzNyAyMi43IEMgNzUuOTM3IDI0IDc3LjYzNyAyNC42IDc5LjUzNyAyNC42IEMgODIuODM3IDI0LjYgODQuNzM3IDIyLjUgODQuNzM3IDIyLjUgTCA4NC41MzcgMjMuNSBDIDg0LjQzNyAyMy45IDg0LjczNyAyNC4zIDg1LjEzNyAyNC4zIEwgODguNTM3IDI0LjMgQyA4OS4wMzcgMjQuMyA4OS41MzcgMjMuOSA4OS42MzcgMjMuNCBMIDkxLjYzNyAxMC42IEMgOTEuNjM3IDEwLjQgOTEuMzM3IDEwIDkwLjkzNyAxMCBaIE0gODUuNzM3IDE3LjIgQyA4NS4zMzcgMTkuMyA4My43MzcgMjAuOCA4MS41MzcgMjAuOCBDIDgwLjQzNyAyMC44IDc5LjYzNyAyMC41IDc5LjAzNyAxOS44IEMgNzguNDM3IDE5LjEgNzguMjM3IDE4LjIgNzguNDM3IDE3LjIgQyA3OC43MzcgMTUuMSA4MC41MzcgMTMuNiA4Mi42MzcgMTMuNiBDIDgzLjczNyAxMy42IDg0LjUzNyAxNCA4NS4xMzcgMTQuNiBDIDg1LjczNyAxNS4zIDg1LjkzNyAxNi4yIDg1LjczNyAxNy4yIFoiPjwvcGF0aD48cGF0aCBmaWxsPSIjMDA5Y2RlIiBkPSJNIDk1LjMzNyAzLjMgTCA5Mi4xMzcgMjMuNiBDIDkyLjAzNyAyNCA5Mi4zMzcgMjQuMyA5Mi43MzcgMjQuMyBMIDk1LjkzNyAyNC4zIEMgOTYuNDM3IDI0LjMgOTYuOTM3IDIzLjkgOTcuMDM3IDIzLjQgTCAxMDAuMjM3IDMuNSBDIDEwMC4zMzcgMy4xIDEwMC4wMzcgMi44IDk5LjYzNyAyLjggTCA5Ni4wMzcgMi44IEMgOTUuNjM3IDIuOCA5NS40MzcgMyA5NS4zMzcgMy4zIFoiPjwvcGF0aD48L3N2Zz4" data-v-b01da731="" alt="" role="presentation" class="paypal-logo paypal-logo-paypal paypal-logo-color-blue">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="wrapper-card card-gallery">
+                <div class="gallery-top">
+                    <ul class="list">
+                        <li class="item rating">
+                            <a href="#rating"></a>
+                            <span>Rating</span>
+                        </li>
+                        <li class="item image">
+                            <img src="https://fullmoontravel.asia/wp-content/uploads/2023/09/gia-xe-giuong-nam-thaco.jpeg" alt="">
+                        </li>
+                        <li class="item image">
+                            <img src="https://fullmoontravel.asia/wp-content/uploads/2023/09/gia-xe-giuong-nam-thaco.jpeg" alt="">
+                        </li>
+                        <li class="item image">
+                            <img src="https://fullmoontravel.asia/wp-content/uploads/2023/09/gia-xe-giuong-nam-thaco.jpeg" alt="">
+                        </li>
+                        <li class="item image">
+                            <img src="https://fullmoontravel.asia/wp-content/uploads/2023/09/gia-xe-giuong-nam-thaco.jpeg" alt="">
+                        </li>
+                        <li class="item image">
+                            <img src="https://fullmoontravel.asia/wp-content/uploads/2023/09/gia-xe-giuong-nam-thaco.jpeg" alt="">
+                        </li>
+                        <li class="item image">
+                            <img src="https://fullmoontravel.asia/wp-content/uploads/2023/09/gia-xe-giuong-nam-thaco.jpeg" alt="">
+                        </li>
+                        <li class="item image">
+                            <img src="https://fullmoontravel.asia/wp-content/uploads/2023/09/gia-xe-giuong-nam-thaco.jpeg" alt="">
+                        </li>
+                    </ul>
+                </div>
+                <div class="gallery-bottom">
+                    <div class="list-condition">
+                        <div class="condition-item">
+                            <img src="https://fullmoontravel.asia/wp-content/uploads/2023/06/screenshot_1688341601.png" alt="">
+                            <span>Aircondition</span>
+                        </div>
+                        <div class="condition-item">
+                            <img src="https://fullmoontravel.asia/wp-content/uploads/2023/06/screenshot_1688341611.png" alt="">
+                            <span>Wifi</span>
+                        </div>
+                        <div class="condition-item">
+                            <img src="https://fullmoontravel.asia/wp-content/uploads/2023/07/kisspng-public-domain-mark-creative-commons-license-comput-cashback-5b19ec82851b48.4804559115284256025452-e1691580280649.jpg" alt="">
+                            <span>Cancellation possible (chek rules)</span>
+                        </div>
+                        <div class="condition-item">
+                            <img src="https://fullmoontravel.asia/wp-content/uploads/2023/07/person-icon-vector-filled-flat-sign-solid-pictogram-isolated-white-user-account-member-symbol-logo-illustration-88293809-e1691581584308.webp" alt="">
+                            <span>Price / Person</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Start Footer -->
+    <footer id="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-logo col-md-2 col-12">
+                        <a href="/" class="logo">
+                            <img src="https://fullmoontravel.asia/wp-content/uploads/2023/07/logo-2.png" alt="logo">
+                        </a>
+                    </div>
+                    <div class="footer-social col-md-3 col-12">
+                        <div class="footer-trip">
+                            <img src="https://d13jio720g7qcs.cloudfront.net/assets/icon/tripadvisor_2023.png" alt="">
+                            <div class="text-review d-flex align-items-center">
+                                <img src="https://d13jio720g7qcs.cloudfront.net/assets/icon/circle.png" alt="">
+                                <span>100000 reviews</span>
+                            </div>
+                        </div>
+
+                        <div class="footer-follow">
+                            <p class="text">Follow us</p>
+                            <div class="logo">
+                                <a href="/">
+                                    <i class="fa-brands fa-facebook"></i>
+                                </a>
+                                <a href="/">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+                                <a href="/">
+                                    <i class="fa-brands fa-pinterest"></i>
+                                </a>
+                                <a href="/">
+                                    <i class="fa-brands fa-youtube"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-menu col-md-2 col-12">
+                        <ul class="list-menu">
+                            <li class="menu-item">
+                                <a href="menu-link">About Us</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="menu-link">Contact Us</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="menu-link">Privacy Statement</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="menu-link">Terms & Conditions</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="menu-link">On the News</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="menu-link">Travel Guide</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="menu-link">Payment Method</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-contact col-md-5 col-12">
+                        <h4 class="title">Contact information</h4>
+                        <div class="footer-support">
+                            <div class="support-item">
+                                <a href="/" class="mail">
+                                    <i class="fa-regular fa-envelope"></i>
+                                    fullmoonpartytour@gmail.com
+                                </a>
+                            </div>
+                            <div class="support-item">
+                                <a href="/" class="phone">
+                                    <i class="fa-solid fa-phone-volume"></i>
+                                    +84 974-426-821
+                                </a>
+                            </div>
+                        </div>
+                        <ul class="footer-branch">
+                            <li class="branch-item">
+                                <b>Hanoi, Vietnam:</b> 162B Tran Quang Khai Street, Ly Thai To Ward, Hoan Kiem District,
+                                Hanoi, Vietnam
+                            </li>
+                            <li class="branch-item">
+                                <b>Hanoi, Vietnam:</b> 162B Tran Quang Khai Street, Ly Thai To Ward, Hoan Kiem District,
+                                Hanoi, Vietnam
+                            </li>
+                            <li class="branch-item">
+                                <b>Hanoi, Vietnam:</b> 162B Tran Quang Khai Street, Ly Thai To Ward, Hoan Kiem District,
+                                Hanoi, Vietnam
+                            </li>
+                            <li class="branch-item">
+                                <b>Hanoi, Vietnam:</b> 162B Tran Quang Khai Street, Ly Thai To Ward, Hoan Kiem District,
+                                Hanoi, Vietnam
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="bottom-wrapper d-flex align-items-center justify-content-between">
+                    <div class="bottom-left">
+                        <p>Business license no: 0201897823 - Issued date: 10/08/2018</p>
+                        <p>Issued by: Investment Planning Department Hai Phong</p>
+                    </div>
+                    <div class="bottom-right">
+                        <img src="https://fullmoontravel.asia/wp-content/uploads/2023/08/ATM.png" alt="atm logo">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+    <script src="../assets/lib/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- Splide JS -->
+    <script src="../assets/lib/splide/splide.min.js"></script>
+
+    <script src="../assets/scripts/main.js"></script>
+</body>
