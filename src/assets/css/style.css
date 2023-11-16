@@ -141,6 +141,9 @@ body main {
 #header .menu .menu-item a:hover {
   border: 2px solid #000;
 }
+#header .menu .menu-item.page-active a {
+  border: 2px solid #000;
+}
 #header .menu .menu-item.has-children {
   position: relative;
 }
@@ -205,7 +208,7 @@ body main {
 #header .menu .menu-item.has-children > .sub-menu .menu-item a:hover {
   border-color: transparent;
 }
-#header .menu .menu-item.has-children:hover > .sub-menu {
+#header .menu .menu-item.has-children.active > .sub-menu {
   opacity: 1;
   visibility: visible;
 }

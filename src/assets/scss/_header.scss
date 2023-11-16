@@ -71,6 +71,7 @@ $border-color_1: transparent;
 		}
 		.menu-item {
 			position: relative;
+
 			&.btn-close{
 				display: none;
 
@@ -146,7 +147,12 @@ $border-color_1: transparent;
 
 				&:hover {
 					border: 2px solid #000;
+				}
+			}
 
+			&.page-active{
+				a{
+					border: 2px solid #000;
 				}
 			}
 		}
@@ -218,7 +224,13 @@ $border-color_1: transparent;
 					}
 				}
 			}
-			&:hover {
+			// &:hover {
+			// 	>.sub-menu {
+			// 		opacity: 1;
+			// 		visibility: visible;
+			// 	}
+			// }
+			&.active{
 				>.sub-menu {
 					opacity: 1;
 					visibility: visible;
