@@ -229,6 +229,11 @@ $border-color_1: transparent;
 					opacity: 1;
 					visibility: visible;
 				}
+
+				.menu-tab.active{
+					opacity: 1 !important;
+					visibility: visible !important;
+				}
 			}
 			&.active{
 				>.sub-menu {
@@ -303,8 +308,8 @@ $border-color_1: transparent;
 
 						&.active{
 							height: auto;
-							visibility: visible;
-							opacity: 1;
+							//visibility: visible;
+							//opacity: 1;
 						}
 
 						.sub-menu{

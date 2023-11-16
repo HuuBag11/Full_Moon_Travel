@@ -212,6 +212,10 @@ body main {
   opacity: 1;
   visibility: visible;
 }
+#header .menu .menu-item.has-children:hover .menu-tab.active {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
 #header .menu .menu-item.has-children.active > .sub-menu {
   opacity: 1;
   visibility: visible;
@@ -276,8 +280,6 @@ body main {
 }
 #header .menu .menu-item.has-children.many-children > .sub-menu .menu-item .menu-tab.active {
   height: auto;
-  visibility: visible;
-  opacity: 1;
 }
 #header .menu .menu-item.has-children.many-children > .sub-menu .menu-item .menu-tab .sub-menu {
   list-style: none;
