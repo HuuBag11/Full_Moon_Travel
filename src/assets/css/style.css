@@ -1720,6 +1720,7 @@ main.pageTours .sidebar__filter .filter__wrapper .group__filter .filter-item inp
   position: absolute;
   bottom: 50%;
   transform: translateY(50%);
+  accent-color: #fff;
 }
 main.pageTours .tours__list .list-order {
   display: flex;
@@ -1884,6 +1885,8 @@ main#pageTicketDetail .wrapper-card {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), 0 3px 6px rgba(75, 75, 75, 0.08);
   padding: 12px;
   position: relative;
+  font-size: 16px;
+  color: #444;
 }
 main#pageTicketDetail .wrapper-card:hover {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2509803922), 0 1px 3px rgba(75, 75, 75, 0.2), 0 3px 6px rgba(75, 75, 75, 0.2);
@@ -1894,6 +1897,39 @@ main#pageTicketDetail .wrapper-card .title {
   margin-bottom: 12px;
   padding: 0 0 4px;
   font-size: 22px;
+  color: #444;
+}
+main#pageTicketDetail .wrapper-card h3 {
+  font-size: 18px;
+  color: #444;
+  margin-bottom: 16px;
+  margin-top: 10px;
+  font-weight: bolder;
+}
+main#pageTicketDetail .wrapper-card h4 {
+  font-size: 20px;
+  color: #444;
+  margin-bottom: 16px;
+}
+main#pageTicketDetail .wrapper-card p {
+  margin-bottom: 16px;
+}
+main#pageTicketDetail .wrapper-card a {
+  position: relative;
+  display: inline-block;
+}
+main#pageTicketDetail .wrapper-card a::after {
+  content: "";
+  width: 0;
+  height: 1px;
+  background-color: #3366ff;
+  position: absolute;
+  top: calc(100% - 2px);
+  left: 0;
+  transition: all 0.4s ease-out;
+}
+main#pageTicketDetail .wrapper-card a:hover::after {
+  width: 100%;
 }
 main#pageTicketDetail .wrapper-card .trip-info {
   display: flex;
