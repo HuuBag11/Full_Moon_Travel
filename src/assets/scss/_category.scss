@@ -38,8 +38,18 @@ main.pageTours{
 
                     .title{
                         color: #212529;
-                        margin-left: 10px;
+                        margin-left: 25px;
                         text-transform: none;
+                    }
+
+                    label{
+                        position: relative;
+
+                        &:hover{
+                            .title{
+                                color: #1e4f3f;
+                            }
+                        }
                     }
 
                     input{
@@ -47,6 +57,11 @@ main.pageTours{
                         color: #1e4f3f;
                         width: 15px;
                         height: 15px;
+
+                        position: absolute;
+                        bottom: 50%;
+                        transform: translateY(50%);
+                        // accent-color: #fff;
                     }
                 }
             }
