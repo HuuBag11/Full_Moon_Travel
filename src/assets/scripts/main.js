@@ -15,6 +15,8 @@ function openSubmenu() {
         $(this).addClass("active");
         $(this).siblings().removeClass("active");
 
+        //$(this).closest(".menu-item.has-children").addClass("active");
+
         let thisDataTab = $(this).data("tab");
         let contentTab = $("#header .menu .menu-item.has-children > .sub-menu .menu-item.right .menu-tab");
 
