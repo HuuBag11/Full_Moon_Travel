@@ -24,13 +24,15 @@ body{
     padding-left: 0;
     list-style-type: none;
   }
-  input,
-  textarea,
-  select,
-  button {
+  html input,
+  html textarea,
+  html select,
+  html button {
     outline: none;
+    box-shadow: none !important;
+    
   }
-  input {
+  html input {
     line-height: normal;
   }
   label,
