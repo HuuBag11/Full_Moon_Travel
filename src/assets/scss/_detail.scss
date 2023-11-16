@@ -75,22 +75,28 @@ main#detailPage {
                     }
                 }
             }
-            #h_tour_overview{
-                .content-post{
+
+            #h_tour_overview {
+                .content-post {
                     width: 100%;
-                    *{
+
+                    * {
                         width: 100% !important;
                     }
-                    img{
+
+                    img {
                         width: 100%;
                         height: auto;
                         object-fit: cover;
                     }
                 }
             }
+
             .tour-content-right {
                 .inner {
-                    padding: 20px 8px 20px 36px;
+                    padding: 20px 8px 20px 20px;
+                    margin-left: 16px;
+                    background-color: #efefef;
 
                     .tour-title {
                         font-size: 28px;
@@ -125,7 +131,7 @@ main#detailPage {
                             line-height: 24px;
                             font-weight: 400;
                             color: #444;
-                            
+
                             span {
                                 font-size: 26px;
                                 line-height: 39px;
@@ -135,7 +141,179 @@ main#detailPage {
                         }
                     }
 
-                    form.variable {}
+                    form.variable {
+                        .tour-departure {
+                            margin: 10px 0;
+
+                            label {
+                                font-size: 16px;
+                                line-height: 24px;
+                                font-weight: 400;
+                                color: #212529;
+                            }
+
+                            input {
+                                height: 40px;
+                                width: calc(100% - 100px);
+                                margin-left: auto;
+                            }
+                        }
+
+                        .tour-departure-from,
+                        .tour-type {
+                            .tour-type__title {
+                                font-size: 16px;
+                                line-height: 24px;
+                                font-weight: 700;
+                                color: #212529;
+
+                                span {
+                                    font-weight: 400;
+                                }
+                            }
+
+                            .list-checkbox {
+                                margin: 16px 0;
+                                display: flex;
+                                flex-wrap: wrap;
+                                gap: 10px 0;
+
+                                li {
+                                    width: max-content;
+                                    padding: 10px;
+                                    height: 40px;
+                                    border: 1px solid white;
+                                    background-color: white;
+                                    font-size: 16px;
+                                    line-height: 24px;
+                                    font-weight: 400;
+                                    color: #212529;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    margin-right: 10px;
+
+                                    &.is-active {
+                                        border: 1px solid #b72020;
+                                    }
+                                }
+                            }
+                        }
+
+                        .table-price {
+                            display: flex;
+                            justify-content: space-between;
+                            margin: 10px 0;
+
+                            .table-left {
+                                align-items: center;
+
+                                .label {
+                                    font-size: 16px;
+                                    line-height: 24px;
+                                    color: #444444;
+                                }
+
+                                .price {
+                                    del {
+                                        margin: 0 8px;
+
+                                        span {
+                                            font-size: 16px;
+                                            line-height: 24px;
+                                        }
+                                    }
+
+                                    ins {
+                                        span {
+                                            font-size: 26px;
+                                            line-height: 36px;
+                                        }
+                                    }
+
+                                    span {
+                                        color: #b72020;
+                                        font-weight: bold;
+                                    }
+                                }
+                            }
+
+                            .table-right {
+                                select {
+                                    width: 80px;
+                                    height: 36px;
+                                }
+                            }
+                        }
+
+                        .total-price {
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: baseline;
+                            margin: 10px 0;
+
+                            .table-left {
+                                align-items: baseline;
+
+                                .label {
+                                    font-size: 16px;
+                                    line-height: 24px;
+                                    color: #444444;
+                                    font-weight: 600;
+                                    margin-right: 6px;
+                                }
+
+                                .price {
+                                    span {
+                                        font-size: 26px;
+                                        font-weight: bold;
+                                        color: #b72020;
+                                    }
+                                }
+                            }
+                        }
+                        .btn-paypal,
+                        .single_add_to_cart_button {
+                            width: 100%;
+                            float: none;
+                            margin-top: 15px;
+                            background-color: #1e4f3f;
+                            border:1px solid #1e4f3f;
+                            font-size: 18px;
+                            font-weight: bold;
+                            font-size: 100%;
+                            margin: 0;
+                            line-height: 1;
+                            cursor: pointer;
+                            position: relative;
+                            text-decoration: none;
+                            padding: 0.618em 1em;
+                            font-weight: 700;
+                            border-radius: 3px;
+                            display: inline-block;
+                            background-image: none;
+                            box-shadow: none;
+                            text-shadow: none;
+                            color: white;
+                            transition: all 0.4s;
+                            margin-bottom: 16px;
+                            &:hover{
+                                background-color: transparent;
+                                color: #1e4f3f;
+                            }
+
+                        }
+                        .btn-paypal{
+                            background-color: #ffb800;
+                            border:1px solid #ffb800;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            &:hover{
+                                color: #ffb800;
+                            }
+                        }
+                    }
                 }
             }
         }

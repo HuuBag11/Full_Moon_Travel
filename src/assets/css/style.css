@@ -1276,7 +1276,9 @@ main#detailPage #tour-detail .tour-detail__content #h_tour_overview .content-pos
   object-fit: cover;
 }
 main#detailPage #tour-detail .tour-detail__content .tour-content-right .inner {
-  padding: 20px 8px 20px 36px;
+  padding: 20px 8px 20px 20px;
+  margin-left: 16px;
+  background-color: #efefef;
 }
 main#detailPage #tour-detail .tour-detail__content .tour-content-right .inner .tour-title {
   font-size: 28px;
@@ -1313,6 +1315,153 @@ main#detailPage #tour-detail .tour-detail__content .tour-content-right .inner .t
   font-weight: 700;
   color: #b72020;
 }
+main#detailPage #tour-detail .tour-detail__content .tour-content-right .inner form.variable .tour-departure {
+  margin: 10px 0;
+}
+main#detailPage #tour-detail .tour-detail__content .tour-content-right .inner form.variable .tour-departure label {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #212529;
+}
+main#detailPage #tour-detail .tour-detail__content .tour-content-right .inner form.variable .tour-departure input {
+  height: 40px;
+  width: calc(100% - 100px);
+  margin-left: auto;
+}
+main#detailPage #tour-detail .tour-detail__content .tour-content-right .inner form.variable .tour-departure-from .tour-type__title,
+main#detailPage #tour-detail .tour-detail__content .tour-content-right .inner form.variable .tour-type .tour-type__title {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #212529;
+}
+main#detailPage #tour-detail .tour-detail__content .tour-content-right .inner form.variable .tour-departure-from .tour-type__title span,
+main#detailPage #tour-detail .tour-detail__content .tour-content-right .inner form.variable .tour-type .tour-type__title span {
+  font-weight: 400;
+}
+main#detailPage #tour-detail .tour-detail__content .tour-content-right .inner form.variable .tour-departure-from .list-checkbox,
+main#detailPage #tour-detail .tour-detail__content .tour-content-right .inner form.variable .tour-type .list-checkbox {
+  margin: 16px 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 0;
+}
+main#detailPage #tour-detail .tour-detail__content .tour-content-right .inner form.variable .tour-departure-from .list-checkbox li,
+main#detailPage #tour-detail .tour-detail__content .tour-content-right .inner form.variable .tour-type .list-checkbox li {
+  width: max-content;
+  padding: 10px;
+  height: 40px;
+  border: 1px solid white;
+  background-color: white;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #212529;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+main#detailPage #tour-detail .tour-detail__content .tour-content-right .inner form.variable .tour-departure-from .list-checkbox li.is-active,
+main#detailPage #tour-detail .tour-detail__content .tour-content-right .inner form.variable .tour-type .list-checkbox li.is-active {
+  border: 1px solid #b72020;
+}
+main#detailPage #tour-detail .tour-detail__content .tour-content-right .inner form.variable .table-price {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+main#detailPage #tour-detail .tour-detail__content .tour-content-right .inner form.variable .table-price .table-left {
+  align-items: center;
+}
+main#detailPage #tour-detail .tour-detail__content .tour-content-right .inner form.variable .table-price .table-left .label {
+  font-size: 16px;
+  line-height: 24px;
+  color: #444444;
+}
+main#detailPage #tour-detail .tour-detail__content .tour-content-right .inner form.variable .table-price .table-left .price del {
+  margin: 0 8px;
+}
+main#detailPage #tour-detail .tour-detail__content .tour-content-right .inner form.variable .table-price .table-left .price del span {
+  font-size: 16px;
+  line-height: 24px;
+}
+main#detailPage #tour-detail .tour-detail__content .tour-content-right .inner form.variable .table-price .table-left .price ins span {
+  font-size: 26px;
+  line-height: 36px;
+}
+main#detailPage #tour-detail .tour-detail__content .tour-content-right .inner form.variable .table-price .table-left .price span {
+  color: #b72020;
+  font-weight: bold;
+}
+main#detailPage #tour-detail .tour-detail__content .tour-content-right .inner form.variable .table-price .table-right select {
+  width: 80px;
+  height: 36px;
+}
+main#detailPage #tour-detail .tour-detail__content .tour-content-right .inner form.variable .total-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin: 10px 0;
+}
+main#detailPage #tour-detail .tour-detail__content .tour-content-right .inner form.variable .total-price .table-left {
+  align-items: baseline;
+}
+main#detailPage #tour-detail .tour-detail__content .tour-content-right .inner form.variable .total-price .table-left .label {
+  font-size: 16px;
+  line-height: 24px;
+  color: #444444;
+  font-weight: 600;
+  margin-right: 6px;
+}
+main#detailPage #tour-detail .tour-detail__content .tour-content-right .inner form.variable .total-price .table-left .price span {
+  font-size: 26px;
+  font-weight: bold;
+  color: #b72020;
+}
+main#detailPage #tour-detail .tour-detail__content .tour-content-right .inner form.variable .btn-paypal,
+main#detailPage #tour-detail .tour-detail__content .tour-content-right .inner form.variable .single_add_to_cart_button {
+  width: 100%;
+  float: none;
+  margin-top: 15px;
+  background-color: #1e4f3f;
+  border: 1px solid #1e4f3f;
+  font-size: 18px;
+  font-weight: bold;
+  font-size: 100%;
+  margin: 0;
+  line-height: 1;
+  cursor: pointer;
+  position: relative;
+  text-decoration: none;
+  padding: 0.618em 1em;
+  font-weight: 700;
+  border-radius: 3px;
+  display: inline-block;
+  background-image: none;
+  box-shadow: none;
+  text-shadow: none;
+  color: white;
+  transition: all 0.4s;
+  margin-bottom: 16px;
+}
+main#detailPage #tour-detail .tour-detail__content .tour-content-right .inner form.variable .btn-paypal:hover,
+main#detailPage #tour-detail .tour-detail__content .tour-content-right .inner form.variable .single_add_to_cart_button:hover {
+  background-color: transparent;
+  color: #1e4f3f;
+}
+main#detailPage #tour-detail .tour-detail__content .tour-content-right .inner form.variable .btn-paypal {
+  background-color: #ffb800;
+  border: 1px solid #ffb800;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main#detailPage #tour-detail .tour-detail__content .tour-content-right .inner form.variable .btn-paypal:hover {
+  color: #ffb800;
+}
+
 /* Footer */
 #footer {
   border-top: 1px solid #000;
