@@ -10,22 +10,23 @@ $(document).ready(function(){
 
  // open sub menu desktop
 function openSubmenu(){
-    $("header .menu-item.has-children").on("click", function(e){
-        e.preventDefault();
-        $(this).toggleClass("active");
-        $(this).siblings(".menu-item.has-children").removeClass("active");
-        console.log($(this));
+    // $("header .menu-item.has-children").on("click", function(e){
+    //     e.preventDefault();
+    //     $(this).toggleClass("active");
+    //     $(this).siblings(".menu-item.has-children").removeClass("active");
 
-        if($(this).hasClass("active")){
-            //window.location.href = $(this).children("a").attr("href");
-        }
+    //     if($(this).hasClass("active")){
+    //         //window.location.href = $(this).children("a").attr("href");
+    //     }
 
-    })
+    // })
 
     $("#header .menu .menu-item.has-children > .sub-menu .menu-item.left a").on("click", function(e){
         e.preventDefault();
         $(this).addClass("active");
         $(this).siblings().removeClass("active");
+
+        //$(this).closest(".menu-item.has-children").addClass("active");
 
         let thisDataTab = $(this).data("tab");
         let contentTab = $("#header .menu .menu-item.has-children > .sub-menu .menu-item.right .menu-tab");
@@ -40,18 +41,18 @@ function openSubmenu(){
     })
 }
 
-function onClickOutsideHeader() {
-    const activeElement = document.querySelector('header .menu-item.has-children.active');
-    const selectDropdownContent = document.querySelector('.select-dropdown__content#header .menu .menu-item.has-children > .sub-menu');
+// function onClickOutsideHeader() {
+//     const activeElement = document.querySelector('header .menu-item.has-children.active');
+//     const selectDropdownContent = document.querySelector('.select-dropdown__content#header .menu .menu-item.has-children > .sub-menu');
   
-    if (activeElement && selectDropdownContent) {
-      document.addEventListener('click', event => {
-        if (!activeElement.contains(event.target) && !selectDropdownContent.contains(event.target)) {
-          $("header .menu-item.has-children").removeClass("active");
-        }
-      });
-    }
-}
+//     if (activeElement && selectDropdownContent) {
+//       document.addEventListener('click', event => {
+//         if (!activeElement.contains(event.target) && !selectDropdownContent.contains(event.target)) {
+//           $("header .menu-item.has-children").removeClass("active");
+//         }
+//       });
+//     }
+// }
 
 // toggle open popup menu mobile
 function toggleOpenPopup(event){

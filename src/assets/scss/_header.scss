@@ -224,12 +224,12 @@ $border-color_1: transparent;
 					}
 				}
 			}
-			// &:hover {
-			// 	>.sub-menu {
-			// 		opacity: 1;
-			// 		visibility: visible;
-			// 	}
-			// }
+			&:hover {
+				>.sub-menu {
+					opacity: 1;
+					visibility: visible;
+				}
+			}
 			&.active{
 				>.sub-menu {
 					opacity: 1;

@@ -208,6 +208,10 @@ body main {
 #header .menu .menu-item.has-children > .sub-menu .menu-item a:hover {
   border-color: transparent;
 }
+#header .menu .menu-item.has-children:hover > .sub-menu {
+  opacity: 1;
+  visibility: visible;
+}
 #header .menu .menu-item.has-children.active > .sub-menu {
   opacity: 1;
   visibility: visible;
