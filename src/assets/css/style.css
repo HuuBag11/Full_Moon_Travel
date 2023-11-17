@@ -131,6 +131,11 @@ body main {
   border: 2px solid transparent;
   transition: ease-out 0.3s;
 }
+@media (min-width: 1190px) and (max-width: 1400px) {
+  #header .menu .menu-item a {
+    padding: 8px 10px;
+  }
+}
 @media (max-width: 992px) {
   #header .menu .menu-item a {
     border: none !important;
@@ -177,6 +182,7 @@ body main {
   opacity: 0;
   visibility: hidden;
   transition: all 0.3s ease;
+  z-index: -1;
   border-radius: 8px;
   background-color: #fff;
   min-width: 160px;
@@ -193,6 +199,7 @@ body main {
     box-shadow: none;
     visibility: visible;
     opacity: 1;
+    z-index: 1;
   }
 }
 #header .menu .menu-item.has-children > .sub-menu .menu-item a {
@@ -227,7 +234,7 @@ body main {
   min-width: 678px;
   min-height: 336px;
   overflow: hidden;
-  display: flex;
+  display: none !important;
   width: 100%;
 }
 @media (max-width: 992px) {
@@ -1029,10 +1036,10 @@ section.comment .splide_comment .splide__slide .cr-review-card-inner .review-pro
   transition: all 300ms ease-in-out;
 }
 section.comment .splide_comment .splide__arrows .splide__arrow--prev {
-  left: -3em;
+  left: -2em;
 }
 section.comment .splide_comment .splide__arrows .splide__arrow--next {
-  right: -3em;
+  right: -2em;
 }
 
 section.popular-destination {
