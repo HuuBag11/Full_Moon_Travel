@@ -67,6 +67,10 @@ $border-color_1: transparent;
 				transform: translateX(0);
 				overflow-y: scroll;
 				padding-bottom: 40px;
+
+				&::-webkit-scrollbar{
+					display: none;
+				}
 			}
 		}
 		.menu-item {
@@ -86,6 +90,7 @@ $border-color_1: transparent;
 					height: 30px;
 					color: #000;
 					opacity: 1;
+					cursor: pointer;
 				}
 			}
 			&.form-search-mobile{

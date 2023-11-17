@@ -62,6 +62,9 @@ body main {
     overflow-y: scroll;
     padding-bottom: 40px;
   }
+  #header .menu.open::-webkit-scrollbar {
+    display: none;
+  }
 }
 #header .menu .menu-item {
   position: relative;
@@ -79,6 +82,7 @@ body main {
     height: 30px;
     color: #000;
     opacity: 1;
+    cursor: pointer;
   }
 }
 #header .menu .menu-item.form-search-mobile {
@@ -2004,8 +2008,6 @@ main.pageTours .tours__list .list__wrapper .item-tour .tour-wrapper .tour-info .
 main.pageTours .tours__list .list__wrapper .item-tour .tour-wrapper .tour-info .list-highlight {
   list-style: none;
   margin-top: 10px;
-  height: 0;
-  overflow: hidden;
 }
 main.pageTours .tours__list .list__wrapper .item-tour .tour-wrapper .tour-info .list-highlight li {
   position: relative;
@@ -2361,8 +2363,9 @@ main#pageTicketDetail .wrapper-card .trip-info .trip-cta form .wrapper-input inp
 main#pageTicketDetail .wrapper-card .trip-info .trip-cta form .wrapper-input span {
   font-size: 20px;
   position: absolute;
-  right: 20px;
-  top: 0;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 main#pageTicketDetail .wrapper-card .trip-info .trip-cta form select {
   margin-top: 10px;

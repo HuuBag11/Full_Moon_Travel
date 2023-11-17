@@ -42,7 +42,9 @@ function toggleClassActive(event) {
     event.preventDefault();
 
     let thisItem = $(event.target);
-    thisItem.toggleClass("active");
+    //thisItem.toggleClass("active");
+
+    thisItem.siblings(".list-highlight").slideToggle();
 }
 
 function splideGallery() {
