@@ -1,4 +1,9 @@
 main.pageTours{
+    // .banner-hero,
+    // .service{
+    //     display: none;
+    // }
+
     .list-tours{
         padding: 40px 0;
     }
@@ -70,8 +75,12 @@ main.pageTours{
     }
 
     .tours__list{
+        @media (max-width: 768px){
+            margin-top: 20px;
+        }
         .list-order{
             display: flex;
+            flex-wrap: wrap;
             align-items: center;
             margin-bottom: 20px;
 

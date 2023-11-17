@@ -1912,8 +1912,14 @@ main.pageTours .sidebar__filter .filter__wrapper .group__filter .filter-item inp
   top: 5px;
   accent-color: #fff;
 }
+@media (max-width: 768px) {
+  main.pageTours .tours__list {
+    margin-top: 20px;
+  }
+}
 main.pageTours .tours__list .list-order {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   margin-bottom: 20px;
 }
