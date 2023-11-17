@@ -1,6 +1,11 @@
 main#pageTicketDetail{
     padding: 20px 0;
 
+    .banner-hero,
+    .service{
+        display: none;
+    }
+
     .wrapper-card{
         margin-bottom: 16px;
         background: #fff;
@@ -139,8 +144,9 @@ main#pageTicketDetail{
                         span{
                             font-size: 20px;
                             position: absolute;
-                            right: 20px;
-                            top: 0;
+                            right: 15px;
+                            top: 50%;
+                            transform: translateY(-50%);
                         }
                     }
 
@@ -211,10 +217,10 @@ main#pageTicketDetail{
                 &::before{
                     content: "";
                     height: calc(100% - 20px);
-                    width: 1px;
+                    width: 2px;
                     background-color: #1e4f3f;
                     position: absolute;
-                    left: 4px;
+                    left: 3px;
                     top: 10px;
                 }
 
@@ -402,7 +408,15 @@ main#pageTicketDetail{
 
                 .check{
                     margin-top: 15px;
-                    display: block;
+                    display: flex;
+                    align-items: center;
+                    
+                    input{
+                        width: 15px;
+                        height: 15px;
+                        accent-color: #444;
+                        margin-right: 10px;
+                    }
                 }
 
                 button[type='submit']{
