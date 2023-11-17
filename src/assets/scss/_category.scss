@@ -59,8 +59,9 @@ main.pageTours{
                         height: 15px;
 
                         position: absolute;
-                        bottom: 50%;
-                        transform: translateY(50%);
+                        //bottom: 50%;
+                        //transform: translateY(50%);
+                        top: 5px;
                         accent-color: #fff;
                     }
                 }

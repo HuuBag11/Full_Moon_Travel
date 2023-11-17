@@ -1909,8 +1909,7 @@ main.pageTours .sidebar__filter .filter__wrapper .group__filter .filter-item inp
   width: 15px;
   height: 15px;
   position: absolute;
-  bottom: 50%;
-  transform: translateY(50%);
+  top: 5px;
   accent-color: #fff;
 }
 main.pageTours .tours__list .list-order {
@@ -2425,10 +2424,10 @@ main#pageTicketDetail .wrapper-card .trip-info .trip-line-wrapper {
 main#pageTicketDetail .wrapper-card .trip-info .trip-line-wrapper::before {
   content: "";
   height: calc(100% - 20px);
-  width: 1px;
+  width: 2px;
   background-color: #1e4f3f;
   position: absolute;
-  left: 4px;
+  left: 3px;
   top: 10px;
 }
 main#pageTicketDetail .wrapper-card .trip-info .trip-line-item {
@@ -2576,7 +2575,14 @@ main#pageTicketDetail .wrapper-card.card-rating form .field label {
 }
 main#pageTicketDetail .wrapper-card.card-rating form .check {
   margin-top: 15px;
-  display: block;
+  display: flex;
+  align-items: center;
+}
+main#pageTicketDetail .wrapper-card.card-rating form .check input {
+  width: 15px;
+  height: 15px;
+  accent-color: #444;
+  margin-right: 10px;
 }
 main#pageTicketDetail .wrapper-card.card-rating form button[type=submit] {
   background: #1e4f3f;
