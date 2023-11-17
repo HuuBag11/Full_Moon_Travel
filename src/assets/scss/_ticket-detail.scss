@@ -1,6 +1,11 @@
 main#pageTicketDetail{
     padding: 20px 0;
 
+    .banner-hero,
+    .service{
+        display: none;
+    }
+
     .wrapper-card{
         margin-bottom: 16px;
         background: #fff;

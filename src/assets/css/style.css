@@ -12,6 +12,9 @@ body main {
   position: relative;
   z-index: 9999;
 }
+#header .header-container {
+  padding: 10px 0;
+}
 @media (max-width: 992px) {
   #header > .container {
     width: 100%;
@@ -19,10 +22,13 @@ body main {
   }
 }
 #header .header-logo {
-  max-height: 60px;
-  object-fit: contain;
-  max-width: 220px;
-  min-width: 150px;
+  width: 100px;
+  aspect-ratio: 1;
+}
+#header .header-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 @media (max-width: 768px) {
   #header .header-logo {
@@ -61,9 +67,6 @@ body main {
     transform: translateX(0);
     overflow-y: scroll;
     padding-bottom: 40px;
-  }
-  #header .menu.open::-webkit-scrollbar {
-    display: none;
   }
 }
 #header .menu .menu-item {
@@ -2250,6 +2253,10 @@ main.pageTours .tours__list .list__wrapper .item-tour .tour-wrapper .tour-action
 main#pageTicketDetail {
   padding: 20px 0;
 }
+main#pageTicketDetail .banner-hero,
+main#pageTicketDetail .service {
+  display: none;
+}
 main#pageTicketDetail .wrapper-card {
   margin-bottom: 16px;
   background: #fff;
@@ -2762,6 +2769,10 @@ main#pageTicketDetail .wrapper-card.card-rating form button[type=submit]:hover {
   #footer .footer-logo {
     margin-bottom: 10px;
   }
+}
+#footer .footer-logo .logo {
+  display: block;
+  max-width: 110px;
 }
 #footer .footer-logo img {
   width: 100%;
