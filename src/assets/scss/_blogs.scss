@@ -15,6 +15,12 @@ main.pageBlogs{
     .pageBlogs__main{
         padding: 40px 0;
 
+        .wrapper-left{
+            @media (max-width: 768px){
+                display: none;
+            }
+        }
+
         .blog-content{
             padding: 20px;
             background-color: #fff;
@@ -24,12 +30,21 @@ main.pageBlogs{
                 font-size: 32px;
                 margin-bottom: 20px;
                 font-weight: 700;
+
+                @media (max-width: 768px){
+                    font-size: 26px;
+                    margin-bottom: 12px;           
+                }
             }
 
             .desc{
                 margin-bottom: 30px;
                 font-size: 16px;
                 color: #444;
+
+                @media (max-width: 768px){
+                    font-size: 14px;           
+                }
             }
 
             .list-news{
@@ -42,12 +57,22 @@ main.pageBlogs{
                     border-bottom: 1px solid #eee;
                     width: 100%;
 
+                    @media (max-width: 768px){
+                        flex-direction: column;
+                    }
+
                     .item-img{
-                        width: 210px;
+                        width: 250px;
                         padding-top: 18.25%;
                         margin-bottom: 0;
                         position: relative;
                         overflow: hidden;
+
+                        @media (max-width: 768px){
+                            width: 100%;
+                            padding-top: 50%;
+                            margin-bottom: 15px;
+                        }
 
                         img{
                             position: absolute;
@@ -66,13 +91,22 @@ main.pageBlogs{
                     }
 
                     .item-info{
-                        width: calc(100% - 210px);
+                        width: calc(100% - 250px);
                         padding-left: 20px;
+
+                        @media (max-width: 768px){
+                            padding-left: 0;
+                            width: 100%;
+                        }
 
                         .item-title{
                             font-size: 22px;
                             font-weight: 700;
                             margin-bottom: 15px;
+
+                            @media (max-width: 768px){
+                                font-size: 20px;
+                            }
 
                             a{
                                 display: block;
