@@ -6,6 +6,8 @@ $(document).ready(function () {
     splideGallery();
     splideComment();
     datePicker();
+    dropdownFrom();
+    changeItemActive();
 });
 
 // open sub menu desktop
@@ -27,6 +29,30 @@ function openSubmenu() {
                 thisContentTab.siblings().removeClass("active");
             }
         })
+    })
+}
+
+function dropdownFrom(){
+    // open dropdown
+    $('.box_click').on('click',function (e) {
+        $(this).addClass('is-active');
+    });
+    // active input radio button
+    $('input[type="radio"]').on('change',function (e) {
+        $(this).parents('.list').find('li').removeClass('active');
+        $(this).parents('li').toggleClass('active');
+        setTimeout(() => {
+            $(this).parents('.box_click').removeClass('is-active');
+            if($(this).parents('.box_click').hasClass('search-form__content__form__price')){
+                 $('input#datepicker').data('daterangepicker').show();
+            }else{
+                $('.search-form__content__form__price.box_click').addClass('is-active');
+            }
+        }, 500);
+    });
+    $('#search_button').on('click', function(e){
+        e.preventDefault();
+        window.location.href = 'src/html/search.html';    
     })
 }
 
@@ -89,12 +115,22 @@ function datePicker() {
         });
     }
 
-    if($('input#single-date').length) {
-        $('input#single-date').daterangepicker({
+    if($('input#single-date, input#departure').length) {
+        $('input#single-date, input#departure').daterangepicker({
             singleDatePicker: true,
             showDropdowns: true,
             minYear: 1901,
             maxYear: parseInt(moment().format('YYYY'),10)
-          });
+        });
     }
+}
+
+function changeItemActive(){
+    $('.item-checkbox').on('click', function(){
+        $(this).parents('.list-checkbox').find('.item-checkbox').removeClass('is-active');
+        $(this).addClass('is-active');
+        let data = $(this).text();
+        $(this).parents('.tour-type').find('.type').text(data);
+    });
+   
 }

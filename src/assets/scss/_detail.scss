@@ -138,7 +138,8 @@ main#detailPage {
                     padding: 20px 8px 20px 20px;
                     margin-left: 16px;
                     background-color: #efefef;
-
+                    position: sticky;
+                    top: 20px;
                     .tour-title {
                         font-size: 28px;
                         margin-bottom: 20px;
@@ -233,7 +234,7 @@ main#detailPage {
                                     justify-content: center;
                                     align-items: center;
                                     margin-right: 10px;
-
+                                    cursor: pointer;
                                     &.is-active {
                                         border: 1px solid #b72020;
                                     }
