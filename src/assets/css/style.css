@@ -2375,8 +2375,23 @@ main#pageTicketDetail .wrapper-card h4 {
   color: #444;
   margin-bottom: 16px;
 }
+@media (max-width: 768px) {
+  main#pageTicketDetail .wrapper-card h4 {
+    font-size: 18px;
+  }
+}
 main#pageTicketDetail .wrapper-card p {
   margin-bottom: 16px;
+}
+@media (max-width: 768px) {
+  main#pageTicketDetail .wrapper-card p {
+    font-size: 14px;
+  }
+}
+@media (max-width: 768px) {
+  main#pageTicketDetail .wrapper-card td {
+    font-size: 14px;
+  }
 }
 main#pageTicketDetail .wrapper-card a {
   position: relative;
@@ -2398,10 +2413,21 @@ main#pageTicketDetail .wrapper-card a:hover::after {
 main#pageTicketDetail .wrapper-card .trip-info {
   display: flex;
 }
+@media (max-width: 768px) {
+  main#pageTicketDetail .wrapper-card .trip-info {
+    flex-direction: column;
+  }
+}
 main#pageTicketDetail .wrapper-card .trip-info .trip-content {
   width: 75%;
   padding: 8px;
   padding-right: 20px;
+}
+@media (max-width: 768px) {
+  main#pageTicketDetail .wrapper-card .trip-info .trip-content {
+    width: 100%;
+    padding-right: 0;
+  }
 }
 main#pageTicketDetail .wrapper-card .trip-info .trip-cta {
   width: 25%;
@@ -2409,6 +2435,13 @@ main#pageTicketDetail .wrapper-card .trip-info .trip-cta {
   flex-direction: column;
   padding: 8px;
   border-left: 1px solid #eaeaea;
+}
+@media (max-width: 768px) {
+  main#pageTicketDetail .wrapper-card .trip-info .trip-cta {
+    width: 100%;
+    border-left: unset;
+    border-top: 1px solid #eaeaea;
+  }
 }
 main#pageTicketDetail .wrapper-card .trip-info .trip-cta-top {
   display: flex;
@@ -2420,6 +2453,11 @@ main#pageTicketDetail .wrapper-card .trip-info .trip-cta-top .label {
   display: flex;
   gap: 5px;
   flex-wrap: wrap;
+}
+@media (max-width: 768px) {
+  main#pageTicketDetail .wrapper-card .trip-info .trip-cta-top .label {
+    font-size: 14px;
+  }
 }
 main#pageTicketDetail .wrapper-card .trip-info .trip-cta-top .price {
   display: flex;
@@ -2558,6 +2596,11 @@ main#pageTicketDetail .wrapper-card .trip-info .trip-note {
   font-size: 16px;
   color: #444;
 }
+@media (max-width: 768px) {
+  main#pageTicketDetail .wrapper-card .trip-info .trip-note {
+    font-size: 14px;
+  }
+}
 main#pageTicketDetail .wrapper-card.card-gallery .gallery-top .list {
   display: flex;
   overflow-x: scroll;
@@ -2606,6 +2649,11 @@ main#pageTicketDetail .wrapper-card.card-gallery .gallery-bottom .list-condition
   gap: 5px;
   font-size: 16px;
   color: #444;
+}
+@media (max-width: 768px) {
+  main#pageTicketDetail .wrapper-card.card-gallery .gallery-bottom .list-condition .condition-item {
+    font-size: 14px;
+  }
 }
 main#pageTicketDetail .wrapper-card.card-rating h3 {
   margin-bottom: 5px;

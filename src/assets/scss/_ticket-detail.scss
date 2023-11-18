@@ -42,10 +42,24 @@ main#pageTicketDetail{
             font-size: 20px;
             color: #444;
             margin-bottom: 16px;
+
+            @media (max-width: 768px){
+                font-size: 18px;
+            }
         }
 
         p{
             margin-bottom: 16px;
+
+            @media (max-width: 768px){
+                font-size: 14px;
+            }
+        }
+
+        td{
+            @media (max-width: 768px){
+                font-size: 14px;
+            }
         }
 
         a{
@@ -72,10 +86,19 @@ main#pageTicketDetail{
         .trip-info{
             display: flex;
 
+            @media (max-width: 768px){
+                flex-direction: column;
+            }
+
             .trip-content{
                 width: 75%;
                 padding: 8px;
                 padding-right: 20px;
+
+                @media (max-width: 768px){
+                    width: 100%;
+                    padding-right: 0;
+                }
             }
 
             .trip-cta{
@@ -85,6 +108,12 @@ main#pageTicketDetail{
                 flex-direction: column;
                 padding: 8px;
                 border-left: 1px solid #eaeaea;
+
+                @media (max-width: 768px){
+                    width: 100%;
+                    border-left: unset;
+                    border-top: 1px solid #eaeaea;
+                }
 
                 &-top{
                     display: flex;
@@ -96,6 +125,10 @@ main#pageTicketDetail{
                         display: flex;
                         gap: 5px;
                         flex-wrap: wrap;
+
+                        @media (max-width: 768px){
+                            font-size: 14px;
+                        }
                     }
 
                     .price{
@@ -262,6 +295,10 @@ main#pageTicketDetail{
             .trip-note{
                 font-size: 16px;
                 color: #444;
+
+                @media (max-width: 768px){
+                    font-size: 14px;
+                }
             }
         }
 
@@ -323,6 +360,10 @@ main#pageTicketDetail{
                         gap: 5px;
                         font-size: 16px;
                         color: #444;
+
+                        @media (max-width: 768px){
+                            font-size: 14px;
+                        }
                     }
                 }
             }
