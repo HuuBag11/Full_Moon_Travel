@@ -3071,6 +3071,7 @@ main.pageBlogs .pageBlogs__main .blog-content .list-news .news-item .item-info .
 #footer {
   border-top: 1px solid #000;
   background-color: #fff;
+  border-bottom: 8px solid #d8232a;
 }
 #footer .footer-top {
   padding: 40px 0;
