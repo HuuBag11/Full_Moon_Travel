@@ -32,7 +32,7 @@ body main {
 }
 @media (max-width: 768px) {
   #header .header-logo {
-    max-width: 180px;
+    max-width: 70px;
   }
 }
 #header .backdrop {
@@ -241,7 +241,7 @@ body main {
   min-width: 678px;
   min-height: 336px;
   overflow: hidden;
-  display: none !important;
+  display: none;
   width: 100%;
 }
 @media (max-width: 992px) {
@@ -251,6 +251,7 @@ body main {
     height: 0;
     overflow: hidden;
     transition: all ease-out;
+    display: unset;
   }
 }
 #header .menu .menu-item.has-children.many-children > .sub-menu .menu-item.left {
@@ -279,6 +280,7 @@ body main {
 @media (max-width: 992px) {
   #header .menu .menu-item.has-children.many-children > .sub-menu .menu-item.right {
     width: 100%;
+    display: none;
   }
 }
 @media (max-width: 992px) {

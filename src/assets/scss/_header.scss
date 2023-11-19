@@ -46,7 +46,7 @@ $border-color_1: transparent;
 		}
 
 		@media (max-width: 768px){
-			max-width: 180px;
+			max-width: 70px;
 		}
 	}
 	.backdrop{
@@ -275,7 +275,7 @@ $border-color_1: transparent;
 				min-width: 678px;
 				min-height: 336px;
 				overflow: hidden;
-				display: none !important;
+				display: none;
 				width: 100%;
 
 				@media (max-width: 992px){
@@ -284,6 +284,7 @@ $border-color_1: transparent;
 					height: 0;
 					overflow: hidden;
 					transition: all ease-out;
+					display: unset;
 				}
 
 				.menu-item{
@@ -314,6 +315,7 @@ $border-color_1: transparent;
 
 						@media (max-width: 992px){
 							width: 100%;
+							display: none;
 						}
 
 						.menu-link{

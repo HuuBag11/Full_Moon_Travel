@@ -63,6 +63,17 @@ function toggleOpenPopup(event) {
     $("header ul.menu").toggleClass("open");
 }
 
+// menu mobile
+if(screen.width < 769){
+    $("header .menu-item.has-children .sub-menu").slideUp();
+
+    $("header .menu-item.has-children").on("click", function(e){
+        e.preventDefault();
+        console.log($(this));
+        $(this).children(".sub-menu").slideToggle();
+    })
+}
+
 // toggle class active
 function toggleClassActive(event) {
     event.preventDefault();
