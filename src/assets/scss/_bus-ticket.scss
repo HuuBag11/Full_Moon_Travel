@@ -2,6 +2,10 @@
     padding: 20px 0;
 
     .list-ticket {
+        @media(max-width: 768px) {
+            padding-top: 12px;
+        }
+
         .trip-card {
             margin-bottom: 16px;
             background: #fff;
@@ -15,6 +19,10 @@
                 display: flex;
                 flex-direction: row;
 
+                @media(max-width: 768px) {
+                    display: block;
+                }
+
                 &-body {
                     display: flex;
                     flex: 1 1 100%;
@@ -26,6 +34,10 @@
                         max-height: 100%;
                         min-width: 270px;
                         position: relative;
+
+                        @media(max-width: 768px) {
+                            min-width: inherit;
+                        }
 
                         .linkfull {
                             display: block;
@@ -46,19 +58,26 @@
                                     top: 10px;
                                 }
                             }
-                            &.arr{
+
+                            &.arr {
                                 .trip-points-line-bar .badge {
                                     color: #fff;
                                     font-size: 8px;
                                     line-height: 1.2;
                                     margin: 10px auto 3px;
                                     padding: 2px;
+
+                                    @media(max-width: 768px) {
+                                        margin: 34px auto 0;
+                                    }
                                 }
+
                                 .trip-points-line-bar:before {
                                     top: 0;
                                     bottom: 4px;
                                 }
                             }
+
                             &-bar {
                                 display: flex;
                                 flex: 0 0 24px;
@@ -103,6 +122,10 @@
                                     justify-content: flex-end;
                                     min-width: 40px;
 
+                                    @media(max-width: 768px) {
+                                        min-width: 27px;
+                                    }
+
                                     img {
                                         height: 24px;
                                     }
@@ -122,6 +145,10 @@
                         width: 250px;
                         display: flex;
                         justify-content: space-between;
+
+                        @media(max-width: 768px) {
+                            width: 120px;
+                        }
 
                         .figure {
                             width: 120px;
@@ -157,6 +184,12 @@
                     gap: 8px;
                     position: relative;
 
+                    @media(max-width: 768px) {
+                        border-left: 0;
+                        border-left: none;
+                        border-top: 1px solid #eaeaea;
+                    }
+
                     .labels {
                         display: flex;
                         width: calc(100% - 80px);
@@ -175,17 +208,17 @@
 
                     }
 
-                    .price{
+                    .price {
                         display: flex;
                         flex-direction: column;
                         color: #444;
                         font-size: 16px;
 
-                        .price-regular{
+                        .price-regular {
                             text-decoration: line-through;
                         }
 
-                        .price-sale{
+                        .price-sale {
                             text-decoration: underline;
                             font-weight: bold;
                         }
