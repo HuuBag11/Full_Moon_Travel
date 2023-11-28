@@ -3207,6 +3207,70 @@ main.pageContact .pageContact__main .contact-content .contact-form .field-item b
   color: #1e4f3f;
 }
 
+main.pageAbout {
+  padding-top: 10px;
+}
+main.pageAbout .breadcrumbs {
+  margin-bottom: 0;
+  color: #bdbdbd;
+  font-size: 14px;
+  line-height: 16px;
+}
+main.pageAbout .breadcrumbs a {
+  color: inherit;
+}
+main.pageAbout .pageAbout__main {
+  padding: 40px 0;
+}
+@media (max-width: 768px) {
+  main.pageAbout .pageAbout__main .wrapper-left {
+    display: none;
+  }
+}
+main.pageAbout .pageAbout__main .about-content {
+  padding: 20px;
+  background-color: #fff;
+}
+main.pageAbout .pageAbout__main .about-content .title {
+  color: #333;
+  font-size: 32px;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+@media (max-width: 768px) {
+  main.pageAbout .pageAbout__main .about-content .title {
+    font-size: 26px;
+    margin-bottom: 12px;
+  }
+}
+main.pageAbout .pageAbout__main .about-content .content-post li,
+main.pageAbout .pageAbout__main .about-content .content-post p {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #444;
+}
+main.pageAbout .pageAbout__main .about-content .content-post li {
+  margin-bottom: 10px;
+}
+main.pageAbout .pageAbout__main .about-content .content-post h2,
+main.pageAbout .pageAbout__main .about-content .content-post h3 {
+  font-size: 20px;
+  line-height: 30px;
+  color: #444;
+  font-weight: 600;
+}
+main.pageAbout .pageAbout__main .about-content .content-post ul li h4 {
+  font-size: 18px;
+  line-height: 23px;
+  color: #444;
+  font-weight: 500;
+}
+main.pageAbout .pageAbout__main .about-content .content-post img {
+  width: 100%;
+  height: auto;
+}
+
 .pageSearch section.body-search {
   padding: 40px 0;
 }
