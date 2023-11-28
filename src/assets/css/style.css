@@ -3113,6 +3113,11 @@ main.pageContact .pageContact__main {
   padding: 40px 0;
 }
 @media (max-width: 768px) {
+  main.pageContact .pageContact__main {
+    padding: 30px 0;
+  }
+}
+@media (max-width: 768px) {
   main.pageContact .pageContact__main .wrapper-left {
     display: none;
   }
@@ -3121,6 +3126,11 @@ main.pageContact .pageContact__main .contact-content {
   padding: 20px;
   background-color: #fff;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
+}
+@media (max-width: 768px) {
+  main.pageContact .pageContact__main .contact-content {
+    padding: 40px;
+  }
 }
 main.pageContact .pageContact__main .contact-content .title {
   color: #333;
@@ -3137,17 +3147,31 @@ main.pageContact .pageContact__main .contact-content .title {
 main.pageContact .pageContact__main .contact-content .contact-form .field-item {
   margin-bottom: 30px;
   align-items: center;
+  color: #333;
 }
 main.pageContact .pageContact__main .contact-content .contact-form .field-item .label {
   font-size: 16px;
   font-weight: 700;
   text-align: right;
 }
+@media (max-width: 768px) {
+  main.pageContact .pageContact__main .contact-content .contact-form .field-item .label {
+    text-align: left;
+  }
+}
 main.pageContact .pageContact__main .contact-content .contact-form .field-item .input select {
   height: 46px;
   width: 100%;
   padding: 0 10px;
   border: 1px solid #ccc;
+  color: #333;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: relative;
+  background-image: url('data:image/svg+xml;utf8, <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10.8247 1.08749L6.00292 5.90999L1.18042 1.08749" stroke="black" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/></svg>');
+  background-repeat: no-repeat;
+  background-position: right 18px center;
 }
 main.pageContact .pageContact__main .contact-content .contact-form .field-item .input input {
   height: 46px;
@@ -3159,6 +3183,9 @@ main.pageContact .pageContact__main .contact-content .contact-form .field-item .
   display: inline;
   width: max-content;
   height: auto;
+}
+main.pageContact .pageContact__main .contact-content .contact-form .field-item .input input::placeholder {
+  color: rgb(51, 51, 51);
 }
 main.pageContact .pageContact__main .contact-content .contact-form .field-item .input.required input, main.pageContact .pageContact__main .contact-content .contact-form .field-item .input.required select {
   border-left: 3px solid #c00;
@@ -3175,6 +3202,8 @@ main.pageContact .pageContact__main .contact-content .contact-form .field-item s
   font-size: 14px;
   color: #828282;
   font-weight: 400;
+  display: block;
+  width: 100%;
 }
 main.pageContact .pageContact__main .contact-content .contact-form .field-item textarea {
   width: 100%;
@@ -3201,6 +3230,7 @@ main.pageContact .pageContact__main .contact-content .contact-form .field-item b
   border: 2px solid #1e4f3f;
   height: 40px;
   transition: all 0.3s ease-in-out;
+  max-width: 100%;
 }
 main.pageContact .pageContact__main .contact-content .contact-form .field-item button:hover {
   background-color: transparent;

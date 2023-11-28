@@ -15,6 +15,10 @@ main.pageContact{
     .pageContact__main{
         padding: 40px 0;
 
+        @media (max-width: 768px){
+            padding: 30px 0;
+        }
+
         .wrapper-left{
             @media (max-width: 768px){
                 display: none;
@@ -25,6 +29,10 @@ main.pageContact{
             padding: 20px;
             background-color: #fff;
             box-shadow: 0 1px 4px rgba(0,0,0,.25);
+
+            @media (max-width: 768px){
+                padding: 40px;
+            }
 
             .title{
                 color: #333;
@@ -42,11 +50,16 @@ main.pageContact{
                 .field-item{
                     margin-bottom: 30px;
                     align-items: center;
+                    color: #333;
 
                     .label{
                         font-size: 16px;
                         font-weight: 700;
                         text-align: right;
+
+                        @media (max-width: 768px){
+                            text-align: left;
+                        }
                     }
 
                     .input{   
@@ -55,6 +68,16 @@ main.pageContact{
                             width: 100%;
                             padding: 0 10px;
                             border: 1px solid #ccc;
+                            color: #333;
+
+                            -webkit-appearance: none;
+                            -moz-appearance: none;
+                            appearance: none;
+                            position: relative;
+                            
+                            background-image: url('data:image/svg+xml;utf8, <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10.8247 1.08749L6.00292 5.90999L1.18042 1.08749" stroke="black" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/></svg>');
+                            background-repeat: no-repeat;
+                            background-position: right 18px center;
                         }
 
                         input{
@@ -67,6 +90,10 @@ main.pageContact{
                                 display: inline;
                                 width: max-content;
                                 height: auto;
+                            }
+
+                            &::placeholder{
+                                color: rgb(51, 51, 51);
                             }
                         }
 
@@ -90,6 +117,8 @@ main.pageContact{
                         font-size: 14px;
                         color: #828282;
                         font-weight: 400;
+                        display: block;
+                        width: 100%;
                     }
 
                     textarea{
@@ -118,6 +147,7 @@ main.pageContact{
                         border: 2px solid #1e4f3f;
                         height: 40px;
                         transition: all 0.3s ease-in-out;
+                        max-width: 100%;
 
                         &:hover{
                             background-color: transparent;
