@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/reset.css" />
+    <link rel="stylesheet" href="../assets/css/core.css" />
+    <!-- Boostrap -->
+    <link rel="stylesheet" href="../assets/lib/bootstrap/bootstrap.min.css" />
+    <!-- splide CSS -->
+    <link rel="stylesheet" href="../assets/lib/splide/splide.min.css" />
+    <!-- Font awesome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- font roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Start header -->
+    <header id="header">
+        <div class="container">
+            <div class="header-container d-flex align-items-center justify-content-between">
+                <a href="../../index.html" class="header-logo">
+                    <img src="../assets/images/logo-full-moon.jpg" alt="logo">
+                </a>
+                <div class="backdrop d-none" onclick="toggleOpenPopup(event)"></div>
+                <ul class="menu d-flex align-content-center">
+                    <li class="menu-item btn-close" onclick="toggleOpenPopup(event)">
+                    </li>
+                    <li class="menu-item form-search-mobile">
+                        <form action="" class="header__search">
+                            <button type="submit"><i class="fa fa-search"></i></button>
+                            <input type="text" placeholder="Your searching here..." name="search">
+                        </form>
+                    </li>
+                    <li class="menu-item">
+                        <a href="../../index.html" class="menu-link">Home</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="./bus-ticket.html" class="menu-link">Bus Ticket</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="./category.html" class="menu-link">Tour</a>
+                    </li>
+                    <li class="menu-item has-children many-children">
+                        <a href="#" class="menu-link">Cruises</a>
+                        <ul class="sub-menu">
+                            <li class="menu-item left">
+                                <a href="#" class="menu-link active" data-tab="tab-1">Halong Bay Cruises</a>
+                                <a href="#" class="menu-link" data-tab="tab-2">Mekong River Cruise</a>
+                            </li>
+
+                            <li class="menu-item right">
+                                <div class="menu-tab active" data-tab="tab-1">
+                                    <ul class="sub-menu">
+                                        <li class="menu-item title">
+                                            <a href="#" class="menu-link">Ha Long Bay Cruise</a>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a href="#" class="menu-link">Budget Cruises</a>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a href="#" class="menu-link">Budget Cruises</a>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a href="#" class="menu-link">Budget Cruises</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="menu-tab" data-tab="tab-2">
+                                    <ul class="sub-menu">
+                                        <li class="menu-item title">
+                                            <a href="#" class="menu-link">All Mekong River Cruise</a>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a href="#" class="menu-link">Budget Cruises</a>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a href="#" class="menu-link">Budget Cruises</a>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a href="#" class="menu-link">Budget Cruises</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu-item has-children">
+                        <a href="#" class="menu-link">About us</a>
+                        <ul class="sub-menu">
+                            <li class="menu-item">
+                                <a href="#" class="menu-link">About us</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#" class="menu-link">About us</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#" class="menu-link">About us</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="header__right d-flex align-items-center">
+                    <a href="#" class="tripadvisor">
+                        <img src="https://d13jio720g7qcs.cloudfront.net/assets/icon/tripadvisor-traveller-choice-2022.png"
+                            alt="">
+                        <span>Traveler choice</span>
+                    </a>
+                    <div class="header__button">
+                        <div class="header__button--wishlist">
+                            <a href="#">
+                                <span class="wishlist-icon d-block">
+                                    <i class="fa-solid fa-heart"></i>
+                                    <span class="wishlist-count">0</span>
+                                </span>
+                            </a>
+                        </div>
+                        <div class="header__button--cart">
+                            <a href="#">
+                                <span class="cart-icon d-block">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </span>
+                            </a>
+                        </div>
+                        <div class="header__button--bars d-none">
+                            <a href="#" onClick="toggleOpenPopup(event)">
+                                <span class="bars-icon d-block">
+                                    <i class="fa-solid fa-bars"></i>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <form action="" class="header__search">
+                        <input type="text" placeholder="Your searching here..." name="search">
+                        <button type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- End header -->
+
+    <main class="pageAbout">
+        <div class="container">
+            <div class="breadcrumbs">
+                <a href="../../index.html">Home</a>/
+                <span>About us</span>
+            </div>
+            <div class="row pageAbout__main">
+                <div class="col-md-3 col-12 wrapper-left">
+                    <div id="sidebar-category">
+                        <div class="sidebar-title">CATEGORY</div>
+                        <div class="sidebar-menu">
+                            <ul class="menu-list">
+                                <li class="menu-item">
+                                    <i class="fa-solid fa-angle-right"></i>
+                                    <a href="/" class="menu-link">About us</a>
+                                </li>
+                                <li class="menu-item">
+                                    <i class="fa-solid fa-angle-right"></i>
+                                    <a href="/" class="menu-link">Meet our team</a>
+                                </li>
+                                <li class="menu-item active">
+                                    <i class="fa-solid fa-angle-right"></i>
+                                    <a href="/" class="menu-link">Blog</a>
+                                </li>
+                                <li class="menu-item">
+                                    <i class="fa-solid fa-angle-right"></i>
+                                    <a href="/" class="menu-link">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-9 col-12 wrapper-right">
+                    <div class="about-content">
+                        <h1 class="title">
+                            About us
+                        </h1>
+                        <div class="content-post">
+                            <p>Full Moon Travel Asia, Establised in 2014 is one of the leading travel companies in
+                                Indochina. We provide tours, hotel booking, Bus ticket booking and other travel services
+                                in Vietnam, Laos, Cambodia, Thailand &amp; Myanmar with the Good
+                                Price<b>&nbsp;Guarantee</b>.</p>
+                            <p>We selectively cooperate with trusted partners including hoteliers, cruise lines and
+                                local suppliers to provide a perfect trip in Indochina for travelers at the lowest cost.
+                            </p>
+                            <p>Through <strong>fullmoontravel.asia</strong>, we are committed to offer our customers
+                                <b>reliable services</b>&nbsp;and&nbsp;<b>true value</b> at the&nbsp;<b>Good price</b>.
+                            </p>
+                            <h3><img decoding="async" fetchpriority="high" class="aligncenter size-full wp-image-1084"
+                                    src="https://fullmoontravel.asia/wp-content/uploads/2023/08/23376207_543253649342258_3576574211310349501_n.jpg"
+                                    alt="" width="960" height="632"
+                                    srcset="https://fullmoontravel.asia/wp-content/uploads/2023/08/23376207_543253649342258_3576574211310349501_n.jpg 960w, https://fullmoontravel.asia/wp-content/uploads/2023/08/23376207_543253649342258_3576574211310349501_n-300x198.jpg 300w, https://fullmoontravel.asia/wp-content/uploads/2023/08/23376207_543253649342258_3576574211310349501_n-768x506.jpg 768w, https://fullmoontravel.asia/wp-content/uploads/2023/08/23376207_543253649342258_3576574211310349501_n-600x395.jpg 600w"
+                                    sizes="(max-width: 960px) 100vw, 960px"></h3>
+                            <h3><span class="highlight">Our Vision</span></h3>
+                            <p>Our vision is to be a leading travel company in Asia which connects all local service
+                                providers in order to supply travelers with high quality and full-service touristic
+                                packages at best price, and benefiting all people around us:</p>
+                            <ul style="list-style: disc; padding-left: 20px" class="our-vision">
+                                <li>
+                                    <h4>Customers</h4>
+                                    <p>We aim to keep on offering best travel services for our clients in order to
+                                        provide them unique unforgettable experiences at the Full Moon Travel.</p>
+                                </li>
+                                <li>
+                                    <h4>Employees</h4>
+                                    <p>We want our employees to develop their potential fully and freely. That is why
+                                        Full Moon Travel provide a comfortable and inspiring working environment.</p>
+                                </li>
+                                <li>
+                                    <h4>Partners</h4>
+                                    <p>Developing a networking in order to promote synergies, which create common and
+                                        true value.</p>
+                                </li>
+                                <li>
+                                    <h4>Society</h4>
+                                    <p>We create true value for our customers means create true value for our society.
+                                        By providing quality travel services, we contribute to get a better world, since
+                                        we help to build bridges between countries and people.</p>
+                                </li>
+                            </ul>
+                            <p>Provides a cost-effective commission based model, a network of most leading travel
+                                companies in Vietnam. Joining with us, we can help you grow your revenue and promote
+                                your brand.</p>
+                            <h3><span class="highlight">Our Core Values</span></h3>
+                            <p>The core values of Full Moon Travel, as a benchmark company in the touristic industry,
+                                are focused on offering very high added-value services to our clients guaranteeing the
+                                good price and quality. In this way, our customers will be totally satisfied by choosing
+                                our services. In order to match the expectations of the travelers, even exceed them, we
+                                are based on the following core values:</p>
+                            <ul style="list-style: disc; padding-left: 20px" id="cus_benefits">
+                                <li><span class="text-price">Full Moon Travel guaranteed </span>As our&nbsp; states, the
+                                    first commitment we have with our clients is saving your money by offering a wide
+                                    range of packages, from standard to luxury, all of them at the Full Moon Travel.
+                                    Besides saving your money, we will save your time as well, because you will not need
+                                    to waste it looking for the good price; since Full Moon Travel provides it for you.
+                                </li>
+                                <li><span class="text-price">Quality guaranteed Full Moon</span>&nbsp;Travel is synonym
+                                    of quality, because both, our personnel and our partners, we strive to provide you
+                                    high quality services. We take very seriously the election of our partners, since
+                                    they will convert you trip in an unforgettable experience. That is why, <b>we
+                                        cooperate with the bestest companies</b>, including, hoteliers, cruisers and
+                                    local suppliers in order to guarantee high quality at the Full Moon Travel.</li>
+                                <li><span class="text-price">Reliable service – True value</span>One of our main goals,
+                                    is supplying our customers a better or equal experience than they expect, in other
+                                    words, we want our clients to be fully satisfied. Full Moon Travel ensures, by the
+                                    selection of the best partners, that the services we offer, provide you <b>TRUE
+                                        VALUE, AT THE Full Moon</b>, and being fully&nbsp;<b>RELIABLE</b>&nbsp;at the
+                                    same time.</li>
+                                <li><span class="text-price">24/7 on spot support </span>Please remember, we will
+                                    available for you during your whole trip (24 hours per day, 7 days per week), so you
+                                    will not need being worried of the details of the trip: we will take care quickly
+                                    and effectively by email, phone call, Whataap, Messange. For anything you need, do
+                                    not hesitate to contact our personnel: we will assist you as thoroughly as you
+                                    require.</li>
+                                <li><span class="text-price">Enthusiastic, professional Consultant</span>If you demand a
+                                    tailored assistance, do not hesitate to contact our English speaking personnel. In
+                                    the case that you are looking for the perfect holidays that best matches your
+                                    wishes, our staff will be delighted of advising and helping you, in order to provide
+                                    you an unforgettable and complete experience.</li>
+                            </ul>
+                            <p>You can trust us for booking your holidays in Indochina; we are backed for the positive
+                                reviews of the people who have already traveled with us in addition to Certificate of
+                                Excellence by&nbsp;Tripadvisor</p>
+                            <h3><span class="highlight">Our Services</span></h3>
+                            <ul style="list-style: disc; padding-left: 20px" class="our-service">
+                                <li>
+                                    <div>
+                                        <h4>Tour Packages</h4>
+                                        <div>
+                                            <div>Tailor-made Tours</div>
+                                            <p>We provide tailor-made tours in Indochina for both individual and group
+                                                with a wide range of tours, including gastronomic and well-being tours,
+                                                beach stays and home stays width local people.</p>
+                                            <div>Small Group Tours</div>
+                                            <p>Based on a minimum of 2 people with full board accommodation. The number
+                                                of participants of our seat-in-coach tours are limited in order to
+                                                guarantee the excellence in quality of services.</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <h4>Hotel Bookings</h4>
+                                        <p>Offer various hotels in Vietnam, Lao, Cambodia, Thailand and Myanmar for
+                                            online booking.</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <h4>Cruise Packages</h4>
+                                        <p>Offer various cruise packages from short cruises in Halong Bay , Lan Ha Bay
+                                            to cross country cruises in Mekong river of Vietnam, Lao, Cambodia, Thailand
+                                            and Myanmar.</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <h4>Bus Tickets</h4>
+                                        <p>Offer instant&nbsp;<span class="text-special">online reservation and
+                                                payment</span> for Bus tickets from all the Routes in Viet Nam, Lao,
+                                            Cambodia.</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <h4>Visa, train tickets, transfer services</h4>
+                                        <p>Offer various travel services quickly and reliably, Full Moon Travel commits
+                                            to support our customers in every moment.</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Start Footer -->
+    <footer id="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-logo col-md-2 col-12">
+                        <a href="../../index.html" class="logo">
+                            <img src="../assets/images/logo-full-moon.jpg" alt="logo">
+                        </a>
+                    </div>
+                    <div class="footer-social col-md-3 col-12">
+                        <div class="footer-trip">
+                            <img src="https://d13jio720g7qcs.cloudfront.net/assets/icon/tripadvisor_2023.png" alt="">
+                            <div class="text-review d-flex align-items-center">
+                                <img src="https://d13jio720g7qcs.cloudfront.net/assets/icon/circle.png" alt="">
+                                <span>100000 reviews</span>
+                            </div>
+                        </div>
+
+                        <div class="footer-follow">
+                            <p class="text">Follow us</p>
+                            <div class="logo">
+                                <a href="/">
+                                    <i class="fa-brands fa-facebook"></i>
+                                </a>
+                                <a href="/">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+                                <a href="/">
+                                    <i class="fa-brands fa-pinterest"></i>
+                                </a>
+                                <a href="/">
+                                    <i class="fa-brands fa-youtube"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-menu col-md-2 col-12">
+                        <ul class="list-menu">
+                            <li class="menu-item">
+                                <a href="menu-link">About Us</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="menu-link">Contact Us</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="menu-link">Privacy Statement</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="menu-link">Terms & Conditions</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="menu-link">On the News</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="menu-link">Travel Guide</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="menu-link">Payment Method</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-contact col-md-5 col-12">
+                        <h4 class="title">Contact information</h4>
+                        <div class="footer-support">
+                            <div class="support-item">
+                                <a href="/" class="mail">
+                                    <i class="fa-regular fa-envelope"></i>
+                                    sapadiscoverypartytour@gmail.com
+                                </a>
+                            </div>
+                            <div class="support-item">
+                                <a href="/" class="phone">
+                                    <i class="fa-solid fa-phone-volume"></i>
+                                    +84 974-426-821
+                                </a>
+                            </div>
+                        </div>
+                        <ul class="footer-branch">
+                            <li class="branch-item">
+                                <b>Hanoi, Vietnam:</b> 162B Tran Quang Khai Street, Ly Thai To Ward, Hoan Kiem District,
+                                Hanoi, Vietnam
+                            </li>
+                            <li class="branch-item">
+                                <b>Hanoi, Vietnam:</b> 162B Tran Quang Khai Street, Ly Thai To Ward, Hoan Kiem District,
+                                Hanoi, Vietnam
+                            </li>
+                            <li class="branch-item">
+                                <b>Hanoi, Vietnam:</b> 162B Tran Quang Khai Street, Ly Thai To Ward, Hoan Kiem District,
+                                Hanoi, Vietnam
+                            </li>
+                            <li class="branch-item">
+                                <b>Hanoi, Vietnam:</b> 162B Tran Quang Khai Street, Ly Thai To Ward, Hoan Kiem District,
+                                Hanoi, Vietnam
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="bottom-wrapper d-flex align-items-center justify-content-between">
+                    <div class="bottom-left">
+                        <p>Business license no: 0201897823 - Issued date: 10/08/2018</p>
+                        <p>Issued by: Investment Planning Department Hai Phong</p>
+                    </div>
+                    <div class="bottom-right">
+                        <img src="https://fullmoontravel.asia/wp-content/uploads/2023/08/ATM.png" alt="atm logo">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+    <script src="../assets/lib/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- Splide JS -->
+    <script src="../assets/lib/splide/splide.min.js"></script>
+
+    <script src="../assets/scripts/main.js"></script>
+</body>
