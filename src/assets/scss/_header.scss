@@ -247,7 +247,7 @@ $border-color_1: transparent;
 					}
 				}
 			}
-			&:hover {
+			&.open {
 				>.sub-menu {
 					opacity: 1;
 					visibility: visible;
@@ -268,7 +268,10 @@ $border-color_1: transparent;
 		.menu-item.has-children.many-children {
 			&.open{
 				>.sub-menu{
+					display: flex;
 					height: auto;
+					opacity: 1;
+					visibility: visible;
 				}
 			}
 			>.sub-menu {
@@ -346,7 +349,9 @@ $border-color_1: transparent;
 							.menu-item{
 								&:not(.title){
 									width: 30%;
-
+									@media (max-width: 1200px){
+										width: max-content;
+									}
 									@media (max-width: 992px){
 										width: 100%;
 									}
@@ -357,7 +362,7 @@ $border-color_1: transparent;
 				}
 
 				@media (max-width: 1200px){
-					min-width: unset;
+					min-width: 500px;
 				}
 				.menu-item.has-children {
 					position: relative;

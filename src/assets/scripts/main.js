@@ -12,8 +12,19 @@ $(document).ready(function () {
 
 // open sub menu desktop
 function openSubmenu() {
+    $("#header .menu .menu-item.has-children").click(function(e){
+        e.preventDefault();
+        if($(this).hasClass('open')){
+            $(this).removeClass('open');
+        }else{
+            $("#header .menu .menu-item.has-children").removeClass('open');
+            $(this).addClass('open');
+        }
+    })
     $("#header .menu .menu-item.has-children > .sub-menu .menu-item.left a").on("click", function (e) {
         e.preventDefault();
+        e.stopPropagation();
+
         $(this).addClass("active");
         $(this).siblings().removeClass("active");
 
@@ -35,7 +46,7 @@ function openSubmenu() {
 function dropdownFrom(){
     // open dropdown
     $('.box_click').on('click',function (e) {
-        $(this).addClass('is-active');
+        $(this).toggleClass('is-active');
     });
     // active input radio button
     $('input[type="radio"]').on('change',function (e) {
@@ -145,3 +156,12 @@ function changeItemActive(){
     });
    
 }
+
+$(document).on('click', function(e) {
+    if (!$(e.target).closest("#header .menu").length) {
+        $("#header .menu .menu-item.has-children").removeClass('open');
+    }
+    if (!$(e.target).closest(".box_click").length) {
+        $(".box_click").removeClass('is-active');
+    }
+});
