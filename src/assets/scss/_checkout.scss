@@ -130,6 +130,15 @@ main.pageCheckout{
                                 }
                             }
                         }
+
+                        .date-field{
+                            display: flex;
+                            gap: 16px;
+
+                            select{
+                                width: 30%;
+                            }
+                        }
                     }
                 }
             }
@@ -234,6 +243,36 @@ main.pageCheckout{
                             top: -0.75em;
                             left: 0;
                             margin: -1em 0 0 2em;
+                        }
+                    }
+
+                    .payment-button{
+                        margin-top: 10px;
+                        padding-top: 40px;
+                        border-top: 1px solid #eee;
+                        button{
+                            margin-bottom: 10px;
+                            border-radius: 4px;
+                            font-size: 18px;
+                            font-weight: 700;
+                            background-color: #2C2E2F;
+                            border: none;
+                            outline: none;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            width: 100%;
+                            height: 50px;
+                            color: #FFF;
+                            transition: all 0.3s;
+
+                            &:hover{
+                                filter: brightness(0.8);
+                            }
+
+                            &.paypal{
+                                background-color: #FFC439;
+                            }
                         }
                     }
                 }

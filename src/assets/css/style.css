@@ -3585,6 +3585,13 @@ main.pageCheckout .pageCheckout__main .pageCheckout__form .attendee-info .box-pa
     width: 100%;
   }
 }
+main.pageCheckout .pageCheckout__main .pageCheckout__form .attendee-info .box-passenger .field .date-field {
+  display: flex;
+  gap: 16px;
+}
+main.pageCheckout .pageCheckout__main .pageCheckout__form .attendee-info .box-passenger .field .date-field select {
+  width: 30%;
+}
 main.pageCheckout .pageCheckout__main .pageCheckout__form .order-review {
   padding: 24px 30px 34px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -3670,6 +3677,33 @@ main.pageCheckout .pageCheckout__main .pageCheckout__form .order-review .order-p
   top: -0.75em;
   left: 0;
   margin: -1em 0 0 2em;
+}
+main.pageCheckout .pageCheckout__main .pageCheckout__form .order-review .order-payment .payment-button {
+  margin-top: 10px;
+  padding-top: 40px;
+  border-top: 1px solid #eee;
+}
+main.pageCheckout .pageCheckout__main .pageCheckout__form .order-review .order-payment .payment-button button {
+  margin-bottom: 10px;
+  border-radius: 4px;
+  font-size: 18px;
+  font-weight: 700;
+  background-color: #2C2E2F;
+  border: none;
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 50px;
+  color: #FFF;
+  transition: all 0.3s;
+}
+main.pageCheckout .pageCheckout__main .pageCheckout__form .order-review .order-payment .payment-button button:hover {
+  filter: brightness(0.8);
+}
+main.pageCheckout .pageCheckout__main .pageCheckout__form .order-review .order-payment .payment-button button.paypal {
+  background-color: #FFC439;
 }
 
 /* Footer */
