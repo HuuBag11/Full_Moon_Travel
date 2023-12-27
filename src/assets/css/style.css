@@ -3494,12 +3494,23 @@ main.pageCheckout .pageCheckout__main .title {
   margin-bottom: 20px;
   font-weight: 700;
 }
+@media (max-width: 768px) {
+  main.pageCheckout .pageCheckout__main .title {
+    font-size: 26px;
+    margin-bottom: 12px;
+  }
+}
 main.pageCheckout .pageCheckout__main .pageCheckout__form .form-title {
   font-size: 24px;
   line-height: 1.5;
   margin-bottom: 21px;
   color: #444;
   font-weight: 600;
+}
+@media (max-width: 768px) {
+  main.pageCheckout .pageCheckout__main .pageCheckout__form .form-title {
+    font-size: 18px;
+  }
 }
 main.pageCheckout .pageCheckout__main .pageCheckout__form .field {
   margin-bottom: 25px;
@@ -3559,6 +3570,11 @@ main.pageCheckout .pageCheckout__main .pageCheckout__form .attendee-info .title 
   margin-bottom: 0.5rem;
   color: #444;
 }
+@media (max-width: 768px) {
+  main.pageCheckout .pageCheckout__main .pageCheckout__form .attendee-info .title {
+    font-size: 18px;
+  }
+}
 main.pageCheckout .pageCheckout__main .pageCheckout__form .attendee-info .box-passenger {
   border: 1px solid #eee;
   padding: 20px 25px;
@@ -3566,11 +3582,21 @@ main.pageCheckout .pageCheckout__main .pageCheckout__form .attendee-info .box-pa
   background: #FAFAFA;
   box-sizing: border-box;
 }
+@media (max-width: 768px) {
+  main.pageCheckout .pageCheckout__main .pageCheckout__form .attendee-info .box-passenger {
+    padding: 10px;
+  }
+}
 main.pageCheckout .pageCheckout__main .pageCheckout__form .attendee-info .box-passenger p {
   margin-bottom: 23px;
   font-size: 16px;
   font-weight: normal;
   color: #444;
+}
+@media (max-width: 768px) {
+  main.pageCheckout .pageCheckout__main .pageCheckout__form .attendee-info .box-passenger p {
+    font-size: 14px;
+  }
 }
 main.pageCheckout .pageCheckout__main .pageCheckout__form .attendee-info .box-passenger .field.two-col {
   display: flex;
@@ -3579,11 +3605,6 @@ main.pageCheckout .pageCheckout__main .pageCheckout__form .attendee-info .box-pa
 }
 main.pageCheckout .pageCheckout__main .pageCheckout__form .attendee-info .box-passenger .field.two-col .input {
   width: calc(50% - 8px);
-}
-@media (max-width: 768px) {
-  main.pageCheckout .pageCheckout__main .pageCheckout__form .attendee-info .box-passenger .field.two-col .input {
-    width: 100%;
-  }
 }
 main.pageCheckout .pageCheckout__main .pageCheckout__form .attendee-info .box-passenger .field .date-field {
   display: flex;
@@ -3595,6 +3616,11 @@ main.pageCheckout .pageCheckout__main .pageCheckout__form .attendee-info .box-pa
 main.pageCheckout .pageCheckout__main .pageCheckout__form .order-review {
   padding: 24px 30px 34px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+@media (max-width: 768px) {
+  main.pageCheckout .pageCheckout__main .pageCheckout__form .order-review {
+    padding: 10px;
+  }
 }
 main.pageCheckout .pageCheckout__main .pageCheckout__form .order-review .order-top {
   display: flex;
@@ -3615,12 +3641,20 @@ main.pageCheckout .pageCheckout__main .pageCheckout__form .order-review .order-t
   font-weight: 500;
   font-size: 16px;
 }
+@media (max-width: 768px) {
+  main.pageCheckout .pageCheckout__main .pageCheckout__form .order-review .order-top h4 {
+    font-size: 14px;
+  }
+}
 main.pageCheckout .pageCheckout__main .pageCheckout__form .order-review .order-bottom .subtotal, main.pageCheckout .pageCheckout__main .pageCheckout__form .order-review .order-bottom .total {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 0;
   border-top: 1px solid #eee;
+}
+main.pageCheckout .pageCheckout__main .pageCheckout__form .order-review .order-bottom .subtotal p, main.pageCheckout .pageCheckout__main .pageCheckout__form .order-review .order-bottom .total p {
+  margin-bottom: 0;
 }
 main.pageCheckout .pageCheckout__main .pageCheckout__form .order-review .order-bottom .total .price {
   font-size: 24px;
@@ -3636,11 +3670,21 @@ main.pageCheckout .pageCheckout__main .pageCheckout__form .order-review .order-b
   font-size: 16px;
   font-weight: 700;
 }
+@media (max-width: 768px) {
+  main.pageCheckout .pageCheckout__main .pageCheckout__form .order-review .order-bottom .price {
+    font-size: 14px;
+  }
+}
 main.pageCheckout .pageCheckout__main .pageCheckout__form .order-review p {
   color: #212529;
   font-size: 16px;
   font-weight: normal;
   margin-bottom: 5px;
+}
+@media (max-width: 768px) {
+  main.pageCheckout .pageCheckout__main .pageCheckout__form .order-review p {
+    font-size: 14px;
+  }
 }
 main.pageCheckout .pageCheckout__main .pageCheckout__form .order-review p span {
   font-weight: 700;
