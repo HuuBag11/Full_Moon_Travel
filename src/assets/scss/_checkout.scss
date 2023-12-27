@@ -22,6 +22,11 @@ main.pageCheckout{
             font-size: 32px;
             margin-bottom: 20px;
             font-weight: 700;
+
+            @media (max-width: 768px){
+                font-size: 26px;
+                margin-bottom: 12px;
+            }
         }
 
         .pageCheckout__form{
@@ -31,6 +36,10 @@ main.pageCheckout{
                 margin-bottom: 21px;
                 color: #444;
                 font-weight: 600;
+
+                @media (max-width: 768px){
+                    font-size: 18px;
+                }
             }
 
             .field{
@@ -100,6 +109,10 @@ main.pageCheckout{
                     font-weight: 600;
                     margin-bottom: 0.5rem;
                     color: #444;
+
+                    @media (max-width: 768px){
+                        font-size: 18px;
+                    }
                 }
 
                 .box-passenger{
@@ -109,11 +122,19 @@ main.pageCheckout{
                     background: #FAFAFA;
                     box-sizing: border-box;
 
+                    @media (max-width: 768px){
+                        padding: 10px;
+                    }
+
                     p{
                         margin-bottom: 23px;
                         font-size: 16px;
                         font-weight: normal;
                         color: #444;
+
+                        @media (max-width: 768px){
+                            font-size: 14px;
+                        }
                     }
 
                     .field{
@@ -124,10 +145,6 @@ main.pageCheckout{
 
                             .input{
                                 width: calc(50% - 8px);
-
-                                @media (max-width: 768px){
-                                    width: 100%;
-                                }
                             }
                         }
                     }
@@ -137,6 +154,10 @@ main.pageCheckout{
             .order-review{
                 padding: 24px 30px 34px;
                 box-shadow: 0 0 10px rgba(0,0,0,.1);
+
+                @media (max-width: 768px){
+                    padding: 10px;
+                }
 
                 .order-top{
                     display: flex;
@@ -158,6 +179,10 @@ main.pageCheckout{
                         color: #212529;
                         font-weight: 500;
                         font-size: 16px;
+
+                        @media (max-width: 768px){
+                            font-size: 14px;
+                        }
                     }
                 }
 
@@ -168,6 +193,10 @@ main.pageCheckout{
                         align-items: center;
                         padding: 10px 0;
                         border-top: 1px solid #eee;
+
+                        p{
+                            margin-bottom: 0;
+                        }
                     }
 
                     .total{
@@ -187,6 +216,10 @@ main.pageCheckout{
                         color: #212529;
                         font-size: 16px;
                         font-weight: 700;
+
+                        @media (max-width: 768px){
+                            font-size: 14px;
+                        }
                     }
                 }
 
@@ -195,6 +228,10 @@ main.pageCheckout{
                     font-size: 16px;
                     font-weight: normal;
                     margin-bottom: 5px;
+
+                    @media (max-width: 768px){
+                        font-size: 14px;
+                    }
 
                     span{
                         font-weight: 700;
