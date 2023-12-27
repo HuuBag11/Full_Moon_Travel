@@ -3471,6 +3471,207 @@ main.pageAbout .pageAbout__main .about-content .content-post img {
   border-radius: 5px;
 }
 
+main.pageCheckout {
+  padding-top: 10px;
+}
+main.pageCheckout .breadcrumbs {
+  margin-bottom: 0;
+  color: #bdbdbd;
+  font-size: 14px;
+  line-height: 16px;
+}
+main.pageCheckout .breadcrumbs a {
+  color: inherit;
+}
+main.pageCheckout .pageCheckout__main {
+  padding: 20px;
+  background-color: #FFF;
+  margin: 40px auto;
+}
+main.pageCheckout .pageCheckout__main .title {
+  color: #333;
+  font-size: 32px;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+main.pageCheckout .pageCheckout__main .pageCheckout__form .form-title {
+  font-size: 24px;
+  line-height: 1.5;
+  margin-bottom: 21px;
+  color: #444;
+  font-weight: 600;
+}
+main.pageCheckout .pageCheckout__main .pageCheckout__form .field {
+  margin-bottom: 25px;
+}
+main.pageCheckout .pageCheckout__main .pageCheckout__form .field label {
+  margin-bottom: 14px;
+  font-weight: 600;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  line-height: 1.2;
+  color: #444;
+}
+main.pageCheckout .pageCheckout__main .pageCheckout__form .field label span {
+  color: red;
+}
+main.pageCheckout .pageCheckout__main .pageCheckout__form .field select {
+  height: 40px;
+  width: 100%;
+  padding: 0 10px;
+  border: 1px solid #f5f5f5;
+  color: #333;
+  border-radius: 3px;
+  background-color: #F5F5F5;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: relative;
+  background-image: url('data:image/svg+xml;utf8, <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10.8247 1.08749L6.00292 5.90999L1.18042 1.08749" stroke="black" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/></svg>');
+  background-repeat: no-repeat;
+  background-position: right 18px center;
+}
+main.pageCheckout .pageCheckout__main .pageCheckout__form .field input {
+  border: 1px solid #EEEEEE;
+  height: 40px;
+  padding: 5px 15px;
+  background: transparent;
+  color: #1A1A1A;
+  font-size: 13px;
+  box-shadow: none;
+  border-radius: 1px;
+  width: 100%;
+  background-color: #FFF;
+}
+main.pageCheckout .pageCheckout__main .pageCheckout__form .field input::placeholder {
+  font-size: 13px;
+}
+main.pageCheckout .pageCheckout__main .pageCheckout__form .field textarea {
+  width: 100%;
+  height: 120px;
+  border: 1px solid #f5f5f5;
+  padding: 5px 15px;
+}
+main.pageCheckout .pageCheckout__main .pageCheckout__form .attendee-info .title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #444;
+}
+main.pageCheckout .pageCheckout__main .pageCheckout__form .attendee-info .box-passenger {
+  border: 1px solid #eee;
+  padding: 20px 25px;
+  margin-bottom: 25px;
+  background: #FAFAFA;
+  box-sizing: border-box;
+}
+main.pageCheckout .pageCheckout__main .pageCheckout__form .attendee-info .box-passenger p {
+  margin-bottom: 23px;
+  font-size: 16px;
+  font-weight: normal;
+  color: #444;
+}
+main.pageCheckout .pageCheckout__main .pageCheckout__form .attendee-info .box-passenger .field.two-col {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+main.pageCheckout .pageCheckout__main .pageCheckout__form .attendee-info .box-passenger .field.two-col .input {
+  width: calc(50% - 8px);
+}
+@media (max-width: 768px) {
+  main.pageCheckout .pageCheckout__main .pageCheckout__form .attendee-info .box-passenger .field.two-col .input {
+    width: 100%;
+  }
+}
+main.pageCheckout .pageCheckout__main .pageCheckout__form .order-review {
+  padding: 24px 30px 34px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+main.pageCheckout .pageCheckout__main .pageCheckout__form .order-review .order-top {
+  display: flex;
+  margin-bottom: 25px;
+}
+main.pageCheckout .pageCheckout__main .pageCheckout__form .order-review .order-top .product {
+  width: 80%;
+}
+main.pageCheckout .pageCheckout__main .pageCheckout__form .order-review .order-top .subtitle {
+  width: 20%;
+  text-align: right;
+  color: #212529;
+  font-weight: 700;
+  font-size: 14px;
+}
+main.pageCheckout .pageCheckout__main .pageCheckout__form .order-review .order-top h4 {
+  color: #212529;
+  font-weight: 500;
+  font-size: 16px;
+}
+main.pageCheckout .pageCheckout__main .pageCheckout__form .order-review .order-bottom .subtotal, main.pageCheckout .pageCheckout__main .pageCheckout__form .order-review .order-bottom .total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-top: 1px solid #eee;
+}
+main.pageCheckout .pageCheckout__main .pageCheckout__form .order-review .order-bottom .total .price {
+  font-size: 24px;
+  font-weight: bold;
+}
+main.pageCheckout .pageCheckout__main .pageCheckout__form .order-review .order-bottom .name {
+  color: #212529;
+  font-size: 16px;
+  font-weight: normal;
+}
+main.pageCheckout .pageCheckout__main .pageCheckout__form .order-review .order-bottom .price {
+  color: #212529;
+  font-size: 16px;
+  font-weight: 700;
+}
+main.pageCheckout .pageCheckout__main .pageCheckout__form .order-review p {
+  color: #212529;
+  font-size: 16px;
+  font-weight: normal;
+  margin-bottom: 5px;
+}
+main.pageCheckout .pageCheckout__main .pageCheckout__form .order-review p span {
+  font-weight: 700;
+}
+main.pageCheckout .pageCheckout__main .pageCheckout__form .order-review .order-payment {
+  margin-top: 40px;
+}
+main.pageCheckout .pageCheckout__main .pageCheckout__form .order-review .order-payment p {
+  font-size: 18px;
+  line-height: 27px;
+  color: #212529;
+  font-weight: 500;
+}
+main.pageCheckout .pageCheckout__main .pageCheckout__form .order-review .order-payment .info {
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 1em;
+  margin: 1em 0;
+  border-radius: 2px;
+  background-color: #dfdcde;
+  color: #515151;
+  font-size: 15px;
+  line-height: 22px;
+}
+main.pageCheckout .pageCheckout__main .pageCheckout__form .order-review .order-payment .info::before {
+  content: "";
+  display: block;
+  border: 1em solid #dfdcde;
+  border-right-color: transparent;
+  border-left-color: transparent;
+  border-top-color: transparent;
+  position: absolute;
+  top: -0.75em;
+  left: 0;
+  margin: -1em 0 0 2em;
+}
+
 /* Footer */
 #footer {
   border-top: 1px solid #000;
