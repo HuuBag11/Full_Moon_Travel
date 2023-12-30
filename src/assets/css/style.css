@@ -3105,6 +3105,52 @@ main.pageBlogs .pageBlogs__main .blog-content .list-news .news-item .item-info .
   -webkit-box-orient: vertical;
 }
 
+main.pageBlogDetail {
+  padding-top: 10px;
+}
+main.pageBlogDetail .breadcrumbs {
+  margin-bottom: 0;
+  color: #bdbdbd;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  margin-bottom: 12px;
+}
+main.pageBlogDetail .breadcrumbs a {
+  color: inherit;
+}
+main.pageBlogDetail .post-title {
+  font-size: 32px;
+  line-height: 42px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 15px;
+  text-align: center;
+}
+main.pageBlogDetail .post-view {
+  background: none;
+  color: #828282;
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+}
+main.pageBlogDetail .post-content {
+  font-size: 16px;
+  line-height: 24px;
+  padding: 20px 0;
+}
+main.pageBlogDetail .post-content h1 {
+  font-size: 28px;
+}
+main.pageBlogDetail .post-content h2 {
+  font-size: 24px;
+}
+main.pageBlogDetail .post-content img {
+  display: block;
+  margin: 15px auto;
+}
+
 main.pageContact {
   padding-top: 10px;
 }

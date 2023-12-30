@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogs</title>
+
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/reset.css" />
+    <link rel="stylesheet" href="../assets/css/core.css" />
+    <!-- Boostrap -->
+    <link rel="stylesheet" href="../assets/lib/bootstrap/bootstrap.min.css" />
+    <!-- splide CSS -->
+    <link rel="stylesheet" href="../assets/lib/splide/splide.min.css" />
+    <!-- Font awesome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- font roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Start header -->
+    <header id="header">
+        <div class="container">
+            <div class="header-container d-flex align-items-center justify-content-between">
+                <a href="../../index.html" class="header-logo">
+                    <img src="../assets/images/logo-full-moon.jpg" alt="logo">
+                </a>
+                <div class="backdrop d-none" onclick="toggleOpenPopup(event)"></div>
+                <ul class="menu d-flex align-content-center">
+                    <li class="menu-item btn-close" onclick="toggleOpenPopup(event)">
+                    </li>
+                    <li class="menu-item form-search-mobile">
+                        <form action="" class="header__search">
+                            <button type="submit"><i class="fa fa-search"></i></button>
+                            <input type="text" placeholder="Your searching here..." name="search">
+                        </form>
+                    </li>
+                    <li class="menu-item">
+                        <a href="../../index.html" class="menu-link">Home</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="./bus-ticket.html" class="menu-link">Bus Ticket</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="./category.html" class="menu-link">Tour</a>
+                    </li>
+                    <li class="menu-item has-children many-children">
+                        <a href="#" class="menu-link">Cruises</a>
+                        <ul class="sub-menu">
+                            <li class="menu-item left">
+                                <a href="#" class="menu-link active" data-tab="tab-1">Halong Bay Cruises</a>
+                                <a href="#" class="menu-link" data-tab="tab-2">Mekong River Cruise</a>
+                            </li>
+
+                            <li class="menu-item right">
+                                <div class="menu-tab active" data-tab="tab-1">
+                                    <ul class="sub-menu">
+                                        <li class="menu-item title">
+                                            <a href="#" class="menu-link">Ha Long Bay Cruise</a>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a href="#" class="menu-link">Budget Cruises</a>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a href="#" class="menu-link">Budget Cruises</a>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a href="#" class="menu-link">Budget Cruises</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="menu-tab" data-tab="tab-2">
+                                    <ul class="sub-menu">
+                                        <li class="menu-item title">
+                                            <a href="#" class="menu-link">All Mekong River Cruise</a>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a href="#" class="menu-link">Budget Cruises</a>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a href="#" class="menu-link">Budget Cruises</a>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a href="#" class="menu-link">Budget Cruises</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu-item has-children">
+                        <a href="#" class="menu-link">About us</a>
+                        <ul class="sub-menu">
+                            <li class="menu-item">
+                                <a href="#" class="menu-link">About us</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#" class="menu-link">About us</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#" class="menu-link">About us</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="header__right d-flex align-items-center">
+                    <a href="#" class="tripadvisor">
+                        <img src="https://d13jio720g7qcs.cloudfront.net/assets/icon/tripadvisor-traveller-choice-2022.png"
+                            alt="">
+                        <span>Traveler choice</span>
+                    </a>
+                    <div class="header__button">
+                        <div class="header__button--wishlist">
+                            <a href="#">
+                                <span class="wishlist-icon d-block">
+                                    <i class="fa-solid fa-heart"></i>
+                                    <span class="wishlist-count">0</span>
+                                </span>
+                            </a>
+                        </div>
+                        <div class="header__button--cart">
+                            <a href="#">
+                                <span class="cart-icon d-block">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </span>
+                            </a>
+                        </div>
+                        <div class="header__button--bars d-none">
+                            <a href="#" onClick="toggleOpenPopup(event)">
+                                <span class="bars-icon d-block">
+                                    <i class="fa-solid fa-bars"></i>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <form action="" class="header__search">
+                        <input type="text" placeholder="Your searching here..." name="search">
+                        <button type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- End header -->
+
+    <main class="pageBlogDetail">
+        <div class="container">
+            <div class="breadcrumbs">
+                <a href="/">Home</a>/
+                <span>Blog</span>/
+                <span>5 Tips to travel with Halong Bay Overnight Cruise</span>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-8 me-auto ms-auto">
+                    <div class="post">
+                        <h2 class="post-title">5 Tips to travel with Halong Bay Overnight Cruise</h2>
+                        <div class="post-view">
+                            Jun 29, 2023 - 83 Views
+                        </div>
+                        <div class="post-content">
+                            <p style="font-weight: 400;">Do you know that travelling by cruise is the best way to enjoy
+                                the
+                                unique beauty of Halong Bay – the UNESCO World Natural Heritage with beautiful landscape
+                                and
+                                many interesting activities throughout the voyage? If you feel worry about your first
+                                experience with Halong Bay Overnight Cruise maybe not so good, just take a look at below
+                                tips, you will feel more confident to start planning your trip cruising through Halong
+                                Bay
+                                for the very first time.</p>
+                            <h1><span style="font-size: 14pt;"><strong>1.&nbsp; </strong>Check carefully before booking
+                                    Halong Bay Overnight Cruise</span></h1>
+                            <p style="font-weight: 400;">Be careful when choosing your&nbsp;Halong Bay Overnight
+                                Cruise&nbsp;as there are hundreds choices and not all of them worth your money. If you
+                                want
+                                to save money, a 3-star cruise is totally suitable with your demand. However, budget
+                                cruise
+                                is always the one to nervous most as there are many cruises which are advertised as
+                                3-star
+                                standard but in fact, many of them are at bad condition with old boat, unprofessional
+                                staff
+                                and poor food. Those unqualified cruises are sold at very cheap price (sometimes just a
+                                half
+                                of a truly qualified cruise’s price) but your experience will be like coming to hell.
+                                Therefore, don’t try to get a cabin with cheapest price, you should choose the one with
+                                best
+                                price.&nbsp;&nbsp;Some suggestion for good budget cruises with reasonable price such as:
+                                Swan Cruise, Glory Legend, Aclass Legend, Phoenix Cruise or Oriental Sails.</p>
+                            <p style="font-weight: 400;">If you willing to pay a bit more for a little larger room with
+                                better meals and services or have a connecting room for your family with kids, mid-range
+                                cruises are available for you to choose. However, just like the budget 3-star cruise,
+                                not
+                                all mid-range 4-star cruises are qualified enough, some have no difference with the
+                                budget
+                                one, so be smart when choosing your 4-star Halong Bay Cruise.</p>
+                            <p style="font-weight: 400;">On the other hand, if you have tons of money and willing to pay
+                                for
+                                the best, so you actually do not have to think too much about budget versus your needs;
+                                especially, when you have special needs about foods (vegan or Halal food), rooms (large
+                                room
+                                or connecting room), training (swimming pool or gym room), etc. However, sometimes
+                                paying a
+                                lot does not mean you can get what you need. So even though you don’t have to care about
+                                the
+                                cost, just check carefully before decide to book your Halong Bay cruise.</p>
+                            <p style="font-weight: 400;">There are many ways to check if a cruise is good enough for you
+                                such as: TripAdvisor, reviews from experienced bloggers, reputable local travel
+                                agencies,
+                                etc. and you should check the information and suggestions from as many channels as you
+                                can.
+                            </p>
+                            <img decoding="async" fetchpriority="high" class="aligncenter size-full wp-image-2074"
+                                src="https://fullmoontravel.asia/wp-content/uploads/2023/10/squid-fishing.jpg" alt=""
+                                width="800" height="550"
+                                srcset="https://fullmoontravel.asia/wp-content/uploads/2023/10/squid-fishing.jpg 800w, https://fullmoontravel.asia/wp-content/uploads/2023/10/squid-fishing-600x413.jpg 600w, https://fullmoontravel.asia/wp-content/uploads/2023/10/squid-fishing-300x206.jpg 300w, https://fullmoontravel.asia/wp-content/uploads/2023/10/squid-fishing-768x528.jpg 768w"
+                                sizes="(max-width: 800px) 100vw, 800px">
+                            <h2><span style="font-size: 14pt;"><strong>2. </strong><strong>Choose the right travel
+                                        agency</strong></span></h2>
+                            <p style="font-weight: 400;">In fact, booking a cruise through travel agency is usually much
+                                cheaper than booking directly on your own. However, among thousands travel agencies in
+                                Vietnam, just a few of them are reputable. An advice for travelers is don’t just walk in
+                                any
+                                random travel agency on Vietnam streets and the Internet or just shopping around some
+                                booths
+                                in Hanoi Old Quarter then decide to choose the one which has a (seems like) sweet and
+                                enthusiastic seller who tell you something seems magical about the cruise they offering
+                                to
+                                you and willing to discount deeply just because “it is you so I will sell with only this
+                                price” or “it is a last-minute booking so the I will sell for you with only that price”,
+                                etc. Please note in your mind that, there is no free lunch and a shock discount for a
+                                super
+                                perfect Halong Bay Overnight Cruise usually means that it is a scam.</p>
+                            <h3>3. Check if there is any promotion</h3>
+                            <p style="font-weight: 400;">After choosing travel agent you want to deal with, you should
+                                double check with them if there is any promotion available for your cruise or is the any
+                                deal they can apply to you. This is not really like a bargain trick; however, sometimes
+                                your
+                                agency forgets about the promotion or maybe there is a deal in the near future and they
+                                can
+                                apply it sooner for you. There are some promotions you may get such as: free Vietnam
+                                visa
+                                letter, free round-trip shuttle bus/VIP bus, free street food-tour in Hanoi, free water
+                                puppet show ticket, discount on price (20-50% usually), etc.</p>
+                            <img decoding="async" class="aligncenter size-large wp-image-2003"
+                                src="https://fullmoontravel.asia/wp-content/uploads/2023/10/DJI_0002-21-1024x767.jpg"
+                                alt="" width="1024" height="767"
+                                srcset="https://fullmoontravel.asia/wp-content/uploads/2023/10/DJI_0002-21-1024x767.jpg 1024w, https://fullmoontravel.asia/wp-content/uploads/2023/10/DJI_0002-21-300x225.jpg 300w, https://fullmoontravel.asia/wp-content/uploads/2023/10/DJI_0002-21-768x575.jpg 768w, https://fullmoontravel.asia/wp-content/uploads/2023/10/DJI_0002-21-1536x1150.jpg 1536w, https://fullmoontravel.asia/wp-content/uploads/2023/10/DJI_0002-21-204x153.jpg 204w, https://fullmoontravel.asia/wp-content/uploads/2023/10/DJI_0002-21-600x449.jpg 600w, https://fullmoontravel.asia/wp-content/uploads/2023/10/DJI_0002-21.jpg 2000w"
+                                sizes="(max-width: 1024px) 100vw, 1024px">
+                            <h4><span style="font-size: 14pt;">4. Bring along not too much luggage</span></h4>
+                            <p style="font-weight: 400;">Normally, the longest trip you can take with a Halong Bay
+                                Overnight
+                                Cruise is a 3 days 2 nights itinerary and most of people choose to have only a
+                                2-day-1-night
+                                trip on Halong Bay; therefore, you should only bring enough luggage for a very short
+                                trip so
+                                you don’t have to carry a lot of things or a big suitcase which is heavy, cumbersome and
+                                uncomfortable. Besides, the shuttle bus and especially the VIP (limousine) bus which are
+                                used to transfer you from Hanoi to the harbor usually do not have a large space for big
+                                size
+                                suitcase or too much luggage, so bring a huge load of luggage means you may not find
+                                enough
+                                space to store it or just simply feeling uncomfortable with the lumbering in at least
+                                2-hour
+                                travelling by car. In addition, you should note that with many 3-star and 4-star
+                                cruises,
+                                the lobby and corridor are really narrow; which means if you bring an oversize suitcase
+                                or
+                                lots of luggage, you may create the difficulty on moving in the public area not only to
+                                yourself but also to other travelers.</p>
+                            <h5><span style="font-size: 14pt;"><strong>5. Be on time</strong></span></h5>
+                            <p style="font-weight: 400;">Please note that most of Halong Bay cruises cannot wait for
+                                your
+                                more than 15 minutes and there are some cruises that only delay about 5 minutes for a
+                                late
+                                customer. Of course, you do not have to cancel your Halong Bay Cruise with full charged
+                                just
+                                because of being late; however, you have to pay hundreds USD for a speed boat or tender
+                                to
+                                catch up with the cruise. Therefore, if you do not want to overpay, feel depressed and
+                                wish
+                                that you woke up sooner, just pack your luggage at the night before, get up soon enough
+                                for
+                                getting dress and having a nice breakfast with a couple of tea or coffee then get to the
+                                meeting point for your shuttle bus 15 minutes soon to the harbor.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section class="related-articles">
+                <div class="container">
+                    <h4 class="title">Latest Articles</h4>
+                    <ul class="row wrapper__list">
+                        <li class="col-lg-3 col-md-6 col-12 list-item">
+                            <div class="item-wrapper">
+                                <a href="/" title=""></a>
+                                <div class="item-img">
+                                    <img src="https://img.freepik.com/free-photo/landmark-forest-tourism-sunrise-famous-ancient_1417-1194.jpg?w=996&t=st=1700311346~exp=1700311946~hmac=bc7e9170dbc2b325f081948b3155b62bf7a0ea89e6b0303b0d570d3b2916310b"
+                                        alt="">
+                                </div>
+                                <h4 class="item-title">
+                                    5 Tips to travel with Halong Bay Overnight Cruise
+                                </h4>
+                                <div class="item-info">
+                                    Jun 29, 2023 - 44 Views
+                                </div>
+                            </div>
+                        </li>
+                        <li class="col-lg-3 col-md-6 col-12 list-item">
+                            <div class="item-wrapper">
+                                <a href="/" title=""></a>
+                                <div class="item-img">
+                                    <img src="https://img.freepik.com/free-photo/landmark-forest-tourism-sunrise-famous-ancient_1417-1194.jpg?w=996&t=st=1700311346~exp=1700311946~hmac=bc7e9170dbc2b325f081948b3155b62bf7a0ea89e6b0303b0d570d3b2916310b"
+                                        alt="">
+                                </div>
+                                <h4 class="item-title">
+                                    5 Tips to travel with Halong Bay Overnight Cruise
+                                </h4>
+                                <div class="item-info">
+                                    Jun 29, 2023 - 44 Views
+                                </div>
+                            </div>
+                        </li>
+                        <li class="col-lg-3 col-md-6 col-12 list-item">
+                            <div class="item-wrapper">
+                                <a href="/" title=""></a>
+                                <div class="item-img">
+                                    <img src="https://img.freepik.com/free-photo/landmark-forest-tourism-sunrise-famous-ancient_1417-1194.jpg?w=996&t=st=1700311346~exp=1700311946~hmac=bc7e9170dbc2b325f081948b3155b62bf7a0ea89e6b0303b0d570d3b2916310b"
+                                        alt="">
+                                </div>
+                                <h4 class="item-title">
+                                    5 Tips to travel with Halong Bay Overnight Cruise
+                                </h4>
+                                <div class="item-info">
+                                    Jun 29, 2023 - 44 Views
+                                </div>
+                            </div>
+                        </li>
+                        <li class="col-lg-3 col-md-6 col-12 list-item">
+                            <div class="item-wrapper">
+                                <a href="/" title=""></a>
+                                <div class="item-img">
+                                    <img src="https://img.freepik.com/free-photo/landmark-forest-tourism-sunrise-famous-ancient_1417-1194.jpg?w=996&t=st=1700311346~exp=1700311946~hmac=bc7e9170dbc2b325f081948b3155b62bf7a0ea89e6b0303b0d570d3b2916310b"
+                                        alt="">
+                                </div>
+                                <h4 class="item-title">
+                                    5 Tips to travel with Halong Bay Overnight Cruise
+                                </h4>
+                                <div class="item-info">
+                                    Jun 29, 2023 - 44 Views
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Start Footer -->
+    <footer id="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-logo col-md-2 col-12">
+                        <a href="../../index.html" class="logo">
+                            <img src="../assets/images/logo-full-moon.jpg" alt="logo">
+                        </a>
+                    </div>
+                    <div class="footer-social col-md-3 col-12">
+                        <div class="footer-trip">
+                            <img src="https://d13jio720g7qcs.cloudfront.net/assets/icon/tripadvisor_2023.png" alt="">
+                            <div class="text-review d-flex align-items-center">
+                                <img src="https://d13jio720g7qcs.cloudfront.net/assets/icon/circle.png" alt="">
+                                <span>100000 reviews</span>
+                            </div>
+                        </div>
+
+                        <div class="footer-follow">
+                            <p class="text">Follow us</p>
+                            <div class="logo">
+                                <a href="/">
+                                    <i class="fa-brands fa-facebook"></i>
+                                </a>
+                                <a href="/">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+                                <a href="/">
+                                    <i class="fa-brands fa-pinterest"></i>
+                                </a>
+                                <a href="/">
+                                    <i class="fa-brands fa-youtube"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-menu col-md-2 col-12">
+                        <ul class="list-menu">
+                            <li class="menu-item">
+                                <a href="#">About Us</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#">Contact Us</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#">Privacy Statement</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#">Terms & Conditions</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#">On the News</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#">Travel Guide</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#">Payment Method</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-contact col-md-5 col-12">
+                        <h4 class="title">Contact information</h4>
+                        <div class="footer-support">
+                            <div class="support-item">
+                                <a href="/" class="mail">
+                                    <i class="fa-regular fa-envelope"></i>
+                                    sapadiscoverypartytour@gmail.com
+                                </a>
+                            </div>
+                            <div class="support-item">
+                                <a href="/" class="phone">
+                                    <i class="fa-solid fa-phone-volume"></i>
+                                    +84 974-426-821
+                                </a>
+                            </div>
+                        </div>
+                        <ul class="footer-branch">
+                            <li class="branch-item">
+                                <b>Hanoi, Vietnam:</b> 162B Tran Quang Khai Street, Ly Thai To Ward, Hoan Kiem District,
+                                Hanoi, Vietnam
+                            </li>
+                            <li class="branch-item">
+                                <b>Hanoi, Vietnam:</b> 162B Tran Quang Khai Street, Ly Thai To Ward, Hoan Kiem District,
+                                Hanoi, Vietnam
+                            </li>
+                            <li class="branch-item">
+                                <b>Hanoi, Vietnam:</b> 162B Tran Quang Khai Street, Ly Thai To Ward, Hoan Kiem District,
+                                Hanoi, Vietnam
+                            </li>
+                            <li class="branch-item">
+                                <b>Hanoi, Vietnam:</b> 162B Tran Quang Khai Street, Ly Thai To Ward, Hoan Kiem District,
+                                Hanoi, Vietnam
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="bottom-wrapper d-flex align-items-center justify-content-between">
+                    <div class="bottom-left">
+                        <p>Business license no: 0201897823 - Issued date: 10/08/2018</p>
+                        <p>Issued by: Investment Planning Department Hai Phong</p>
+                    </div>
+                    <div class="bottom-right">
+                        <img src="https://fullmoontravel.asia/wp-content/uploads/2023/08/ATM.png" alt="atm logo">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+    <script src="../assets/lib/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- Splide JS -->
+    <script src="../assets/lib/splide/splide.min.js"></script>
+
+    <script src="../assets/scripts/main.js"></script>
+</body>
